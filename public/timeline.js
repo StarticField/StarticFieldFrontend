@@ -8,7 +8,7 @@ function qs(selector, all = false) {
 
 const sections = qs(".section", true);
 const timeline = qs(".timeline");
-const line = qs(".line");
+const line = qs(".horizontalLine");
 line.style.bottom = `calc(100% - 20px)`;
 let prevScrollY = window.scrollY;
 let up, down;

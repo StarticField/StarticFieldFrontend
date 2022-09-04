@@ -24,7 +24,7 @@ export default function Timeline() {
         </div>
 
         <div className="timeline">
-          <div className="line"></div>
+          <div className="horizontalLine"></div>
           <div className="section">
             <div className="bead bead1"></div>
             <div className="content">

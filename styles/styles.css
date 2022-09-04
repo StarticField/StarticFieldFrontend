@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.line{
+.horizontalLine{
     position: absolute;
     left: calc(50% - 2px);
     width: 4px;
@@ -28,7 +28,7 @@
     display: block;
 }
 
-.line::after{
+.horizontal-line::after{
     bottom: 0;
 }
 
@@ -109,7 +109,7 @@
     .content{
         width: 100%;
     }
-    .line{
+    .lhorizontalLineine{
         left: -2px;
     }
     .bead{

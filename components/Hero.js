@@ -11,7 +11,7 @@ export default function Hero() {
       }}
       justify="center"
     >
-      <Grid xs={6}>
+      <Grid xs={12} md={6}>
         <div
           style={{
             width: "70%",
@@ -20,8 +20,7 @@ export default function Hero() {
           }}
         >
           <Text h1 size={40}>
-            The First Step To Electrifying<br></br> Your Startup Journey
-            <br></br> Starts Here!
+            The First Step To Electrifying Your Startup Journey Starts Here!
           </Text>
           <Spacer x={2} />
           <Link>
@@ -39,7 +38,7 @@ export default function Hero() {
           <CustomButton>Discord</CustomButton>
         </div>
       </Grid>
-      <Grid xs={6}>
+      <Grid xs={12} md={6}>
         <Image src="heroCover.png" alt=""></Image>
       </Grid>
     </Grid.Container>
