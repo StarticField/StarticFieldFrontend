@@ -19,7 +19,20 @@ export default function Hero() {
             marginTop: "90px",
           }}
         >
-          <Text h1 size={40}>
+          <Text
+            h1
+            size={40}
+            css={{
+              "@xs": {
+                fontSize: "20px",
+                textAlign: "center",
+              },
+              "@md": {
+                  fontSize: "50px",
+                  textAlign: "left",
+              },
+            }}
+          >
             The First Step To Electrifying Your Startup Journey Starts Here!
           </Text>
           <Spacer x={2} />
