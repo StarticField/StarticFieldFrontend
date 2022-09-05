@@ -13,8 +13,8 @@ export default function Home() {
       <Hero></Hero>
       <div
         style={{
-          position: "relative",
-        }}
+          position: "relative"
+      }}
       >
         <img
           src="/circles1.svg"

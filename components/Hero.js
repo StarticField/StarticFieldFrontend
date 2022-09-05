@@ -52,7 +52,7 @@ export default function Hero() {
           <CustomButton>Discord</CustomButton>
         </div>
       </Grid>
-      <Grid xs={12} md={6}>
+      <Grid xs={10} sm={6} md={6}>
         <Image src="heroCover.png" alt=""></Image>
       </Grid>
     </Grid.Container>
