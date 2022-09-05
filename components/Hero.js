@@ -17,6 +17,7 @@ export default function Hero() {
             width: "70%",
             margin: "0 auto",
             marginTop: "90px",
+            marginBottom: "90px",
           }}
         >
           <Text
