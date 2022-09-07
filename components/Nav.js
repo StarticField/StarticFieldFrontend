@@ -17,10 +17,11 @@ export default function Nav() {
     "Premium Membership",
   ];
 
+
   const theme = useTheme();
 
   return (
-    <Navbar variant={"sticky"}>
+    <Navbar maxWidth={"fluid"} variant={"sticky"}>
       <Navbar.Brand
         css={{
           w: "150px",

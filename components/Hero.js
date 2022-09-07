@@ -1,4 +1,4 @@
-import { Grid, Spacer, Text, Image, Link } from "@nextui-org/react";
+import {Grid, Spacer, Text, Image, Link, Button} from "@nextui-org/react";
 import CustomButton from "./CustomButton";
 
 export default function Hero() {
@@ -49,7 +49,7 @@ export default function Hero() {
             </Text>
           </Link>
           <Spacer x={2} />
-          <CustomButton>Discord</CustomButton>
+          <Button auto rounded css={{fontWeight:"bold"}}>Join Discord</Button>
         </div>
       </Grid>
       <Grid xs={10} sm={6} md={6}>
