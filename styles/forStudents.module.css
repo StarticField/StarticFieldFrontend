@@ -1,0 +1,67 @@
+.background{
+    /*background-image: linear-gradient(0deg,rgba(0,0,0) -90%,rgba(76,65,119,0.84) -10%,rgba(106,197,170,0.84),rgba(57,184,200,0.84),rgba(51,97,160,0.84),rgba(0,0,0,0.1));*/
+    background-repeat:no-repeat;
+}
+
+.hero{
+    max-width: 100vw;
+    margin: auto;
+}
+
+.heroSection1{
+    margin: auto;
+}
+.heroSection{
+    margin: auto;
+}
+
+.heroText{
+    text-align: center;
+    width: 50vw;
+    margin:auto;
+    margin-top: 10vh;
+    font-size: 20px;
+}
+.intro{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.introText{
+    width: 60vw;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.section{
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sectionImage{
+    width: 50vw;
+}
+.sectionImage img{
+    width: 40vw;
+    margin-left: 5vw;
+}
+.sectionText{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDiscription{
+    width: 40vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroText{
+        width: 80vw;
+    }
+}

@@ -6,7 +6,6 @@ export const Layout = ({ children }) => (
   <Box>
     <Nav></Nav>
     {children}
-      <div style={{ height: "10vh" }}></div>
     <Footer></Footer>
   </Box>
 );

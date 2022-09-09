@@ -64,6 +64,7 @@ export default function Home() {
       </div>
       <div style={{ height: "100vh" }}></div>
       <Timeline />
+      <div style={{ height: "10vh" }}></div>
     </Layout>
   );
 }
