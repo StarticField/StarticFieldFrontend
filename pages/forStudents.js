@@ -16,6 +16,7 @@ export default function ForStudents(){
                         </Text>
                     </Grid>
                 </Grid.Container>
+                <div className={styles.background2}></div>
                 <div className={styles.intro}>
                     <Text b h3>1.Join a Startup team</Text>
                     <Text className={styles.introText}>Startic Field is the home to the largest number of college based startups who are always looking to expand their teams. You can register yourself as any of these 3 roles:</Text>

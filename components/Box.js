@@ -5,4 +5,5 @@ export const Box = styled("div", {
   padding: "$0",
   margin: "auto",
   width: "100vw",
+  overflowX: "hidden"
 });

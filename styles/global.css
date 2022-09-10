@@ -8,6 +8,8 @@ body {
     font-smooth: always;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   h1 {
