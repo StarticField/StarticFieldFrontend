@@ -20,6 +20,10 @@
     margin: auto;
 }
 
+.heroSection img{
+    margin-top: 2vh;
+}
+
 .heroText{
     text-align: center;
     width: 50vw;

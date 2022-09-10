@@ -6,6 +6,5 @@ export const Layout = ({ children }) => (
   <Box>
     <Nav></Nav>
     {children}
-    <Footer></Footer>
   </Box>
 );
