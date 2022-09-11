@@ -3,9 +3,8 @@ import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
 import Image from "next/image";
 import Timeline from "../components/Timeline";
-import Group1 from "../components/Group1";
-import Group2 from "../components/Group2";
-import { Spacer } from "@nextui-org/react";
+import styles from "../styles/index.module.css"
+
 
 export default function Home() {
   return (
@@ -19,15 +18,20 @@ export default function Home() {
         <img
           src="/circles1.svg"
           alt=""
-          style={{
-            position: "absolute",
-            bottom: "-40vh",
-            left: "0",
-            height: "80vh",
-            display: "block",
-          }}
+          className={styles.groupOne}
         ></img>
       </div>
+        <div
+            style={{
+                position: "relative"
+            }}
+        >
+            <img
+                src="/circles3.svg"
+                alt=""
+                className={styles.groupTwo}
+            ></img>
+        </div>
       <Timeline />
       <div
         style={{
@@ -37,13 +41,7 @@ export default function Home() {
         <img
           src="/circles2.svg"
           alt=""
-          style={{
-            position: "absolute",
-            bottom: "-10vh",
-            right: "2vw",
-            height: "35vh",
-            display: "block",
-          }}
+          className={styles.groupThree}
         ></img>
       </div>
       <div
@@ -51,18 +49,24 @@ export default function Home() {
           position: "relative",
         }}
       >
-        <Group1></Group1>
+          <img
+              alt=""
+              className={styles.groupFour}
+          />
       </div>
-      <div style={{ height: "35vw" }}></div>
+      <div className={styles.groupFourSpace}></div>
       <Timeline />
       <div
         style={{
           position: "relative",
         }}
       >
-        <Group2></Group2>
-      </div>
-      <div style={{ height: "100vh" }}></div>
+          <img
+              className={styles.groupFive}
+              alt=""
+
+          />      </div>
+      <div className={styles.groupFiveSpace}></div>
       <Timeline />
       <div style={{ height: "10vh" }}></div>
     </Layout>

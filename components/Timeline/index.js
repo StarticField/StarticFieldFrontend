@@ -8,7 +8,8 @@ export default function Timeline() {
         <div className="top-section">
           <Text
             h1
-            size={40}
+            size={47}
+            weight={'semibold'}
             css={{
               textGradient:
                 "to right, #3361AD -20%,#6061AC 5%,#39B8C8 80%,#6AC5AA -90%",
@@ -17,8 +18,8 @@ export default function Timeline() {
             Why join Startic Field?
           </Text>
           <Spacer x={2} />
-          <Text h2 size={30}>
-            Why join Startic Field?
+          <Text h2 i weight={'medium'} size={40}>
+            For Student Startups
           </Text>
           <Spacer x={2} />
         </div>

@@ -1,0 +1,7 @@
+.navParent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89vw;
+    margin:auto;
+}

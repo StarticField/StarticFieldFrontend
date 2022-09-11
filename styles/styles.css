@@ -40,10 +40,18 @@
     border-radius: 1rem;
     align-items: justify;
     min-height: 150px;
-    width: 60vw;
+    width: 57vw;
     margin: auto;
 }
 
+.content{
+    margin-top: 1.7vh;
+}
+
+.content h3{
+    font-weight: 500;
+    font-size: 28px;
+}
 .section p{
     color: grey;
     font-style: italic;
