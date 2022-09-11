@@ -76,7 +76,7 @@ export default function Nav() {
           <Navbar.Link href="./premium">Premium Membership</Navbar.Link>
           <Navbar.Link href="#">
             <Button bordered color="gradient" auto>
-              Sign In
+              Sign In (soon)
             </Button>
           </Navbar.Link>
         </Navbar.Content>
