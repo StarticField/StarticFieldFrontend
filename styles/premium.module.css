@@ -14,6 +14,7 @@
 
 .headings{
     margin: 10vh;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -25,6 +26,7 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 2px;
+    backdrop-filter: blur(10px);
 }
 
 .tableLeft{
@@ -37,6 +39,16 @@
     border-width: 0 0 0 2px;
     width: 50%;
     padding: 20px 0 20px 30px;
+}
+
+.background2{
+    position: absolute;
+    height: 120vh;
+    width: 100vw;
+    top: 150vh;
+    overflow: hidden;
+    background: conic-gradient(from 187.97deg at 57.75% 44.64%, #3361AD 0deg, #6061AC 90deg, #39B8C8 180deg, #6AC5AA 270deg, #000000 360deg);
+    filter: blur(863px);
 }
 
 
@@ -55,5 +67,9 @@
     .tableRight{
         width: 100%;
         border-width: 0;
+    }
+    .background2{
+        top: 130vh;
+        height: 350vh;
     }
 }

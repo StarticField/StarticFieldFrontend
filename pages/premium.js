@@ -7,6 +7,7 @@ export default function Premium(){
         <Layout>
             <div>
                <div className={styles.hero}>
+                   <div className={styles.background2}></div>
                    <Image className={styles.heroImg} src={'cover3.png'} alt={''}></Image>
                    <div className={styles.heroText}>
                        <Text i>All our services are free till December 1, 2022. Post that below would be the membership plans for various stakeholders.</Text>

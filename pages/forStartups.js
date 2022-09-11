@@ -6,6 +6,7 @@ export default function ForStartups(){
     return(
         <Layout>
             <div className={styles.background}>
+                <div className={styles.background2}></div>
                 <Grid.Container className={styles.hero}>
                     <Grid  xs={12} className={styles.heroSection}>
                         <Image src={"cover2.png"}></Image>
