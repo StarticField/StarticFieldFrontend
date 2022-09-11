@@ -1,4 +1,4 @@
-import {Grid, Spacer, Text, Image, Link, Button} from "@nextui-org/react";
+import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
 import styles from "../styles/hero.module.css"
 
 
@@ -55,7 +55,9 @@ export default function Hero() {
             >
               Startic Field
             </Text>
-          <Button auto rounded css={{fontWeight:"semibold"}}>Join Discord</Button>
+          <Link className={styles.joinButton}>
+              <Text weight={'semi-bold'}>Join Discord</Text>
+          </Link>
         </div>
       </Grid>
       <Grid xs={10} sm={6} md={6} className={styles.heroImage}>
