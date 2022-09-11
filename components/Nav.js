@@ -14,9 +14,19 @@ export default function Nav() {
     "Home",
     "About Us",
     "For Student Startups",
+    "For Students",
+    "Events & Programs",
     "For Corporate Startups",
-    "For Stusents",
     "Premium Membership",
+  ];
+  const collapseItemsLink = [
+    "/",
+    "/",
+    "/forStartups",
+    "/forStudents",
+    "/eventsAndProgram",
+    "/",
+    "/premium",
   ];
 
 
@@ -70,22 +80,21 @@ export default function Nav() {
             </Button>
           </Navbar.Link>
         </Navbar.Content>
-        <Navbar.Collapse>
+        <Navbar.Collapse css={{paddingLeft:'10vw'}}>
           {collapseItems.map((item, index) => (
               <Navbar.CollapseItem
                   key={item}
                   activeColor={theme.primary}
                   css={{
-                    color: index === collapseItems.length - 1 ? "$error" : "",
+                    color: index === collapseItems.length - 1 ? "$success" : "",
                   }}
-                  isActive={index === 2}
               >
                 <Link
                     color="inherit"
                     css={{
                       minWidth: "100%",
                     }}
-                    href="#"
+                    href={collapseItemsLink[index]}
                 >
                   {item}
                 </Link>
