@@ -1,14 +1,17 @@
 .main{
     background-color: #303030;
     width: 100vw;
-    display: flex;
     padding: 7vh 7vw ;
     backdrop-filter: blur(1px);
 }
 
+.infoSection{
+    display: flex;
+}
+
 .discription{
     width: 35%;
-    align-items: start;
+    align-items: flex-start;
     text-align: justify;
 }
 
@@ -37,8 +40,8 @@
 
 .socialMedia{
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 4vh;
 }
 
@@ -61,10 +64,35 @@
     width: 180px;
 }
 
+
+.bottomSection{
+    text-align: center;
+    position: relative;
+}
+
+
+.bottomImage{
+    width: 50vw;
+}
+
+.devlooper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.devlooperLink{
+    margin-left: 6px;
+}
+
 @media only screen and (max-width: 900px) {
     .main{
-        flex-direction: column;
         padding: 7vh 7vw ;
+    }
+
+    .infoSection{
+        flex-direction: column;
     }
     .discription{
         width: 100%;
@@ -86,6 +114,12 @@
 
     .contactUs{
         margin-top: 2vh;
+    }
+    .bottomImage{
+        margin-top: -10vh;
+        margin-bottom: -10vh;
+        height: 50vh;
+        width: 100vw;
     }
 }
 

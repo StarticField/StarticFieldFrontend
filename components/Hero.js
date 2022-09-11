@@ -5,7 +5,7 @@ import styles from "../styles/hero.module.css"
 export default function Hero() {
   return (
     <Grid.Container className={styles.main}>
-      <Grid xs={12} md={6}>
+      <Grid xs={12} md={5.7}>
         <div className={styles.heroText}>
           <Text
             h1
@@ -60,7 +60,7 @@ export default function Hero() {
           </Link>
         </div>
       </Grid>
-      <Grid xs={10} sm={6} md={6} className={styles.heroImage}>
+      <Grid xs={12} sm={6.3} md={6.3} className={styles.heroImage}>
         <Image src="heroCover.png" alt=""></Image>
       </Grid>
     </Grid.Container>

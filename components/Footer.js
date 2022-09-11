@@ -7,6 +7,7 @@ export default function Footer(){
 
     return(
         <div className={styles.main}>
+            <div className={styles.infoSection}>
                 <div className={styles.discription}>
                     <Image className={styles.discriptionImage} src="/logo.png" />
                     <Text size={'18'}>{text}</Text>
@@ -41,6 +42,15 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.bottomSection}>
+                <Image className={styles.bottomImage} src="/footer.png" />
+                <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
+                <div className={styles.devlooper}>
+                    <Text size={'18'}>Made with  ❤  by</Text>
+                    <Link external className={styles.devlooperLink} target={'_blank'} href="http://devlooper.in"><Text size={'18'}>Devlooper</Text></Link>
+                </div>
+            </div>
         </div>
     )
 }
