@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     padding: 7vh 7vw ;
+    backdrop-filter: blur(1px);
 }
 
 .discription{
