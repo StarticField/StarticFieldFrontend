@@ -1,4 +1,4 @@
-import {Image, Table, Text} from "@nextui-org/react";
+import {Image, Text} from "@nextui-org/react";
 import {Layout} from "../components/Layout";
 import styles from "../styles/premium.module.css"
 
@@ -7,7 +7,7 @@ export default function Premium(){
         <Layout>
             <div>
                <div className={styles.hero}>
-                   <Image src={'cover3.png'}></Image>
+                   <Image className={styles.heroImg} src={'cover3.png'} alt={''}></Image>
                    <div className={styles.heroText}>
                        <Text i>All our services are free till December 1, 2022. Post that below would be the membership plans for various stakeholders.</Text>
                    </div>

@@ -34,7 +34,7 @@ export default function Nav() {
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
-          <Navbar.Link isActive href="#">
+          <Navbar.Link isActive href="/">
             Home
           </Navbar.Link>
           <Navbar.Item>
@@ -59,7 +59,7 @@ export default function Nav() {
             </Dropdown>
           </Navbar.Item>
           <Navbar.Link href="#">About Us</Navbar.Link>
-          <Navbar.Link href="#">Premium Membership</Navbar.Link>
+          <Navbar.Link href="./premium">Premium Membership</Navbar.Link>
           <Navbar.Link href="#">
             <Button bordered color="gradient" auto>
               Sign In
