@@ -42,12 +42,19 @@ export default function Nav() {
               <Dropdown.Button auto light ripple={false}>
                 Why Startic Field?
               </Dropdown.Button>
-              <Dropdown.Menu aria-label="Static Actions">
-                <Dropdown.Item key="new">For Student Startups</Dropdown.Item>
-                <Dropdown.Item key="copy">
-                  For Corporate contributors
+              <Dropdown.Menu aria-label="Static Actions" css={{ $$dropdownMenuWidth: "280px" }}>
+                <Dropdown.Item >
+                  <Link href="./forStudents" color="text">
+                    For Student Startups
+                  </Link>
                 </Dropdown.Item>
-                <Dropdown.Item key="edit">Premium Membership</Dropdown.Item>
+                <Dropdown.Item >For Students</Dropdown.Item>
+                <Dropdown.Item>
+                  <Link href="./eventsAndProgram" color="text">
+                    Events and Programs
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item >For Corporate contributors</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Navbar.Item>
