@@ -27,8 +27,7 @@
 .heroText{
     text-align: center;
     width: 50vw;
-    margin:auto;
-    margin-top: 10vh;
+    margin: 10vh auto auto;
     font-size: 20px;
 }
 .intro{
@@ -37,12 +36,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(1px);
 }
 .introText{
     width: 60vw;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto auto;
     text-align: center;
 }
 
@@ -65,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(1px);
 }
 .sectionDiscription{
     width: 40vw;
@@ -80,8 +78,7 @@
         width: 80vw;
     }
     .intro{
-        margin: auto;
-        margin-top: 5vh;
+        margin: 5vh auto auto;
         width: 80vw;
     }
     .introText{
