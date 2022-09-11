@@ -67,12 +67,23 @@
     }
     .discription{
         width: 100%;
-        margin-top: 2vh;
         margin-bottom: 4vh;
     }
     .links{
         width: 100%;
         margin-left: 0;
+        margin-top: 2vh;
+    }
+
+    .linkSection{
+        margin-top: 2vh;
+    }
+
+    .otherLinks{
+        margin-top: 2vh;
+    }
+
+    .contactUs{
         margin-top: 2vh;
     }
 }
