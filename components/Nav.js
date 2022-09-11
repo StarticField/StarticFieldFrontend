@@ -34,7 +34,7 @@ export default function Nav() {
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
-          <Navbar.Link isActive href="/">
+          <Navbar.Link href="/">
             Home
           </Navbar.Link>
           <Navbar.Item>
@@ -44,11 +44,15 @@ export default function Nav() {
               </Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions" css={{ $$dropdownMenuWidth: "280px" }}>
                 <Dropdown.Item >
-                  <Link href="./forStudents" color="text">
+                  <Link href="./forStartups" color="text">
                     For Student Startups
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item >For Students</Dropdown.Item>
+                <Dropdown.Item >
+                  <Link href="./forStudents" color="text">
+                    For Students
+                  </Link>
+                </Dropdown.Item>
                 <Dropdown.Item>
                   <Link href="./eventsAndProgram" color="text">
                     Events and Programs
