@@ -4,7 +4,6 @@ import styles from "../styles/premium.module.css"
 
 export default function Premium(){
     return(
-        <Layout>
             <div>
                <div className={styles.hero}>
                    <div className={styles.background2}></div>
@@ -60,8 +59,7 @@ export default function Premium(){
                        </div>
                    </div>
                </div>
+                <div style={{height:'10vh'}}></div>
             </div>
-            <div style={{ height: "10vh" }}></div>
-        </Layout>
     )
 }

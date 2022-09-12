@@ -1,12 +1,11 @@
 import {
   Navbar,
-  Link,
   Dropdown,
   useTheme,
   Image,
   Button,
 } from "@nextui-org/react";
-
+import Link from 'next/link'
 import style from '../styles/nav.module.css'
 
 export default function Nav() {
@@ -44,9 +43,11 @@ export default function Nav() {
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
-          <Navbar.Link href="/">
-            Home
-          </Navbar.Link>
+          <Navbar.Item>
+            <Link href={"/"}>
+              Home
+            </Link>
+          </Navbar.Item>
           <Navbar.Item>
             <Dropdown>
               <Dropdown.Button auto light ripple={false}>
@@ -73,12 +74,16 @@ export default function Nav() {
             </Dropdown>
           </Navbar.Item>
           {/*<Navbar.Link href="#">About Us</Navbar.Link>*/}
-          <Navbar.Link href="./premium">Premium Membership</Navbar.Link>
-          <Navbar.Link href="#">
+          <Navbar.Item>
+            <Link href="./premium">
+              Premium Membership
+            </Link>
+          </Navbar.Item>
+          <Navbar.Item href="#">
             <Button bordered color="gradient" auto>
               Sign In (soon)
             </Button>
-          </Navbar.Link>
+          </Navbar.Item>
         </Navbar.Content>
         <Navbar.Collapse css={{paddingLeft:'10vw'}}>
           {collapseItems.map((item, index) => (

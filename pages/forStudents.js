@@ -4,7 +4,6 @@ import styles from "../styles/forStudents.module.css"
 
 export default function ForStudents(){
     return(
-        <Layout>
             <div className={styles.background}>
                 <Grid.Container className={styles.hero}>
                     <Grid  xs={12} className={styles.heroSection}>
@@ -70,8 +69,7 @@ export default function ForStudents(){
                         </div>
                     </div>
                 </div>
+                <div style={{ height: "10vh" }}></div>
             </div>
-            <div style={{ height: "10vh" }}></div>
-        </Layout>
     )
 }

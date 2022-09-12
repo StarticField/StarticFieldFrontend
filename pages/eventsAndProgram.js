@@ -5,7 +5,7 @@ import Timeline2 from "../components/Timeline2";
 
 export default function EventsAndProgram(){
     return(
-        <Layout>
+        <>
             <div className={styles.main}>
                 <Text h1 className={styles.heading}>
                     Events and Programs
@@ -75,6 +75,6 @@ export default function EventsAndProgram(){
                 </div>
             </div>
             <div style={{ height: "10vh" }}></div>
-        </Layout>
+        </>
     )
 }

@@ -47,8 +47,7 @@ export default function Footer(){
                 <Image className={styles.bottomImage} src="/footer.png" />
                 <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
                 <div className={styles.devlooper}>
-                    <Text size={'18'}>Made with  ❤  by</Text>
-                    <Link external className={styles.devlooperLink} target={'_blank'} href="http://devlooper.in"><Text size={'18'}>Devlooper</Text></Link>
+                    <Text b size={'18'}>Designed And Developed by</Text>
                 </div>
             </div>
         </div>
