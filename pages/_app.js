@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     // 2. Use at the root of your app
     <NextUIProvider theme={coustomTheme}>
+        <title>Startic Field</title>
       <Component {...pageProps} />
     </NextUIProvider>
   );
