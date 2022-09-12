@@ -48,6 +48,21 @@
     list-style-type:decimal;
 }
 
-.list{
-    color: white;
+@media only screen and (max-width: 600px) {
+    .heroText{
+        width: 80vw;
+    }
+    .heroImage{
+        margin: auto;
+        width: 100vw;
+    }
+
+    .belowTimeline{
+        margin-top: 10vh;
+        width: 70vw;
+    }
+    .list{
+        width: 90vw;
+        margin-top: 0;
+    }
 }

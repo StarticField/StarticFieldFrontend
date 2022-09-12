@@ -1,5 +1,5 @@
 import {Layout} from "../components/Layout";
-import {Grid, Image, Spacer, Text} from "@nextui-org/react";
+import {Grid, Image, Text} from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css"
 
 export default function ForStartups(){
@@ -85,7 +85,7 @@ export default function ForStartups(){
                     </Text>
                 </div>
                 <div className={styles.intro}>
-                    <Text className={styles.introText} style={{width: "38vw"}}>Startic Field is the place where you can prepare for
+                    <Text className={styles.bottomText} >Startic Field is the place where you can prepare for
                         this challenge. We run programs for all our startups
                         where we bring people who have successfully
                         entered these accelerators and championships to

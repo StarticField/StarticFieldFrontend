@@ -69,6 +69,12 @@
     width: 40vw;
 }
 
+.bottomText{
+    width: 38vw;
+    margin: 10px auto auto;
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     .heroSection img{
         width: 90vw;
@@ -112,5 +118,8 @@
     }
     .section:nth-child(odd){
         flex-direction: column-reverse;
+    }
+    .bottomText{
+        width: 60vw;
     }
 }

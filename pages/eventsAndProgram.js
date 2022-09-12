@@ -27,13 +27,13 @@ export default function EventsAndProgram(){
                     Epsilon
                 </Text>
                 <div style={{ height: "4vh" }}></div>
-                <Text h2 i weight={'bold'} size={28}>
+                <Text css={{padding:"0 5vw"}} h2 i weight={'bold'} size={28}>
                     The Reciprocal Pitch Contest
                 </Text>
                 <Text className={styles.heroText}>
                     Epsilon is one of its kind event which aims at identifying extraordinary college students to transform great ideas into million-dollar businesses.
                 </Text>
-                <div style={{ height: "20vh" }}></div>
+                <div style={{ height: "10vh" }}></div>
                 <Text
                     h1
                     size={28}

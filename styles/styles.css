@@ -143,7 +143,9 @@
         left: 0;
         top: 12%;
     }
-    .section:nth-child(odd){
+    .section:nth-child(odd),
+    .section3:nth-child(odd),
+    .section4:nth-child(odd){
         text-align: left;
     }
     .container{
