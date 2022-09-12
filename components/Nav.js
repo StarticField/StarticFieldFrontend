@@ -72,7 +72,7 @@ export default function Nav() {
               </Dropdown.Menu>
             </Dropdown>
           </Navbar.Item>
-          <Navbar.Link href="#">About Us</Navbar.Link>
+          {/*<Navbar.Link href="#">About Us</Navbar.Link>*/}
           <Navbar.Link href="./premium">Premium Membership</Navbar.Link>
           <Navbar.Link href="#">
             <Button bordered color="gradient" auto>
