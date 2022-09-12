@@ -28,9 +28,6 @@ export default function Nav() {
     "/premium",
   ];
 
-
-  const theme = useTheme();
-
   return (
     <Navbar maxWidth={'fluid'} height={'15vh'} shouldHideOnScroll variant="sticky">
       <div className={style.navParent}>
@@ -41,7 +38,7 @@ export default function Nav() {
         >
           <Image src="logo.svg" alt=""></Image>
         </Navbar.Brand>
-        <Navbar.Toggle showIn="xs" />
+        <Navbar.Toggle showIn="xs"/>
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
           <Navbar.Item>
             <Link href={"/"}>
@@ -87,13 +84,7 @@ export default function Nav() {
         </Navbar.Content>
         <Navbar.Collapse css={{paddingLeft:'10vw'}}>
           {collapseItems.map((item, index) => (
-              <Navbar.CollapseItem
-                  key={item}
-                  activeColor={theme.primary}
-                  css={{
-                    color: index === collapseItems.length - 1 ? "$success" : "",
-                  }}
-              >
+              <Navbar.CollapseItem key={item}>
                 <Link
                     color="inherit"
                     css={{
@@ -101,7 +92,11 @@ export default function Nav() {
                     }}
                     href={collapseItemsLink[index]}
                 >
-                  {item}
+                  <a
+                      className={
+                  index === collapseItems.length - 1 ? style.premium : ''
+                  }>
+                  {item}</a>
                 </Link>
               </Navbar.CollapseItem>
           ))}
