@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
-import Image from "next/image";
 import Timeline from "../components/Timeline";
 import styles from "../styles/index.module.css"
+import Timeline3 from "../components/Timeline3";
+import Timeline4 from "../components/Timeline4";
 
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
           />
       </div>
       <div className={styles.groupFourSpace}></div>
-      <Timeline />
+      <Timeline3 />
       <div
         style={{
           position: "relative",
@@ -67,7 +68,7 @@ export default function Home() {
 
           />      </div>
       <div className={styles.groupFiveSpace}></div>
-      <Timeline />
+      <Timeline4 />
       <div style={{ height: "10vh" }}></div>
     </Layout>
   );

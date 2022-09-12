@@ -10,11 +10,15 @@
     margin: 0 auto;
 }
 
-.timeline{
+.timeline,
+.timeline3,
+.timeline4{
     position: relative;
 }
 
-.horizontalLine{
+.horizontalLine ,
+.horizontalLine3,
+.horizontalLine4{
     position: absolute;
     left: calc(50% - 2px);
     width: 4px;
@@ -26,11 +30,16 @@
     display: block;
 }
 
-.horizontal-line::after{
+.horizontal-line::after,
+.horizontal-line3::after,
+.horizontal-line4::after
+{
     bottom: 0;
 }
 
-.section{
+.section,
+.section3,
+.section4{
     display: flex;
     opacity: 0;
     transform: translateX(-100%);
@@ -38,7 +47,6 @@
     position: relative;
     z-index: 1;
     border-radius: 1rem;
-    align-items: justify;
     min-height: 150px;
     width: 57vw;
     margin: auto;
@@ -52,18 +60,24 @@
     font-weight: 500;
     font-size: 28px;
 }
-.section p{
+.section p,
+.section3 p,
+.section4 p{
     color: grey;
     font-style: italic;
 }
 
-.section:nth-child(even){
+.section:nth-child(even),
+.section3:nth-child(even),
+.section4:nth-child(even){
     flex-direction: row-reverse;
     transform: translateX(100%);
     text-align: left;
 }
 
-.section:nth-child(odd){
+.section:nth-child(odd),
+.section3:nth-child(odd),
+.section4:nth-child(odd){
     text-align: right;
 }
 
@@ -104,7 +118,9 @@
 }
 
 @media screen and (max-width: 700px){
-    .section{
+    .section,
+    .section3,
+    .section4{
         padding:0 10px;
         padding-left: 20px;
         transform: translateX(100%);
@@ -118,7 +134,9 @@
     .content{
         width: 100%;
     }
-    .horizontalLine{
+    .horizontalLine,
+    .horizontalLine3,
+    .horizontalLine4{
         left: -2px;
     }
     .bead{
