@@ -19,7 +19,7 @@ export default function Nav() {
   ];
   const collapseItemsLink = [
     "/",
-    "/",
+    "/aboutUs",
     "/forStartups",
     "/forStudents",
     "/eventsAndProgram",
