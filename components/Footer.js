@@ -48,6 +48,7 @@ export default function Footer(){
                 <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
                 <div className={styles.devlooper}>
                     <Text b size={'18'}>Designed And Developed by</Text>
+                    <Image className={styles.devlooperImage} src="/devlooper.svg" />
                 </div>
             </div>
         </div>
