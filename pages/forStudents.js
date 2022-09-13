@@ -1,11 +1,13 @@
-import {Layout} from "../components/Layout";
-import {Grid, Image, Spacer, Text} from "@nextui-org/react";
+import {Grid, Image, Text} from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css"
 
 export default function ForStudents(){
     return(
             <div className={styles.background}>
                 <Grid.Container className={styles.hero}>
+                    <Grid xs={12}>
+                        <Text h1 className={styles.heroHeading}>For Students</Text>
+                    </Grid>
                     <Grid  xs={12} className={styles.heroSection}>
                         <Image src={"cover2.png"}></Image>
                     </Grid>

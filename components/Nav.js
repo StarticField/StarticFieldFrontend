@@ -1,11 +1,10 @@
 import {
   Navbar,
   Dropdown,
-  useTheme,
   Image,
   Button,
+  Link
 } from "@nextui-org/react";
-import Link from 'next/link'
 import style from '../styles/nav.module.css'
 
 export default function Nav() {
@@ -24,7 +23,7 @@ export default function Nav() {
     "/forStartups",
     "/forStudents",
     "/eventsAndProgram",
-    "/",
+    "/forCorporateContributors",
     "/premium",
   ];
 
@@ -40,11 +39,9 @@ export default function Nav() {
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs"/>
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
-          <Navbar.Item>
-            <Link href={"/"}>
+          <Navbar.Link  href={"/"}>
               Home
-            </Link>
-          </Navbar.Item>
+          </Navbar.Link>
           <Navbar.Item>
             <Dropdown>
               <Dropdown.Button auto light ripple={false}>
@@ -66,16 +63,18 @@ export default function Nav() {
                     Events and Programs
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item >For Corporate contributors</Dropdown.Item>
+                <Dropdown.Item >
+                  <Link href="./forCorporateContributors" color="text">
+                    For Corporate contributors
+                  </Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Navbar.Item>
-          {/*<Navbar.Link href="#">About Us</Navbar.Link>*/}
-          <Navbar.Item>
-            <Link href="./premium">
+          <Navbar.Link href="./aboutUs">About Us</Navbar.Link>
+          <Navbar.Link  href="./premium">
               Premium Membership
-            </Link>
-          </Navbar.Item>
+          </Navbar.Link>
           <Navbar.Item href="#">
             <Button bordered color="gradient" auto>
               Sign In (soon)
@@ -91,12 +90,10 @@ export default function Nav() {
                       minWidth: "100%",
                     }}
                     href={collapseItemsLink[index]}
-                >
-                  <a
-                      className={
-                  index === collapseItems.length - 1 ? style.premium : ''
-                  }>
-                  {item}</a>
+                    className={
+                      index === collapseItems.length - 1 ? style.premium : ''
+                    }>
+                  {item}
                 </Link>
               </Navbar.CollapseItem>
           ))}

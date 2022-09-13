@@ -2,7 +2,7 @@
     position: absolute;
     height: 300vh;
     width: 100vw;
-    top: 150vh;
+    top: 200vh;
     overflow: hidden;
     background: conic-gradient(from 187.97deg at 57.75% 44.64%, #3361AD 0deg, #6061AC 90deg, #39B8C8 180deg, #6AC5AA 270deg, #000000 360deg);
     filter: blur(863px);
@@ -22,6 +22,14 @@
 
 .heroSection img{
     margin-top: 2vh;
+}
+
+.heroHeading{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    width: 90vw;
+    margin: 8vh auto;
 }
 
 .heroText{
@@ -66,11 +74,11 @@
     backdrop-filter: blur(1px);
 }
 .sectionDiscription{
-    width: 40vw;
+    width: 30vw;
 }
 
 .bottomText{
-    width: 38vw;
+    width: 30vw;
     margin: 10px auto auto;
     text-align: center;
 }
@@ -92,16 +100,16 @@
         margin: auto;
     }
     .background2{
-        height: 250vh;
+        height: 600vh;
         width: 100vw;
-        top: 150vh;
+        top: 120vh;
     }
     .section{
         flex-direction: column;
         margin-top: 5vh;
     }
     .sectionImage{
-        width: 90vw;
+        width: 100vw;
     }
     .sectionImage img{
         width: 90vw;

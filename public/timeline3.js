@@ -24,7 +24,6 @@ function scrollHandler(e) {
   const lineRect3 = line3.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
 
   const dist3 = targetY3 - timelineRect3.top;
-  console.log(dist3);
 
   if (down3 && !full3) {
     set3 = Math.max(set3, dist3);

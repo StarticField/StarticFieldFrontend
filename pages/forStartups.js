@@ -1,4 +1,3 @@
-import {Layout} from "../components/Layout";
 import {Grid, Image, Text} from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css"
 
@@ -8,6 +7,9 @@ export default function ForStartups(){
             <div className={styles.background}>
                 <div className={styles.background2}></div>
                 <Grid.Container className={styles.hero}>
+                    <Grid xs={12}>
+                        <Text h1 className={styles.heroHeading}>For Student Startups</Text>
+                    </Grid>
                     <Grid  xs={12} className={styles.heroSection}>
                         <Image src={"cover2.png"}></Image>
                     </Grid>
@@ -28,9 +30,8 @@ export default function ForStartups(){
                     </div>
                     <div  className={styles.sectionText}>
                         <div>
-                            <Text b h3>1.Develop your idea</Text>
-                            <Text className={styles.sectionDiscription}>Use VOLT, our strategic planning tool to discover customers, markets and partners for your
-                                idea. Formulate and input strategies to take your startup to the next level.</Text>
+                            <Text b h3>2.Work on your idea</Text>
+                            <Text className={styles.sectionDiscription}>Based on the strategy formulated, set and track goals for your team. Get points on achieving these targets and compare with other startups.</Text>
                         </div>
                         <div style={{ height: "5vh" }}></div>
                         <div>
@@ -43,15 +44,17 @@ export default function ForStartups(){
                 <div className={styles.section}>
                     <div  className={styles.sectionText} style={{textAlign:'right'}}>
                         <div>
-                            <Text b h3>1.Develop your idea</Text>
-                            <Text className={styles.sectionDiscription}>Use VOLT, our strategic planning tool to discover customers, markets and partners for your
-                                idea. Formulate and input strategies to take your startup to the next level.</Text>
+                            <Text b h3>4.Get the essentials</Text>
+                            <Text className={styles.sectionDiscription}>
+                                Before you get a Shark, you need a Hawk. Hawks are experienced industry professionals who will invest small but work with you to make your startup big!
+                            </Text>
                         </div>
                         <div style={{ height: "5vh" }}></div>
                         <div>
-                            <Text b h3>3.Build your team</Text>
-                            <Text className={styles.sectionDiscription}>Get a co-founder, CTO or any other team
-                                members from our vibrant community</Text>
+                            <Text b h3>5.Get credibility</Text>
+                            <Text className={styles.sectionDiscription}>
+                                Get your startup incorporated by working with our partners. Hawks can help you finance the cost.
+                            </Text>
                         </div>
                     </div>
 
@@ -65,15 +68,17 @@ export default function ForStartups(){
                     </div>
                     <div  className={styles.sectionText}>
                         <div>
-                            <Text b h3>1.Develop your idea</Text>
-                            <Text className={styles.sectionDiscription}>Use VOLT, our strategic planning tool to discover customers, markets and partners for your
-                                idea. Formulate and input strategies to take your startup to the next level.</Text>
+                            <Text b h3>6.Attend knowledge sessions by experts</Text>
+                            <Text className={styles.sectionDiscription}>
+                                Startic Field aims to become India’s most trusted hub of student startups. Get the Startic Field badge on your website as well as signature on all your emails.
+                            </Text>
                         </div>
                         <div style={{ height: "5vh" }}></div>
                         <div>
-                            <Text b h3>3.Build your team</Text>
-                            <Text className={styles.sectionDiscription}>Get a co-founder, CTO or any other team
-                                members from our vibrant community</Text>
+                            <Text b h3>7.Prepare for accelerators</Text>
+                            <Text className={styles.sectionDiscription}>
+                                Attend weekly knowledge sessions by entrepreneurs, experts and industry leaders.
+                            </Text>
                         </div>
                     </div>
                 </div>

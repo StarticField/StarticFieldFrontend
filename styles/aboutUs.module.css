@@ -1,0 +1,42 @@
+.main{
+    width: 100vw;
+    text-align: center;
+}
+
+.mainText{
+    width: 60vw;
+    margin: 10vh auto;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.space1{
+    height: 10vh;
+}
+
+.team{
+    display: flex;
+    justify-content: space-around;
+}
+
+.person{
+    width: 20vw;
+    margin: auto;
+}
+
+.person:nth-child(2),
+.person:nth-child(3){
+    width: 12vw;
+    margin-top:8vh;
+}
+
+.mentor{
+    display: flex;
+}
+
+.mentorText{
+    width: 40vw;
+    margin: 20vh 5vw;
+    text-align: left;
+}
