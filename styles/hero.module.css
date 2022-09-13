@@ -9,6 +9,10 @@
     margin: 15vh auto 90px;
 }
 
+.heroText h1{
+    font-size: 40px;
+}
+
 .heroImage{
     z-index: 2;
 }
@@ -22,7 +26,13 @@
 @media only screen and (max-width: 600px) {
     .heroText{
         margin: 5vh auto;
+        width: 70vw;
     }
+
+    .heroText h1{
+        font-size: 29px;
+    }
+
     .heroImage{
         margin: auto;
         width: 100vw;

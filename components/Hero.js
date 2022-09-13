@@ -9,38 +9,20 @@ export default function Hero() {
         <div className={styles.heroText}>
           <Text
             h1
-            size={40}
             weight={'semibold'}
             css={{
                margin:'0',
                padding:'0',
-              "@xs": {
-                fontSize: "20px",
-                textAlign: "center",
-              },
-              "@md": {
-                  fontSize: "40px",
-                  textAlign: "left",
-              },
             }}
           >
             The First Step To Electrifying Your Startup Journey
           </Text>
           <Text
             h1
-            size={40}
             weight={'semibold'}
             css={{
                margin:'0',
                padding:'0',
-              "@xs": {
-                fontSize: "20px",
-                textAlign: "center",
-              },
-              "@md": {
-                  fontSize: "40px",
-                  textAlign: "left",
-              },
             }}
           >
               Starts Here!
