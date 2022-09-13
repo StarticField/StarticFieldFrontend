@@ -49,7 +49,7 @@ export default function ForCorporateContributors(){
                         <Image src={'img4.png'} alt={''}></Image>
                     </div>
                 </div>
-                <div className={styles.section}>
+                <div className={styles.sectionReverse}>
                     <div className={styles.sectionImage} >
                         <Image src={'img1.png'} alt={''}></Image>
                     </div>

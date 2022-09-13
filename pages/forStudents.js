@@ -51,7 +51,7 @@ export default function ForStudents(){
                     </Text>
                 </div>
                 <div style={{height: "10vh"}}></div>
-                <div className={styles.section}>
+                <div className={styles.sectionReverse}>
                     <div  className={styles.sectionText} style={{textAlign:'right'}}>
                         <div>
                             <Text b h3>3.Learn and Grow</Text>

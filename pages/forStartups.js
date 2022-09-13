@@ -43,7 +43,7 @@ export default function ForStartups(){
                     </div>
                 </div>
                 <div style={{height: "10vh"}}></div>
-                <div className={styles.section}>
+                <div className={styles.sectionReverse}>
                     <div  className={styles.sectionText} style={{textAlign:'right'}}>
                         <div>
                             <Text b h3 className={styles.introHeading}>4.Get the essentials</Text>
@@ -59,7 +59,6 @@ export default function ForStartups(){
                             </Text>
                         </div>
                     </div>
-
                     <div className={styles.sectionImage} >
                         <Image src={'img3.png'} alt={''}></Image>
                     </div>

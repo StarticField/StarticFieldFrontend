@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .main{
     background-color: #303030;
     width: 100vw;
@@ -15,6 +18,11 @@
     text-align: justify;
 }
 
+.discription p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
 .discriptionImage{
     width: 200px;
     margin: -16px;
@@ -24,10 +32,14 @@
 .links{
     width: 55%;
     margin-left: 10vw;
-    margin-top: 1.5vh;
+    margin-top: 3.3vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.links p{
+    font-family: 'Poppins', sans-serif;
 }
 
 .Items{
@@ -70,6 +82,10 @@
     position: relative;
 }
 
+
+.bottomSection p{
+    font-family: 'Poppins', sans-serif;
+}
 
 .bottomImage{
     width: 50vw;
