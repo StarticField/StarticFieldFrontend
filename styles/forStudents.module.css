@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .background2{
     position: absolute;
     height: 300vh;
@@ -26,17 +29,19 @@
 
 .heroHeading{
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     width: 90vw;
     margin: 8vh auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .heroText{
     text-align: center;
     width: 50vw;
     margin: 10vh auto auto;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 .intro{
     margin-top: 10vh;
@@ -45,26 +50,36 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(1px);
-}
-.introText{
-    width: 60vw;
-    margin: 10px auto auto;
     text-align: center;
 }
 
+.introHeading{
+    font-size: 36px;
+    width: 35vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.introText{
+    width: 60vw;
+    margin: 10px auto auto;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .section{
-    margin-top: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .sectionImage{
     width: 50vw;
 }
+
 .sectionImage img{
-    width: 40vw;
-    margin-left: 5vw;
+    height: 90vh;
 }
+
 .sectionText{
     width: 50vw;
     display: flex;
@@ -73,14 +88,20 @@
     align-items: center;
     backdrop-filter: blur(1px);
 }
+
 .sectionDiscription{
-    width: 30vw;
+    width: 35vw;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .bottomText{
-    width: 30vw;
-    margin: 10px auto auto;
+    width: 50vw;
+    margin: 10vh auto;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
 }
 
 @media only screen and (max-width: 600px) {

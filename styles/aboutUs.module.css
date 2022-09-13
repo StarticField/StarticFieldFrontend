@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .main{
     width: 100vw;
+    overflow-y: hidden;
     text-align: center;
 }
 
@@ -8,27 +12,36 @@
     margin: 10vh auto;
     font-style: italic;
     font-size: 25px;
-    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
 }
 
-.space1{
-    height: 10vh;
+.teamHeading{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20vh 0;
 }
 
 .team{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20vh;
 }
 
 .person{
-    width: 20vw;
+    width: 18vw;
     margin: auto;
 }
 
 .person:nth-child(2),
 .person:nth-child(3){
-    width: 12vw;
-    margin-top:8vh;
+    width: 10vw;
+    margin-top:9vh;
+}
+
+.personName{
+    font-size: 28px;
+    text-align: center;
 }
 
 .mentor{
@@ -39,4 +52,72 @@
     width: 40vw;
     margin: 20vh 5vw;
     text-align: left;
+}
+
+
+.mentorName{
+    font-size: 28px;
+}
+
+.mentorJob{
+    font-size: 28px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mainText{
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    .teamHeading{
+        font-size: 20px;
+        margin: 5vh 0;
+    }
+
+    .team{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .person{
+        width: 60vw;
+        padding: 2vw;
+        margin: 2vh auto;
+    }
+
+    .person:nth-child(2),
+    .person:nth-child(3){
+        width: 60vw;
+        margin:2vh auto;
+    }
+
+    .personName{
+        font-size: 16px;
+    }
+
+    .mentor{
+        flex-direction: column;
+    }
+
+    .mentorText{
+        width: 35vw;
+        margin: 0 10vw;
+    }
+
+    .mentorImage{
+        margin-top: -10vh;
+        margin-left: 30vw;
+        margin-bottom: 5vh;
+        width: 70vw;
+    }
+
+
+    .mentorName{
+        font-size: 18px;
+    }
+
+    .mentorJob{
+        font-size: 16px;
+    }
 }

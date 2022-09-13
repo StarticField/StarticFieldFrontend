@@ -9,7 +9,7 @@ export default function Footer(){
         <div className={styles.main}>
             <div className={styles.infoSection}>
                 <div className={styles.discription}>
-                    <Image className={styles.discriptionImage} src="/logo.png" />
+                    <Image className={styles.discriptionImage} src="/logo.svg" />
                     <Text size={'18'}>{text}</Text>
                 </div>
                 <div className={styles.links}>

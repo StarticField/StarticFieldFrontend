@@ -22,6 +22,7 @@ export default function ForStudents(){
                     <Text b h3>1.Join a Startup team</Text>
                     <Text className={styles.introText}>Startic Field is the home to the largest number of college based startups who are always looking to expand their teams. You can register yourself as any of these 3 roles:</Text>
                 </div>
+                <div style={{height: "10vh"}}></div>
                 <div className={styles.section}>
                     <div className={styles.sectionImage} >
                         <Image src={'img4.png'} alt={''}></Image>
@@ -43,11 +44,13 @@ export default function ForStudents(){
                         </div>
                     </div>
                 </div>
+                <div style={{height: "10vh"}}></div>
                 <div className={styles.intro}>
                     <Text b h3>2.SF recognition certificate</Text>
                     <Text className={styles.introText}>If you contribute in any way or form, the startup can recommend you for a recognition certificate which will be issued from Startic Field. This will add to your credentials when you are trying to get into your dream company.
                     </Text>
                 </div>
+                <div style={{height: "10vh"}}></div>
                 <div className={styles.section}>
                     <div  className={styles.sectionText} style={{textAlign:'right'}}>
                         <div>
@@ -71,7 +74,7 @@ export default function ForStudents(){
                         </div>
                     </div>
                 </div>
-                <div style={{ height: "10vh" }}></div>
+                <div style={{ height: "20vh" }}></div>
             </div>
     )
 }
