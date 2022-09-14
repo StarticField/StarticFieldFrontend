@@ -1,5 +1,4 @@
 import {Image, Text} from "@nextui-org/react";
-import {Layout} from "../components/Layout";
 import styles from "../styles/premium.module.css"
 
 export default function Premium(){
@@ -40,12 +39,8 @@ export default function Premium(){
                    <div style={{ height: "10vh" }}></div>
                    <div  className={styles.table}>
                        <div className={styles.tableLeft} style={{width: '100%'}}>
-                           <Text h4>Premium Plan (INR 60 per month, INR 160 for 3 months and INR 399 for an year)</Text>
-                           <Text><li>Individual Premium membership for 4 members of the startup with the benefits described above</li></Text>
-                           <Text><li>Startup Idea Evaluation and Strategy Roadmap</li></Text>
-                           <Text><li>Customized Learning and Research Plan for the Startup</li></Text>
-                           <Text><li>Quarterly Business Review</li></Text>
-                           <Text><li>Connect with validated freelancers.</li></Text>
+                           <Text h4>Supercharger Program (5% equity)</Text>
+                           <Text>This program is for startups who are serious and want to scale to the next level. This is a comprehensive program for startups from idea to first set of customers and/or seed funding.</Text>
                        </div>
                    </div>
                    <div style={{ height: "5vh" }}></div>
