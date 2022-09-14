@@ -46,9 +46,10 @@ export default function Premium(){
                    <div style={{ height: "5vh" }}></div>
                    <Text small i>*This program starts Dec 1, 2022</Text>
                    <div style={{ height: "10vh" }}></div>
+                   <Text h2 className={styles.headings}>For contributors</Text>
                    <div  className={styles.table}>
                        <div className={styles.tableLeft} style={{width: '100%'}}>
-                           <Text h4>For contributors</Text>
+                           <Text h4>Premium Plan (INR 120 per month, INR 320 for 3 months, INR 799 for an year)</Text>
                            <Text><li>Participation in Lateral Pitches.</li></Text>
                            <Text><li>Connect with student startups.</li></Text>
                        </div>
