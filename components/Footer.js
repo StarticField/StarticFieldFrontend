@@ -46,10 +46,10 @@ export default function Footer(){
             <div className={styles.bottomSection}>
                 <Image className={styles.bottomImage} src="/footer.png" />
                 <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
-                <div className={styles.devlooper}>
+                <Link external href={"http://devlooper.in"} target={"_blank"} className={styles.devlooper}>
                     <Text b size={'18'}>Designed And Developed by</Text>
                     <Image className={styles.devlooperImage} src="/devlooper.svg" />
-                </div>
+                </Link>
             </div>
         </div>
     )
