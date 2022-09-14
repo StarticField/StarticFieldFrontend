@@ -25,7 +25,7 @@ export default function Premium(){
                            <Text><li>Internship and Freelance opportunities with Startups</li></Text>
                        </div>
                    </div>
-                   <Text h2 className={styles.headings}>For Individual Students</Text>
+                   <Text h2 className={styles.headings}>For student startups</Text>
                    <div  className={styles.table}>
                        <div className={styles.tableLeft} style={{width: '100%'}}>
                            <Text h4>Premium Plan (INR 60 per month, INR 160 for 3 months and INR 399 for an year)</Text>
