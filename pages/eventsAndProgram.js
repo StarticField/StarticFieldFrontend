@@ -1,4 +1,3 @@
-import {Layout} from "../components/Layout";
 import styles from "../styles/eventsAndProgram.module.css"
 import {Text} from "@nextui-org/react";
 import Timeline2 from "../components/Timeline2";
@@ -23,11 +22,11 @@ export default function EventsAndProgram(){
                 <Text weight={'thin'} size={18} className={styles.belowTimeline}>
                     We will be taking 5% equity in return for the above services and will put in an investment of INR 60000 to the startup.
                 </Text>
-                <Text h1 className={styles.heading}>
+                <Text h1 className={styles.heading2}>
                     Epsilon
                 </Text>
                 <div style={{ height: "4vh" }}></div>
-                <Text css={{padding:"0 5vw"}} h2 i weight={'bold'} size={28}>
+                <Text css={{padding:"0 5vw"}} h2 i weight={'bold'} className={styles.heading4}>
                     The Reciprocal Pitch Contest
                 </Text>
                 <Text className={styles.heroText}>

@@ -5,8 +5,11 @@
 .heading{
     text-align: center;
     font-size: 41px;
+    font-style: italic;
     margin-top: 70px;
-    font-weight: 900;
+    font-weight: 100;
+    margin: 10vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 .heading2{
@@ -14,6 +17,8 @@
     font-size: 40px;
     margin-top: 40px;
     font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .heroText{
@@ -22,6 +27,8 @@
     margin: auto;
     margin-top: 40px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .heading3{
@@ -29,29 +36,60 @@
     font-size: 28px;
     margin-top: 40px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+}
+.heading4{
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .heroText2{
     text-align: center;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .belowTimeline{
     width: 30vw;
     margin: auto;
     color: gray;
+    font-family: 'Poppins', sans-serif;
+
 }
 .list{
     width: 50vw;
     margin: auto;
     text-align: start;
     list-style-type:decimal;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 @media only screen and (max-width: 600px) {
+
     .heroText{
         width: 80vw;
+        font-size: 18px;
     }
+
+    .heading{
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 900;
+        margin: 3vh;
+    }
+    .heading2{
+        font-size: 21px;
+    }
+
+    .heading4{
+        font-size: 19px;
+    }
+
     .heroImage{
         margin: auto;
         width: 100vw;
@@ -64,5 +102,6 @@
     .list{
         width: 90vw;
         margin-top: 0;
+        font-size: 16px;
     }
 }
