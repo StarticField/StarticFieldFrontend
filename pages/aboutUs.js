@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import style from "../styles/aboutUs.module.css"
 import {Image, Text} from "@nextui-org/react";
 
@@ -23,33 +24,81 @@ export default function AboutUs(){
             >
                 Our Team
             </Text>
-            <div className={style.team}>
+
+            <div
+                style={{
+                    position: "relative",
+                }}
+                className={style.backgroundTeam}
+            >
+                <img src={"./leftTeam.svg"} style={{
+
+                    position: 'absolute',
+                    top: '-4.3vh',
+                    left: '0',
+                    zIndex: '0',
+                    width:'51vw'
+                }} alt={"background"}/>
+                <img src={"./rightTeam.svg"} style={{
+
+                    position: 'absolute',
+                    top: '-5.4vh',
+                    right: '0',
+                    zIndex: '0',
+                    width:'51vw'
+                }} alt={"background"}/>
+            </div>
+            <div className={style.team} style={{zIndex: "3",position:'relative'}}>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
+                    <Image src={'ShubhanshuRao.jpeg'}></Image>
                     <Text b className={style.personName}>Shubhanshu Rao</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'PriyanshNegi.jpg'}></Image>
+                    <Text b className={style.personName}>Priyansh Negi</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'AnirudhMukkamala.jpeg'}></Image>
+                    <Text b className={style.personName}>Anirudh Mukkamala</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'AryanKataria.jpeg'}></Image>
+                    <Text b className={style.personName}>Aryan Kataria</Text>
                 </div>
             </div>
-            <div className={style.space1}></div>
-            <div className={style.team}>
+            <div className={style.spaceTeamSection}></div>
+
+            <div
+                style={{
+                    position: "relative",
+                }}
+                className={style.backgroundTeam}
+            >
+                <img src={"./leftTeam.svg"} style={{
+
+                    position: 'absolute',
+                    top: '-4.3vh',
+                    left: '0',
+                    zIndex: '0',
+                    width:'51vw'
+                }} alt={"background"}/>
+                <img src={"./rightTeam.svg"} style={{
+
+                    position: 'absolute',
+                    top: '-5.4vh',
+                    right: '0',
+                    zIndex: '0',
+                    width:'51vw'
+                }} alt={"background"}/>
+            </div>
+            <div className={style.team} style={{zIndex: "3",position:'relative'}}>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'AshutoshBisht.jpeg'}></Image>
+                    <Text b className={style.personName}>Ashutosh Bisht</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'AyushSharma.jpeg'}></Image>
+                    <Text b className={style.personName}>Ayush Sharma</Text>
                 </div>
                 <div className={style.person}>
                     <Image src={'dummy.png'}></Image>
