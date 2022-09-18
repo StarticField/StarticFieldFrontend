@@ -1,0 +1,31 @@
+.heading{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slideBackground{
+    height:55vh;
+    width: 55vh;
+    background: rgba(217, 217, 217, 0.74);
+    box-shadow: 16px 14px 12px rgba(96, 97, 172, 0.57);
+    border-radius:22px;
+    margin:5vh 5vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .slideBackground{
+        margin: 5vh 5vw;
+        height: 37vh;
+        width: 37vh;
+    }
+
+    .heading{
+        font-size: 20px;
+        margin-bottom: 3vh;
+    }
+}

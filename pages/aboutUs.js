@@ -101,12 +101,12 @@ export default function AboutUs(){
                     <Text b className={style.personName}>Ayush Sharma</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'AnkitGupta.png'}></Image>
+                    <Text b className={style.personName}>Ankit Gupta</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'dummy.png'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
+                    <Image src={'VanshKapoor.png'}></Image>
+                    <Text b className={style.personName}>Vansh Kapoor</Text>
                 </div>
             </div>
             <Text
