@@ -19,9 +19,9 @@
 
 @media only screen and (max-width: 600px) {
     .slideBackground{
-        margin: 5vh 5vw;
-        height: 37vh;
-        width: 37vh;
+        margin: 5vh auto;
+        height: 32vh;
+        width: 32vh;
     }
 
     .heading{
