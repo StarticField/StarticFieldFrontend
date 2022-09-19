@@ -58,10 +58,9 @@ export default class UpcomingEvents extends Component {
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
                             <span className={styles.date}>Startic Field</span>
-                            <h2>Coming Soon</h2>
+                            <h2>Student CTO Hunt</h2>
                             <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
+                                Get ready for the all India CTO Hunt comming soon.....
                             </p>
                         </div>
                     </div>
