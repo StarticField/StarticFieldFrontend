@@ -7,15 +7,86 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.slideBackground{
-    height:55vh;
-    width: 55vh;
-    background: rgba(217, 217, 217, 0.74);
-    box-shadow: 16px 14px 12px rgba(57, 184, 200, 0.41);
-    border-radius:22px;
-    margin:5vh 5vw;
+
+.eventTitle{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 85%;
+    margin: auto;
+    margin-top: 2vh;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 170px 170px 80px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: rgba(255, 255, 255,1);
+    box-shadow: 12px 10px 20px rgba(98, 99, 172, 0.8);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:50px;
+}
+.cardImage {
+    grid-area: image;
+    background: url("/img1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.cardText {
+    grid-area: text;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 30px auto auto;
+    text-align: justify;
+
+}
+.cardText .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+    margin-left: 2px;
+    color: rgba(98, 99, 172, 0.8);
+}
+.cardText p {
+    color: grey;
+    font-size:12px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+.cardText h2 {
+    margin-top:0;
+    font-size:22px;
+    line-height: 120%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px  rgba(98, 99, 172, 1);
+}
+
+/*card2*/
+.cardImage.card2 {
+    background: url("/img2.jpg");
+    background-size: cover;
+}
+.cardText.card2 .date {
+    color: rgb(255, 77, 7);
+}
+/*card3*/
+.cardImage.card3 {
+    background: url("/img3.jpg");
+    background-size: cover;
+}
+.cardText.card3 .date {
+    color: rgb(0, 189, 63);
+}
 
 @media only screen and (max-width: 600px) {
     .slideBackground{
@@ -26,5 +97,8 @@
     .heading{
         font-size: 20px;
         margin-bottom: 3vh;
+    }
+    .card{
+        margin: 30px;
     }
 }

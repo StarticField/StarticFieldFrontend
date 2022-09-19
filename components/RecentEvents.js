@@ -31,7 +31,7 @@ export default class RecentEvents extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -54,22 +54,82 @@ export default class RecentEvents extends Component {
                 <h2 className={styles.heading}>Recent Events</h2>
                 <Slider {...settings}>
                     <div>
-                        <div className={styles.slideBackground}>1</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div className={styles.slideBackground}>2</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div className={styles.slideBackground}>3</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div className={styles.slideBackground}>4</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div className={styles.slideBackground}>5</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <div className={styles.slideBackground}>6</div>
+                        <div className={styles.card}>
+                            <div className={styles.cardImage}></div>
+                            <div className={styles.cardText}>
+                                <span className={styles.date}>Shamik Guha</span>
+                                <h2>CEO & Co-Founder of Altor</h2>
+                                <p>
+                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
+                                    startup, which was influenced by the death of a friend.....
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </Slider>
             </div>
