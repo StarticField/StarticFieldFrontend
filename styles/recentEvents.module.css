@@ -78,6 +78,7 @@
         margin-bottom: 3vh;
     }
     .card{
-        margin: 30px;
+        margin: 10px;
+        box-shadow: none;
     }
 }

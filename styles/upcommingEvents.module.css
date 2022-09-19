@@ -90,16 +90,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .slideBackground{
-        margin: 5vh auto;
-        height: 32vh;
-        width: 32vh;
-    }
     .heading{
         font-size: 20px;
         margin-bottom: 3vh;
     }
     .card{
-        margin: 30px;
+        margin: 10px;
+        box-shadow: none;
     }
 }
