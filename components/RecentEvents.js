@@ -81,11 +81,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Martynas Fedotovas</span>
-                                <h2>Space Start Ups To The Moon</h2>
+                                <span className={styles.date}>Udit Goenka</span>
+                                <h2>How to Bootstrap your Business ?</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    Mr Udit Goenka, Founder & CEO at PitchGround - Bootstrapped to ﹩20M and part of LinkedIn accelerator program 2022 gave.....
                                 </p>
                             </div>
                         </div>
@@ -94,17 +93,16 @@ export default class RecentEvents extends Component {
                         <div className={styles.card}>
 
                             <iframe className={styles.cardImage} width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/YyCR7gK7zS"
+                                    src="https://www.youtube.com/embed/YyCR7gK7zSI"
                                     title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>Rakhi Pal</span>
+                                <h2>Leveraging Communities For Start</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    Ms Rakhi Pal, Co-Founder & COO at Event Beep, that got featured and funded on Shark Tank India tells about why community.....
                                 </p>
                             </div>
                         </div>
@@ -119,11 +117,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>Anant Sharma</span>
+                                <h2>Journey to Shark Tank India 🦈</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    Mr Anant Sharma, the Co Founder & CEO of Tweek Labs, discussed about his journey to Shark Tank India and his insights about.....
                                 </p>
                             </div>
                         </div>
@@ -138,11 +135,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>Francesco Ciulla</span>
+                                <h2>Scope of DevOps</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    To explain why and how DevOps approach is getting more adopted every companies nowadays, StarticField invited Mr. Francesco.....
                                 </p>
                             </div>
                         </div>
@@ -157,11 +153,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>GS Madhusudan</span>
+                                <h2>Semiconductor based Industry</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    To address more on the shortage problems and scope of Semiconductor based industries and startups in India, StarticField.....
                                 </p>
                             </div>
                         </div>
@@ -176,11 +171,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>Anurag Khurana</span>
+                                <h2>Gaming: The future of Start ups</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    Mr Anurag Khurana the Founder & CEO of Penta Esports, former Country Manager at Riot Games and former Esports consultant.....
                                 </p>
                             </div>
                         </div>
@@ -195,11 +189,10 @@ export default class RecentEvents extends Component {
                                     allowFullScreen>
                             </iframe>
                             <div className={styles.cardText}>
-                                <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <span className={styles.date}>Martynas Fedotovas</span>
+                                <h2>Space Start Ups To The Moon</h2>
                                 <p>
-                                    Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                    startup, which was influenced by the death of a friend.....
+                                    Serial Entrepreneur and Space Advocate "Martynas Fedotovas" discussed on Space related startups and space based explorations.....
                                 </p>
                             </div>
                         </div>
