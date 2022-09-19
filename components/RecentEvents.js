@@ -192,7 +192,7 @@ export default class RecentEvents extends Component {
                                 <span className={styles.date}>Martynas Fedotovas</span>
                                 <h2>Space Start Ups To The Moon</h2>
                                 <p>
-                                    Serial Entrepreneur and Space Advocate "Martynas Fedotovas" discussed on Space related startups and space based explorations.....
+                                    Serial Entrepreneur and Space Advocate &quot;Martynas Fedotovas&quot; discussed on Space related startups and space based explorations.....
                                 </p>
                             </div>
                         </div>
