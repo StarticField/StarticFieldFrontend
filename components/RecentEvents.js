@@ -55,7 +55,7 @@ export default class RecentEvents extends Component {
                 <Slider {...settings}>
                     <div>
                         <div className={styles.card}>
-                            <iframe className={styles.cardImage} width="100%" height="100%"
+                            <iframe className={styles.cardImage}
                                         src="https://www.youtube-nocookie.com/embed/-tJRl-yEeV4"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

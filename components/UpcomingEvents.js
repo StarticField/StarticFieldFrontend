@@ -57,8 +57,8 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
+                            <span className={styles.date}>Startic Field</span>
+                            <h2>Coming Soon</h2>
                             <p>
                                 Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
                                 startup, which was influenced by the death of a friend.....
@@ -70,11 +70,10 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
+                            <span className={styles.date}>Startic Field</span>
+                            <h2>Coming Soon. . . .</h2>
                             <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
+                                Comming Soon. . . .
                             </p>
                         </div>
                     </div>
@@ -83,50 +82,10 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
+                            <span className={styles.date}>Startic Field</span>
+                            <h2>Coming Soon. . . .</h2>
                             <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.card}>
-                        <div className={styles.cardImage}></div>
-                        <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
-                            <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.card}>
-                        <div className={styles.cardImage}></div>
-                        <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
-                            <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.card}>
-                        <div className={styles.cardImage}></div>
-                        <div className={styles.cardText}>
-                            <span className={styles.date}>Shamik Guha</span>
-                            <h2>CEO & Co-Founder of Altor</h2>
-                            <p>
-                                Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
-                                startup, which was influenced by the death of a friend.....
+                                Comming Soon. . . .
                             </p>
                         </div>
                     </div>

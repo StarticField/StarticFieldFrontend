@@ -33,9 +33,10 @@
 }
 .cardImage {
     grid-area: image;
-    background: url("/img1.jpg");
+    background: url("/commingSoon.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: 110%;
     background-size: cover;
 }
 
