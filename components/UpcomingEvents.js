@@ -53,7 +53,7 @@ export default class UpcomingEvents extends Component {
             <div>
                 <h2 className={styles.heading}>Upcoming events</h2>
                 <Slider {...settings}>
-                <div>
+                <div className={styles.ctoHunt}>
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>

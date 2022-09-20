@@ -73,20 +73,9 @@
 }
 
 /*card2*/
-.cardImage.card2 {
-    background: url("/img2.jpg");
+.ctoHunt .cardImage {
+    background: url("/allIndiaHunt.png");
     background-size: cover;
-}
-.cardText.card2 .date {
-    color: rgb(255, 77, 7);
-}
-/*card3*/
-.cardImage.card3 {
-    background: url("/img3.jpg");
-    background-size: cover;
-}
-.cardText.card3 .date {
-    color: rgb(0, 189, 63);
 }
 
 @media only screen and (max-width: 600px) {
