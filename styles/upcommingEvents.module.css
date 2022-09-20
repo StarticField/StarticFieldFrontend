@@ -87,4 +87,9 @@
         margin: 10px;
         box-shadow: none;
     }
+
+    .card:hover{
+        transform: none;
+        box-shadow: none;
+    }
 }
