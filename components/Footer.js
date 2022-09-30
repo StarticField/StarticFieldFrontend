@@ -17,18 +17,18 @@ export default function Footer(){
                         <Text size={'23'} weight={'semibold'}>Company</Text>
                         <Text size={'18'} className={styles.Items}>About Us</Text>
                         <Text size={'18'} className={styles.Items}>Privacy Policy</Text>
-                        <Text size={'18'} className={styles.Items}>Terms of Conditions</Text>
+                        <Text size={'18'} className={styles.Items}>Terms & Conditions</Text>
                     </div>
                     <div className={styles.otherLinks}>
                         <Text size={'23'} weight={'semibold'}>Other Links</Text>
                         <Text size={'18'} className={styles.Items}>Community</Text>
                         <Text size={'18'} className={styles.Items}>Events</Text>
                         <Text size={'18'} className={styles.Items}>Programs</Text>
-                        <Text size={'18'} className={styles.Items}>Careers</Text>
+                        
                     </div>
                     <div className={styles.contactUs}>
                         <Text size={'23'} weight={'semibold'}>Contact Us</Text>
-                        <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticField.com</Text>
+                        <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticfield.com</Text>
                         <div className={styles.socialMedia}>
                             <Link>
                                 <Image className={styles.socialIcons} src="/linkedin.svg" />
@@ -45,7 +45,7 @@ export default function Footer(){
             </div>
             <div className={styles.bottomSection}>
                 <Image className={styles.bottomImage} src="/footer.png" />
-                <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
+                <Text size={'18'}>© 2022 StarticField Innovation Pvt Ltd. All rights reserved.</Text>
                 <Link external href={"http://devlooper.in"} target={"_blank"} className={styles.devlooper}>
                     <Text b size={'18'}>Designed And Developed by</Text>
                     <Image className={styles.devlooperImage} src="/devlooper.svg" />
