@@ -218,7 +218,7 @@ export default function LogIn() {
                   mt={6}
                   className=""
                 >
-                  Already have an account? <Button>Sign In</Button>
+                  New to Startic Field? <Button>Sign Up</Button>
                 </Box>
               </div>
               <div className="modal-right left-color">
