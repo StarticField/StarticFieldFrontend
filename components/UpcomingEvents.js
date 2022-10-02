@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/upcommingEvents.module.css";
+import {Image, Link, Text} from "@nextui-org/react";
+
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -65,12 +67,12 @@ export default class UpcomingEvents extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={styles.big5}>
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
                             <span className={styles.date}>Startic Field</span>
-                            <h2>Coming Soon. . . .</h2>
+                            <h2>Big 5</h2>
                             <p>
                                 Comming Soon. . . .
                             </p>

@@ -13,30 +13,40 @@ export default function Footer(){
                     <Text size={'18'}>{text}</Text>
                 </div>
                 <div className={styles.links}>
-                    <div className={styles.linkSection}>
-                        <Text size={'23'} weight={'semibold'}>Company</Text>
-                        <Text size={'18'} className={styles.Items}>About Us</Text>
-                        <Text size={'18'} className={styles.Items}>Privacy Policy</Text>
-                        <Text size={'18'} className={styles.Items}>Terms of Conditions</Text>
-                    </div>
                     <div className={styles.otherLinks}>
-                        <Text size={'23'} weight={'semibold'}>Other Links</Text>
-                        <Text size={'18'} className={styles.Items}>Community</Text>
-                        <Text size={'18'} className={styles.Items}>Events</Text>
-                        <Text size={'18'} className={styles.Items}>Programs</Text>
-                        <Text size={'18'} className={styles.Items}>Careers</Text>
+                        <Text size={'23'} weight={'semibold'}>Important Links</Text>
+                        <Text size={'18'} className={styles.Items}>
+                            <Link color="text" href="./aboutUs">
+                            About Us
+                            </Link>
+                        </Text>
+                        <Text size={'18'} className={styles.Items}>
+                            <Link color="text" href="./eventsAndProgram">
+                            Events
+                            </Link>
+                        </Text>
+                        <Text size={'18'} className={styles.Items}>
+                            <Link color="text" href="./forStudents" >
+                            Programs
+                            </Link>
+                        </Text>
+                        <Text size={'18'} className={styles.Items}>
+                            <Link color="text" href="https://discord.com/invite/uWxKXJRpKS">
+                            Community
+                            </Link>
+                        </Text>
                     </div>
                     <div className={styles.contactUs}>
                         <Text size={'23'} weight={'semibold'}>Contact Us</Text>
-                        <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticField.com</Text>
+                        <Text size={'18'} className={styles.Items}>priyansh@starticField.com</Text>
                         <div className={styles.socialMedia}>
-                            <Link>
+                            <Link href="https://in.linkedin.com/company/starticfield" color="text" >
                                 <Image className={styles.socialIcons} src="/linkedin.svg" />
                             </Link>
-                            <Link>
-                                <Image className={styles.socialIcons} src="/twitter.svg" />
+                            <Link href="https://www.youtube.com/channel/UC3V_g2rgU_G9newiszP5wnw/about" >
+                                <Image className={styles.socialIcons} src="/youtube.svg" />
                             </Link>
-                            <Link>
+                            <Link href="https://www.instagram.com/startic_field/" >
                                 <Image className={styles.socialIcons} src="/instagram.svg" />
                             </Link>
                         </div>
@@ -45,11 +55,7 @@ export default function Footer(){
             </div>
             <div className={styles.bottomSection}>
                 <Image className={styles.bottomImage} src="/footer.png" />
-                <Text size={'18'}>© 2021 Startic Field. All rights reserved.</Text>
-                <Link external href={"http://devlooper.in"} target={"_blank"} className={styles.devlooper}>
-                    <Text b size={'18'}>Designed And Developed by</Text>
-                    <Image className={styles.devlooperImage} src="/devlooper.svg" />
-                </Link>
+                <Text size={'18'}>@ 2022 StarticField Innovations Pvt Ltd. All rights reserved.</Text>
             </div>
         </div>
     )

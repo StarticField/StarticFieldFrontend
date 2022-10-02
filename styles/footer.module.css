@@ -56,7 +56,8 @@
 
 .socialIcons{
     margin: -3px;
-    padding: 0;
+    padding: 8px;
+    height: 50px;
 }
 
 .linkSection{
