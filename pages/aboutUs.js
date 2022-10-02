@@ -93,7 +93,7 @@ export default function AboutUs(){
             </div>
             <div className={style.team} style={{zIndex: "3",position:'relative'}}>
                 <div className={style.person}>
-                    <Image src={'AshutoshBisht.jpeg'}></Image>
+                    <Image src={'AshutoshBisht.png'}></Image>
                     <Text b className={style.personName}>Ashutosh Bisht</Text>
                 </div>
                 <div className={style.person}>
@@ -103,10 +103,6 @@ export default function AboutUs(){
                 <div className={style.person}>
                     <Image src={'AnkitGupta.png'}></Image>
                     <Text b className={style.personName}>Ankit Gupta</Text>
-                </div>
-                <div className={style.person}>
-                    <Image src={'VanshKapoor.png'}></Image>
-                    <Text b className={style.personName}>Vansh Kapoor</Text>
                 </div>
             </div>
             <Text
