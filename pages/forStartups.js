@@ -22,7 +22,7 @@ export default function ForStartups(){
                 <div className={styles.intro}>
                     <Text b h3 className={styles.introHeading}>1.Develop your idea</Text>
                     <Text className={styles.introText}>Use VOLT, our strategic planning tool to discover customers, markets and partners for your
-                        idea. Formulate and input strategies to take your startup to the next level.</Text>
+                        idea. Formulatefvdfvfdvdf and input strategies to take your startup to the next level.</Text>
                 </div>
                 <div style={{height: "10vh"}}></div>
                 <div className={styles.section}>
