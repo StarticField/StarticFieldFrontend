@@ -30,7 +30,7 @@ export default function Footer(){
                         <Text size={'23'} weight={'semibold'}>Contact Us</Text>
                         <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticfield.com</Text>
                         <div className={styles.socialMedia}>
-                            <Link external href="https://in.linkedin.com/company/starticfield" color="text" >
+                            <Link external href="https://in.linkedin.com/company/starticfield" color="text"  target={"_blank"} >
                                 <Image className={styles.socialIcons} src="/linkedin.svg" />
                             </Link>
                             <Link external href="https://www.youtube.com/channel/UC3V_g2rgU_G9newiszP5wnw/about" target={"_blank"} >
