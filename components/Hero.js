@@ -37,8 +37,8 @@ export default function Hero() {
             >
               Startic Field
             </Text>
-          <Link className={styles.joinButton}>
-              <Text  weight={'semibold'}>Join Discord</Text>
+          <Link href="https://discord.com/" className={styles.joinButton}>
+              <Text weight={'semibold'}>Join Discord</Text>
           </Link>
         </div>
       </Grid>

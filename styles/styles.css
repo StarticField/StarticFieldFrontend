@@ -1,3 +1,7 @@
+.left-color {
+    background: rgb(73, 76, 80);
+  }
+
 .container{
     padding: 2rem;
     overflow: hidden;
