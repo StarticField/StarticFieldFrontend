@@ -34,6 +34,22 @@ export default function Home() {
                   className={styles.groupTwo}
               ></img>
           </div>
+          <div style={{
+              width:'80vw',
+              margin:"auto",
+              marginTop:'15vh',
+              textAlign:'center'
+          }}>
+              < RecentEvents/>
+          </div>
+          <div style={{
+              width:'80vw',
+              margin:"auto",
+              marginTop:'15vh',
+              textAlign:'center'
+          }}>
+              < UpcomingEvents/>
+          </div>
           <Timeline />
           <div
               style={{
@@ -70,22 +86,6 @@ export default function Home() {
               />      </div>
           <div className={styles.groupFiveSpace}></div>
           <Timeline4 />
-          <div style={{
-              width:'80vw',
-              margin:"auto",
-              marginTop:'15vh',
-              textAlign:'center'
-          }}>
-              < RecentEvents/>
-          </div>
-          <div style={{
-              width:'80vw',
-              margin:"auto",
-              marginTop:'15vh',
-              textAlign:'center'
-          }}>
-              < UpcomingEvents/>
-          </div>
           <div style={{ height: "10vh" }}></div>
       </>
   );
