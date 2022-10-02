@@ -13,7 +13,7 @@ export default function ForStudents(){
                     </Grid>
                     <Grid sm={6} xs={12} className={styles.heroSection}>
                         <Text className={styles.heroText}>
-                            Even if you do not have ideas but have the passion to join and contribute to a campus based startup, you need to create your profile on Startic Field.
+                            Even if you do not have ideas but have the passion to join and contribute to a campus based startup, you need to create your profile on Startic Field. +++
                         </Text>
                     </Grid>
                 </Grid.Container>
