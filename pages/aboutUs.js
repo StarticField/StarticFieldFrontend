@@ -58,10 +58,6 @@ export default function AboutUs(){
                     <Text b className={style.personName}>Priyansh Negi</Text>
                 </div>
                 <div className={style.person}>
-                    <Image src={'AnirudhMukkamala.jpeg'}></Image>
-                    <Text b className={style.personName}>Anirudh Mukkamala</Text>
-                </div>
-                <div className={style.person}>
                     <Image src={'AryanKataria.jpeg'}></Image>
                     <Text b className={style.personName}>Aryan Kataria</Text>
                 </div>
