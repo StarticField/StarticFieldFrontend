@@ -5,7 +5,7 @@ import {
   Button,
   Link
 } from "@nextui-org/react";
-import style from '../styles/nav.module.css'
+import style from '../styles/nav.module.css';
 
 export default function Nav() {
   const collapseItems = [
@@ -75,11 +75,11 @@ export default function Nav() {
           <Navbar.Link  href="./premium">
               Premium Membership
           </Navbar.Link>
-          <Navbar.Item href="#">
-            <Button bordered color="gradient" auto>
-              Sign In (soon)
+          <Navbar.Link href="./sign-in">
+            <Button className="w3-large" bordered color="gradient" auto>
+              Sign In
             </Button>
-          </Navbar.Item>
+          </Navbar.Link>
         </Navbar.Content>
         <Navbar.Collapse css={{paddingLeft:'10vw'}}>
           {collapseItems.map((item, index) => (
