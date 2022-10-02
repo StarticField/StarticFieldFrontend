@@ -72,6 +72,7 @@
 
 .contactUs{
     width: 180px;
+    z-index: 1000;
 }
 
 
