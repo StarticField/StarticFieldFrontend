@@ -13,32 +13,22 @@ export default function Footer(){
                     <Text size={'18'}>{text}</Text>
                 </div>
                 <div className={styles.links}>
+                    <div className={styles.linkSection}>
+                        <Text size={'23'} weight={'semibold'}>Company</Text>
+                        <Text size={'18'} className={styles.Items}>About Us</Text>
+                        <Text size={'18'} className={styles.Items}>Privacy Policy</Text>
+                        <Text size={'18'} className={styles.Items}>Terms & Conditions</Text>
+                    </div>
                     <div className={styles.otherLinks}>
-                        <Text size={'23'} weight={'semibold'}>Important Links</Text>
-                        <Text size={'18'} className={styles.Items}>
-                            <Link color="text" href="./aboutUs">
-                            About Us
-                            </Link>
-                        </Text>
-                        <Text size={'18'} className={styles.Items}>
-                            <Link color="text" href="./eventsAndProgram">
-                            Events
-                            </Link>
-                        </Text>
-                        <Text size={'18'} className={styles.Items}>
-                            <Link color="text" href="./forStudents" >
-                            Programs
-                            </Link>
-                        </Text>
-                        <Text size={'18'} className={styles.Items}>
-                            <Link color="text" href="https://discord.com/invite/uWxKXJRpKS">
-                            Community
-                            </Link>
-                        </Text>
+                        <Text size={'23'} weight={'semibold'}>Other Links</Text>
+                        <Text size={'18'} className={styles.Items}>Community</Text>
+                        <Text size={'18'} className={styles.Items}>Events</Text>
+                        <Text size={'18'} className={styles.Items}>Programs</Text>
+                        
                     </div>
                     <div className={styles.contactUs}>
                         <Text size={'23'} weight={'semibold'}>Contact Us</Text>
-                        <Text size={'18'} className={styles.Items}>priyansh@starticField.com</Text>
+                        <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticfield.com</Text>
                         <div className={styles.socialMedia}>
                             <Link href="https://in.linkedin.com/company/starticfield" color="text" >
                                 <Image className={styles.socialIcons} src="/linkedin.svg" />
