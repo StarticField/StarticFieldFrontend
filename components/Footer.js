@@ -30,13 +30,13 @@ export default function Footer(){
                         <Text size={'23'} weight={'semibold'}>Contact Us</Text>
                         <Text size={'18'} className={styles.Items}>Email: <br/>Priyansh@starticfield.com</Text>
                         <div className={styles.socialMedia}>
-                            <Link href="https://in.linkedin.com/company/starticfield" color="text" >
+                            <Link external href="https://in.linkedin.com/company/starticfield" color="text"  target={"_blank"} >
                                 <Image className={styles.socialIcons} src="/linkedin.svg" />
                             </Link>
-                            <Link href="https://www.youtube.com/channel/UC3V_g2rgU_G9newiszP5wnw/about" >
+                            <Link external href="https://www.youtube.com/channel/UC3V_g2rgU_G9newiszP5wnw/about" target={"_blank"} >
                                 <Image className={styles.socialIcons} src="/youtube.svg" />
                             </Link>
-                            <Link href="https://www.instagram.com/startic_field/" >
+                            <Link external href="https://www.instagram.com/startic_field/" target={"_blank"} >
                                 <Image className={styles.socialIcons} src="/instagram.svg" />
                             </Link>
                         </div>
@@ -46,6 +46,10 @@ export default function Footer(){
             <div className={styles.bottomSection}>
                 <Image className={styles.bottomImage} src="/footer.png" />
                 <Text size={'18'}>@ 2022 StarticField Innovations Pvt Ltd. All rights reserved.</Text>
+                <Link external href={"http://devlooper.in"} target={"_blank"} className={styles.devlooper}>
+                    <Text b size={'18'}>Designed And Developed by</Text>
+                    <Image className={styles.devlooperImage} src="/devlooper.svg" />
+                </Link>
             </div>
         </div>
     )
