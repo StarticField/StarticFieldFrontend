@@ -77,6 +77,11 @@
     background: url("/allIndiaHunt.jpg");
     background-size: cover;
 }
+.big5 .cardImage {
+    background: url("/big5.png");
+    background-size: cover;
+}
+
 
 @media only screen and (max-width: 600px) {
     .heading{
