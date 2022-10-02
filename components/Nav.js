@@ -9,22 +9,22 @@ import style from '../styles/nav.module.css';
 
 export default function Nav() {
   const collapseItems = [
-    "Home",
     "About Us",
     "For Student Startups",
     "For Students",
     "Events & Programs",
     "For Corporate Startups",
     "Premium Membership",
+    "Login / SignUp"
   ];
   const collapseItemsLink = [
-    "/",
     "/aboutUs",
     "/forStartups",
     "/forStudents",
     "/eventsAndProgram",
     "/forCorporateContributors",
     "/premium",
+    "/sign-in"
   ];
 
   return (
@@ -35,13 +35,12 @@ export default function Nav() {
               w: "150px",
             }}
         >
-          <Image src="logo.svg" alt=""></Image>
+          <Link href={"/"}>
+            <Image src="logo.svg" alt=""></Image>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs"/>
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
-          <Navbar.Link  href={"/"}>
-              Home
-          </Navbar.Link>
           <Navbar.Item>
             <Dropdown>
               <Dropdown.Button auto light ripple={false}>
