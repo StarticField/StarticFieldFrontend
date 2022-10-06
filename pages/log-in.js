@@ -1,7 +1,9 @@
 import { Box, Button, styled } from "@mui/material";
 import { Google } from "@mui/icons-material";
 import { useState} from "react";
-import axios from 'axios'
+import axios from 'axios';
+import Router from "next/router"; 
+import {Link} from "@nextui-org/react";
 
 const Wrapper = styled(Box)(
   ({ theme }) => `
@@ -53,6 +55,7 @@ const Wrapper = styled(Box)(
     overflow: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
+    background: rgb(47, 50, 53);
   }
   .modal-left::-webkit-scrollbar {
     display: none;
@@ -96,14 +99,16 @@ const Wrapper = styled(Box)(
   }
   @media (max-width: 750px) {
     .modal-container {
-      max-width: 90vw;
+      max-width: 100vw;
+      max-height:100vh;
+    }
+    .modal-left {
+      padding: 60px 20px 20px;
+      background: black;
     }
     .modal-right {
       display: none;
     }
-  }
-  .left-color {
-    background: rgb(47, 50, 53);
   }
   .full {
     width: 100%;
@@ -144,6 +149,11 @@ export default function LogIn() {
                   localStorage.setItem('refresh_token', result.data.refresh);
                 }
             }
+          )
+          .then(
+            Router.push({
+              pathname: "/"
+            })
           );
     } 
     catch (error) {
@@ -207,6 +217,7 @@ export default function LogIn() {
                     variant="contained"
                     color={"secondary"}
                     endIcon={<Google />}
+                    disabled
                   >
                     Google
                   </Button>
@@ -218,7 +229,10 @@ export default function LogIn() {
                   mt={6}
                   className=""
                 >
-                  New to Startic Field? <Button>Sign Up</Button>
+                  New to Startic Field? 
+                  <Link href="./sign-in">
+                    <Button className="w3-text-blue" >Sign Up</Button>
+                  </Link>
                 </Box>
               </div>
               <div className="modal-right left-color">
