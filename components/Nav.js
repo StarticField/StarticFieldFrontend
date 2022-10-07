@@ -5,9 +5,23 @@ import {
   Button,
   Link
 } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import style from '../styles/nav.module.css';
 
 export default function Nav() {
+  const [authenticated, setAuthenticated] = useState(false);
+  const logout = () => {
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("refresh_token");
+    setAuthenticated(false);
+  }
+  useEffect(() => {
+    var access_token = localStorage.getItem("access_token");
+    var refresh_token = localStorage.getItem("refresh_token");
+    if (access_token && refresh_token){
+      setAuthenticated(true);
+    }
+  }, []);
   const collapseItems = [
     "About Us",
     "For Student Startups",
@@ -15,7 +29,6 @@ export default function Nav() {
     "Events & Programs",
     "For Corporate Startups",
     "Premium Membership",
-    "Login / SignUp"
   ];
   const collapseItemsLink = [
     "/aboutUs",
@@ -24,7 +37,6 @@ export default function Nav() {
     "/eventsAndProgram",
     "/forCorporateContributors",
     "/premium",
-    "/sign-in"
   ];
 
   return (
@@ -58,6 +70,11 @@ export default function Nav() {
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
+                  <Link href="./profile" color="text">
+                    Profile
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
                   <Link href="./eventsAndProgram" color="text">
                     Events and Programs
                   </Link>
@@ -74,11 +91,17 @@ export default function Nav() {
           <Navbar.Link  href="./premium">
               Premium Membership
           </Navbar.Link>
-          <Navbar.Link href="./sign-in">
-            <Button className="w3-large" bordered color="gradient" auto>
-              Sign In
+          {authenticated?
+            <Button onPress={logout} className="w3-large" bordered color="gradient" auto>
+              Logout
             </Button>
-          </Navbar.Link>
+          :
+            <Navbar.Link href="./sign-in">
+              <Button className="w3-large" bordered color="gradient" auto>
+                Sign In
+              </Button>
+            </Navbar.Link>
+          }
         </Navbar.Content>
         <Navbar.Collapse css={{paddingLeft:'10vw'}}>
           {collapseItems.map((item, index) => (
@@ -89,13 +112,41 @@ export default function Nav() {
                       minWidth: "100%",
                     }}
                     href={collapseItemsLink[index]}
-                    className={
-                      index === collapseItems.length - 1 ? style.premium : ''
-                    }>
+                    >
                   {item}
                 </Link>
-              </Navbar.CollapseItem>
+              </Navbar.CollapseItem>  
           ))}
+          {
+            authenticated ?
+            <Navbar.CollapseItem key={"logout"}>
+                <Link
+                  color="inherit"
+                  css={{
+                    minWidth: "100%",
+                  }}
+                  onPress={logout}
+                  className={
+                    style.premium
+                  }>
+                Logout
+              </Link>
+            </Navbar.CollapseItem>  
+            :
+            <Navbar.CollapseItem key={"sign-in"}>
+                <Link
+                  color="inherit"
+                  css={{
+                    minWidth: "100%",
+                  }}
+                  href={"/sign-in"}
+                  className={
+                    style.premium
+                  }>
+                SignUp / Login
+              </Link>
+            </Navbar.CollapseItem> 
+          }
         </Navbar.Collapse>
       </div>
     </Navbar>

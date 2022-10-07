@@ -1,11 +1,13 @@
 import { Box, Button, Grid, styled, TextField } from "@mui/material";
 import { Google } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
-import Router from "next/router";
+import axios from 'axios'
+import {useState} from "react";
 import {Link} from "@nextui-org/react";
+import Router from "next/router"; 
 
 const Wrapper = styled(Box)(
-  ({ theme }) => `
+  () => `
   .container {
     position: fixed;
     top: 0;
@@ -54,6 +56,7 @@ const Wrapper = styled(Box)(
     overflow: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
+    background: rgb(47, 50, 53);
   }
   .modal-left::-webkit-scrollbar {
     display: none;
@@ -97,14 +100,16 @@ const Wrapper = styled(Box)(
   }
   @media (max-width: 750px) {
     .modal-container {
-      max-width: 90vw;
+      max-width: 100vw;
+      max-height:100vh;
+    }
+    .modal-left {
+      background: black;
+      padding: 60px 20px 20px;
     }
     .modal-right {
       display: none;
     }
-  }
-  .left-color {
-    background: rgb(47, 50, 53);
   }
   input {
     background-color: rgb(36, 41, 36);
@@ -114,7 +119,80 @@ const Wrapper = styled(Box)(
 `
 );
 
+const token = (typeof window !== "undefined")?localStorage.getItem("access_token"):"none";
+const axiosInstance = axios.create({
+    baseURL: 'http://127.0.0.1:8000/',
+    timeout: 5000,
+    headers: {
+        'Authorization': "JWT " + token,
+        'Content-Type': 'application/json',
+        'accept': 'application/json'
+    }
+});
+
 const SignUp = () => {
+
+  const [username,setUsername] = useState("");
+  const [emailid,setEmailid] = useState("");
+  const [contact,setContact] = useState("");
+  const [password,setPsswd] = useState("");
+  const [confpassword,setConfPsswd] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleUsername = (e) => {setUsername(e.target.value)};
+  const handlePsswd = (e) => {setPsswd(e.target.value)};
+  const handleConfPsswd = (e) => {setConfPsswd(e.target.value)};
+  const handleEmailid = (e) => {setEmailid(e.target.value)};
+  const handleContact = (e) => {setContact(e.target.value)};
+
+  const checkPassword = () => {
+    if (password === confpassword) return true;
+    return false;
+  }
+
+  const handleSubmit = () => {
+    if (checkPassword()){
+    try {
+        axiosInstance.post('/user/create/', {
+            username: username,
+            password: password,
+            contact: contact,
+            emailid: emailid
+        })
+        .then((response) => {
+          if (response.status==201){
+            axiosInstance.post('/token/obtain/', {
+                    username: username,
+                    password: password,
+            })
+            .then(
+              result => {
+                  axiosInstance.defaults.headers['Authorization'] = "JWT " + result.data.access;
+                  if (typeof window !== "undefined") {
+                    console.log("done!");
+                    localStorage.setItem('access_token', result.data.access);
+                    localStorage.setItem('refresh_token', result.data.refresh);
+                  }
+              }
+            )
+            .then(
+              Router.push({
+                pathname: "/"
+              })
+            );
+          }
+          else {console.log("Error")}
+        });
+    } 
+    catch (error) {
+        throw error;
+    }
+    } else {
+      setMessage("Passwords didn't match !");
+    }
+  };
+
+
   return (
     <>
       <Wrapper>
@@ -128,6 +206,7 @@ const SignUp = () => {
                   </Typography>
                   <Typography className="" variant="subtitle2">
                     To the startic field website an eco-system for startup.
+                    {message?message:null}
                   </Typography>
                 </Grid>
                 <Box
@@ -141,27 +220,27 @@ const SignUp = () => {
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
-                    label="firstname"
-                    type="name"
+                    onChange={handleUsername}
+                    type="text"
                     autoComplete="off"
-                    name="firstname"
-                    id="firstname"
-                    placeholder="Full Name"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
                   />
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
-                    label="lastname"
+                    onChange={handleContact}
                     type="name"
                     autoComplete="off"
-                    name="lastname"
-                    id="lastname"
+                    name="contact"
+                    id="contact"
                     placeholder="Mobile No."
                   />
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
-                    label="email"
+                    onChange={handleEmailid}
                     type="email"
                     autoComplete="off"
                     name="email"
@@ -171,7 +250,7 @@ const SignUp = () => {
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
-                    label="password"
+                    onChange={handlePsswd}
                     type="password"
                     autoComplete="off"
                     name="password"
@@ -181,7 +260,7 @@ const SignUp = () => {
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
-                    label="Conform Password"
+                    onChange={handleConfPsswd}
                     type="password"
                     autoComplete="off"
                     name="confirm_password"
@@ -201,15 +280,14 @@ const SignUp = () => {
                     variant="contained"
                     color={"secondary"}
                     endIcon={<Google />}
+                    disabled
                   >
                     Google
                   </Button>
                   <Button
                     variant="contained"
                     type="submit"
-                    onClick={() => {
-                      Router.push("/signin");
-                    }}
+                    onClick={handleSubmit}
                   >
                     Register
                   </Button>
