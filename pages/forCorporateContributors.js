@@ -18,11 +18,9 @@ export default function ForCorporateContributors(){
                     </Grid>
                     <Grid sm={6} xs={12} className={styles.heroSection}>
                         <Text className={styles.heroText}>
-                           India is the country with the 2nd highest number of Unicorns after USA. However, if we take into consideration the population of both countries, India has only utilized 6% of its startup potential.
-                           
-This is because a vast population of experienced and talented people with entrepreneurial aspirations are unable to fulfil them as they are unable to find the right set of people to form a team. They have the experience. They have the networks. They even have some money to spare. But after a hard day's work and a family to look after, they hardly find time or energy to work on the ground.
-
-If you are one such individual, Startic Field is the place for you. Join the network and connect with student entrepreneurs with whom you can partner to make your long-buried dream of entrepreneurship a reality. There are 3 roles which you can 
+                            India is the country with the 2nd highest number of Unicorns after USA. However, if we take into consideration the population of both countries, India has only utilized 6% of its startup potential.
+                            This is because a vast population of experienced and talented people with entrepreneurial aspirations are unable to fulfil them as they are unable to find the right set of people to form a team. They have the experience. They have the networks. They even have some money to spare. But after a hard day's work and a family to look after, they hardly find time or energy to work on the ground.
+                            If you are one such individual, Startic Field is the place for you. Join the network and connect with student entrepreneurs with whom you can partner to make your long-buried dream of entrepreneurship a reality. There are 3 roles which you can 
                         </Text>
                     </Grid>
                 </Grid.Container>
