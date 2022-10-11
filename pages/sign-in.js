@@ -1,4 +1,4 @@
-import { Box, Button, Grid, styled, TextField } from "@mui/material";
+import { Box, Button, Grid, styled} from "@mui/material";
 import { Google } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 import axios from 'axios'
@@ -18,25 +18,18 @@ const Wrapper = styled(Box)(
     justify-content: center;
     align-items: center; 
   }
-
   .modal {
-    background: rgba(51, 51, 51, 0.5);
+    background: rgb(31, 37, 47);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
-  
-
   .modal-container {
     display: flex;
-    max-width: 60vw;
-    max-height: 78vh;
     width: 100%;
-    overflow: hidden;
     position: absolute;
-    background: #fff;
+    background: rgb(31, 37, 47);
   }
   .form-error {
     font-size: 0.8rem;
@@ -48,15 +41,12 @@ const Wrapper = styled(Box)(
     margin: 6px 0 30px 0;
   }
   .modal-left {
-    padding: 60px 30px 20px;
-    background: #fff;
+    padding: 60px 30px 10px;
+    background: rgb(31, 37, 47);
     flex: 1.5;
-    transition-duration: 0.5s;
     opacity: 1;
-    overflow: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
-    background: rgb(47, 50, 53);
   }
   .modal-left::-webkit-scrollbar {
     display: none;
@@ -105,6 +95,7 @@ const Wrapper = styled(Box)(
     }
     .modal-left {
       background: black;
+      height:100vh;
       padding: 60px 20px 20px;
     }
     .modal-right {
@@ -112,7 +103,7 @@ const Wrapper = styled(Box)(
     }
   }
   input {
-    background-color: rgb(36, 41, 36);
+    background-color: rgb(23, 25, 30);
     color: white;
     border: none;
   }
@@ -157,7 +148,7 @@ const SignUp = () => {
             username: username,
             password: password,
             contact: contact,
-            emailid: emailid
+            email: emailid
         })
         .then((response) => {
           if (response.status==201){
@@ -172,6 +163,7 @@ const SignUp = () => {
                     console.log("done!");
                     localStorage.setItem('access_token', result.data.access);
                     localStorage.setItem('refresh_token', result.data.refresh);
+                    localStorage.setItem('username', username);
                   }
               }
             )

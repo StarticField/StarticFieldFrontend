@@ -28,3 +28,7 @@ h1 {
 a{
     color: white;
 }
+.background {
+    background-image: linear-gradient(-20deg, #367d64 0%, #422b7b 100%);
+    color: rgb(39, 34, 59);
+  }
