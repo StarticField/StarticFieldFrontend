@@ -6,6 +6,7 @@ import {
   Link
 } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import Router from "next/router"; 
 import style from '../styles/nav.module.css';
 
 export default function Nav() {
@@ -14,6 +15,9 @@ export default function Nav() {
     localStorage.removeItem("access_token");
     localStorage.removeItem("refresh_token");
     setAuthenticated(false);
+    Router.push({
+      pathname: "/"
+    })
   }
   useEffect(() => {
     var access_token = localStorage.getItem("access_token");
@@ -21,7 +25,7 @@ export default function Nav() {
     if (access_token && refresh_token){
       setAuthenticated(true);
     }
-  }, []);
+  }, [authenticated]);
   const collapseItems = [
     "About Us",
     "For Student Startups",
@@ -70,11 +74,6 @@ export default function Nav() {
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link href="./profile" color="text">
-                    Profile
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item>
                   <Link href="./eventsAndProgram" color="text">
                     Events and Programs
                   </Link>
@@ -92,9 +91,12 @@ export default function Nav() {
               Premium Membership
           </Navbar.Link>
           {authenticated?
+          <>
+            <Navbar.Link href="./dashboard">Dashboard</Navbar.Link>
             <Button onPress={logout} className="w3-large" bordered color="gradient" auto>
               Logout
             </Button>
+          </>
           :
             <Navbar.Link href="./sign-in">
               <Button className="w3-large" bordered color="gradient" auto>
@@ -119,19 +121,34 @@ export default function Nav() {
           ))}
           {
             authenticated ?
+            <>
             <Navbar.CollapseItem key={"logout"}>
-                <Link
-                  color="inherit"
-                  css={{
-                    minWidth: "100%",
-                  }}
-                  onPress={logout}
-                  className={
-                    style.premium
-                  }>
-                Logout
-              </Link>
+              <Link
+                color="inherit"
+                css={{
+                  minWidth: "100%",
+                }}
+                onPress={logout}
+                className={
+                  "w3-text-red"
+                }>
+              Logout
+            </Link>
             </Navbar.CollapseItem>  
+            <Navbar.CollapseItem key={"dashboard"}>
+              <Link
+                color="inherit"
+                css={{
+                  minWidth: "100%",
+                }}
+                className={
+                  style.premium
+                }
+                href={"/dashboard"}>
+                Dashboard
+              </Link>
+            </Navbar.CollapseItem> 
+            </>
             :
             <Navbar.CollapseItem key={"sign-in"}>
                 <Link

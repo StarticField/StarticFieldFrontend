@@ -104,6 +104,7 @@ const Wrapper = styled(Box)(
     }
     .modal-left {
       padding: 60px 20px 20px;
+      height:100vh;
       background: black;
     }
     .modal-right {
@@ -147,6 +148,7 @@ export default function LogIn() {
                   console.log("done!");
                   localStorage.setItem('access_token', result.data.access);
                   localStorage.setItem('refresh_token', result.data.refresh);
+                  localStorage.setItem('username', username);
                 }
             }
           )
