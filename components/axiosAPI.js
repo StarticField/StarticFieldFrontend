@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const token = (typeof window !== "undefined")?localStorage.getItem("access_token"):"none";
 const axiosInstance = axios.create({
-    baseURL: 'https://www.starticfieldapi.herokuapp.com/',
+    baseURL: 'https://starticfieldapi.herokuapp.com/',
     timeout: 5000,
     headers: {
         'Authorization': "JWT " + token,
