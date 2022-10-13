@@ -1,5 +1,5 @@
 import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
-import styles from "../styles/hero.module.css"
+import styles from "../styles/hero.module.css";
 
 
 export default function Hero() {

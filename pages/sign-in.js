@@ -9,26 +9,17 @@ import Router from "next/router";
 const Wrapper = styled(Box)(
   () => `
   .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center; 
   }
   .modal {
     background: rgb(31, 37, 47);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .modal-container {
-    display: flex;
-    width: 100%;
-    position: absolute;
+    margin-left: 13vw;
     background: rgb(31, 37, 47);
   }
   .form-error {
@@ -38,12 +29,12 @@ const Wrapper = styled(Box)(
     color: #b22b27;
   }
   .modal-desc {
-    margin: 6px 0 30px 0;
+    margin: 0px 0 30px 0;
   }
   .modal-left {
     padding: 60px 30px 10px;
     background: rgb(31, 37, 47);
-    flex: 1.5;
+    
     opacity: 1;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
@@ -53,9 +44,12 @@ const Wrapper = styled(Box)(
   }
 
   .modal-right {
-    flex: 2;
-    font-size: 0;
-    overflow: hidden;
+    padding: 60px 30px 10px;
+    height: 87.7vh;
+    background: rgb(31, 37, 47);
+    opacity: 1;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  
   }
   .modal-right img {
     width: 120%;
@@ -90,13 +84,14 @@ const Wrapper = styled(Box)(
   }
   @media (max-width: 750px) {
     .modal-container {
+      top: 0;
       max-width: 100vw;
-      max-height:100vh;
+      margin-left: 0vw;
     }
     .modal-left {
       background: black;
       height:100vh;
-      padding: 60px 20px 20px;
+      padding: 10px 20px 20px;
     }
     .modal-right {
       display: none;
@@ -181,12 +176,12 @@ const SignUp = () => {
         <div className="container">
           <div className="modal">
             <div className="modal-container">
-              <div className="modal-left left-color">
+              <div className="modal-left w3-half">
                 <Grid item paddingBottom={4} paddingLeft={1}>
-                  <Typography className="" variant="h4" component="h3" gutterBottom>
+                  <Typography variant="h4" component="h3" gutterBottom>
                     Begin your Startup journey!
                   </Typography>
-                  <Typography className="" variant="subtitle2">
+                  <Typography variant="subtitle2">
                     To the startic field website an eco-system for startup.
                     {message?message:null}
                   </Typography>
@@ -287,7 +282,7 @@ const SignUp = () => {
                   </Link>
                 </Box>
               </div>
-              <div className="modal-right left-color">
+              <div className="modal-right w3-half left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={"img2.png"}

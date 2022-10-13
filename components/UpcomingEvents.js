@@ -63,7 +63,9 @@ export default class UpcomingEvents extends Component {
                             <h2>Student CTO Hunt</h2>
                             <p>
                                 Get ready for the all India CTO Hunt comming soon.....
+                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
                             </p>
+                            <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
                     </div>
                 </div>
@@ -74,8 +76,10 @@ export default class UpcomingEvents extends Component {
                             <span className={styles.date}>Startic Field</span>
                             <h2>Big 5</h2>
                             <p>
-                                Comming Soon. . . .
+                                Get ready for the all India CTO Hunt comming soon.....
+                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
                             </p>
+                            <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
                     </div>
                 </div>
@@ -86,8 +90,10 @@ export default class UpcomingEvents extends Component {
                             <span className={styles.date}>Startic Field</span>
                             <h2>Coming Soon. . . .</h2>
                             <p>
-                                Comming Soon. . . .
+                                Get ready for the all India CTO Hunt comming soon.....
+                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
                             </p>
+                            <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
                     </div>
                 </div>
