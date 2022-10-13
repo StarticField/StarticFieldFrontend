@@ -182,7 +182,7 @@ export default function LogIn() {
                     label="email"
                     name="email"
                     id="email"
-                    placeholder="Email ID" 
+                    placeholder="Username" 
                   />
                   <input
                     required

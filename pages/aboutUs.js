@@ -31,22 +31,6 @@ export default function AboutUs(){
                 }}
                 className={style.backgroundTeam}
             >
-                <img src={"./leftTeam.svg"} style={{
-
-                    position: 'absolute',
-                    top: '-4.3vh',
-                    left: '0',
-                    zIndex: '0',
-                    width:'51vw'
-                }} alt={"background"}/>
-                <img src={"./rightTeam.svg"} style={{
-
-                    position: 'absolute',
-                    top: '-5.4vh',
-                    right: '0',
-                    zIndex: '0',
-                    width:'51vw'
-                }} alt={"background"}/>
             </div>
             <div className={style.team} style={{zIndex: "3",position:'relative'}}>
                 <div className={style.person}>
@@ -70,22 +54,6 @@ export default function AboutUs(){
                 }}
                 className={style.backgroundTeam}
             >
-                <img src={"./leftTeam.svg"} style={{
-
-                    position: 'absolute',
-                    top: '-4.3vh',
-                    left: '0',
-                    zIndex: '0',
-                    width:'51vw'
-                }} alt={"background"}/>
-                <img src={"./rightTeam.svg"} style={{
-
-                    position: 'absolute',
-                    top: '-5.4vh',
-                    right: '0',
-                    zIndex: '0',
-                    width:'51vw'
-                }} alt={"background"}/>
             </div>
             <div className={style.team} style={{zIndex: "3",position:'relative'}}>
                 <div className={style.person}>

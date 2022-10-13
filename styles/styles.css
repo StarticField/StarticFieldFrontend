@@ -34,8 +34,8 @@
 .horizontalLine4{
     position: absolute;
     left: calc(50% - 2px);
-    width: 4px;
-    top: -50px;
+    width: 6px;
+    top: -10px;
     bottom: -50px;
     border-radius: 50px;
     background-color: #4c4177;
@@ -43,11 +43,12 @@
     display: block;
 }
 
+
 .horizontal-line::after,
 .horizontal-line3::after,
 .horizontal-line4::after
 {
-    bottom: 0;
+    bottom: 10px;
 }
 
 .section,
