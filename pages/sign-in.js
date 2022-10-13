@@ -20,7 +20,7 @@ const Wrapper = styled(Box)(
   }
   .modal-container {
     margin-left: 13vw;
-    background: rgb(31, 37, 47);
+    background-color: rgb(31, 37, 47);
   }
   .form-error {
     font-size: 0.8rem;
@@ -33,7 +33,6 @@ const Wrapper = styled(Box)(
   }
   .modal-left {
     padding: 60px 30px 10px;
-    background: rgb(31, 37, 47);
     
     opacity: 1;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -46,7 +45,6 @@ const Wrapper = styled(Box)(
   .modal-right {
     padding: 60px 30px 10px;
     height: 87.7vh;
-    background: rgb(31, 37, 47);
     opacity: 1;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
@@ -84,9 +82,8 @@ const Wrapper = styled(Box)(
   }
   @media (max-width: 750px) {
     .modal-container {
-      top: 0;
       max-width: 100vw;
-      margin-left: 0vw;
+      margin-left: 0;
     }
     .modal-left {
       background: black;
