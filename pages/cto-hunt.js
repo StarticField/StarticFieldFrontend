@@ -17,7 +17,7 @@ export default function CTOHunt(){
                 padding:'0',
                 }}
             >
-                CTO Hunt will be starting on 
+                ALL INDIA STUDENT CTO HUNT 2022
             </Text>
             <Text
                 h1
@@ -27,9 +27,9 @@ export default function CTOHunt(){
                 padding:'0',
                 }}
             >
-                <e className="w3-text-blue"> 15 November, 2022  !!</e>
+                <e className="w3-text-blue"> 6 Nov - 3 Dec !!</e>
             </Text>
-            <h4>On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups. But who have been hustling with the lack of experience and even small amounts of capital.</h4>
+            <h4>If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</h4>
             <Spacer x={4} />
             <Link href="https://discord.com/invite/uWxKXJRpKS" className="w3-button w3-round-xxlarge w3-green">
                 <p className="w3-large" >Regsiter now !!</p>
@@ -54,7 +54,7 @@ export default function CTOHunt(){
                     padding:'0',
                     }}
                 >
-                    15 November, 2022  !!
+                    Prizes !!!
                 </Text>
                 <h4 className="w3-margin">On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups. But who have been hustling with the lack of experience and even small amounts of capital.</h4>
             </div>
@@ -70,9 +70,9 @@ export default function CTOHunt(){
                     padding:'0',
                     }}
                 >
-                    15 November, 2022  !!
+                    Participating Startups
                 </Text>
-                <h4 className="w3-margin">On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups. But who have been hustling with the lack of experience and even small amounts of capital.</h4>
+                <h4 className="w3-margin">Coming soon…</h4>
             </div>
             <div className="w3-half w3-padding">
                 <Image src="img1.png" alt=""></Image>
