@@ -59,11 +59,10 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Startic Field</span>
+                            <span className={styles.date}>6 Nov - 3 Dec</span>
                             <h2>Student CTO Hunt</h2>
                             <p>
-                                Get ready for the all India CTO Hunt comming soon.....
-                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
+                            If you think you have what it takes to be a CTO or Tech Cofounder at one of the best student startups in India, then this is the competition for you
                             </p>
                             <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
@@ -73,11 +72,10 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Startic Field</span>
+                            <span className={styles.date}>1 Oct - 30 Oct</span>
                             <h2>Big 5</h2>
                             <p>
-                                Get ready for the all India CTO Hunt comming soon.....
-                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
+                                Get top 5 problems in the industry to solve for and explore million dollars startup opportunities.
                             </p>
                             <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
@@ -87,11 +85,10 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>Startic Field</span>
-                            <h2>Coming Soon. . . .</h2>
+                            <span className={styles.date}>20 Nov - 8 Jan</span>
+                            <h2>Mock Pitch</h2>
                             <p>
-                                Get ready for the all India CTO Hunt comming soon.....
-                                On one hand are student entrepreneurs who have the energy, time and passion to build path breaking startups.
+                                Improve your pitch and prepare for next season of Shark Tank India, 2023
                             </p>
                             <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
