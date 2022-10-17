@@ -88,7 +88,8 @@ const Wrapper = styled(Box)(
     .modal-left {
       background: black;
       height:100vh;
-      padding: 0;
+      padding: 0px 0px 0px;
+      margin: 0;
     }
     .modal-right {
       display: none;
@@ -183,14 +184,7 @@ const SignUp = () => {
                     {message?message:null}
                   </Typography>
                 </Grid>
-                <Box
-                  component="form"
-                  sx={{
-                    "& .MuiTextField-root": { m: 1, width: "97%" },
-                  }}
-                  noValidate
-                  autoComplete="off"
-                >
+               
                   <input
                     required
                     className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
@@ -241,7 +235,7 @@ const SignUp = () => {
                     id="confirm_password"
                     placeholder="Confirm Password"
                   />
-                </Box>
+                
                 <Box
                   display={"flex"}
                   justifyContent={"space-between"}
