@@ -43,7 +43,7 @@ export default function Hero() {
         </div>
       </Grid>
       <Grid xs={12} sm={6.3} md={6.3} className={styles.heroImage}>
-        <Image src="heroCover.png" alt=""></Image>
+        <Image src="heroCover.webp" alt=""></Image>
       </Grid>
     </Grid.Container>
   );

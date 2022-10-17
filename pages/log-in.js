@@ -230,7 +230,7 @@ export default function LogIn() {
               <div className="modal-right left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={"img1.png"}
+                  src={"img1.webp"}
                   alt=""
                 />
               </div>

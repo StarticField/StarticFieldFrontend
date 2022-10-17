@@ -88,7 +88,7 @@ const Wrapper = styled(Box)(
     .modal-left {
       background: black;
       height:100vh;
-      padding: 10px 20px 20px;
+      padding: 0;
     }
     .modal-right {
       display: none;
@@ -282,7 +282,7 @@ const SignUp = () => {
               <div className="modal-right w3-half left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={"img2.png"}
+                  src={"img2.webp"}
                   alt=""
                 />
               </div>

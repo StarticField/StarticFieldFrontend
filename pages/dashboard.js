@@ -3,7 +3,8 @@ import axios from 'axios'
 import {useState, useEffect} from "react";
 import {Link, Image} from "@nextui-org/react";
 import Router from "next/router"; 
-import styles from "../styles/footer.module.css"
+import styles from "../styles/footer.module.css";
+import UpcomingEvents from "../components/UpcomingEvents";
 
 const Wrapper = styled(Box)(
   () => `
@@ -233,7 +234,7 @@ const Dashboard = () => {
       <div className="wrapper">
         <div className="profile-card js-profile-card">
           <div className="profile-card__img">
-            <Image src={"./img3.png"} />
+            <Image src={"./img3.webp"} />
           </div>
 
           <div className="profile-card__cnt js-profile-cnt">
@@ -258,8 +259,16 @@ const Dashboard = () => {
       </div>
       <div className="w3-row w3-center w3-black w3-margin w3-padding w3-card" >
         <h3>Your are not enrolled in any event !</h3>
-        <Image src={"./img3.png"} className="img" />
+        <Image src={"./img3.webp"} className="img" />
       </div>
+      <div style={{
+              width:'80vw',
+              margin:"auto",
+              marginTop:'8vh',
+              textAlign:'center'
+          }}>
+            < UpcomingEvents/>
+        </div>
       <div className=" w3-container" ></div>
       </div>
       </Wrapper>
