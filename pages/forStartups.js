@@ -11,7 +11,7 @@ export default function ForStartups(){
                         <Text h1 className={styles.heroHeading}>For Student Startups</Text>
                     </Grid>
                     <Grid  xs={12} className={styles.heroSection}>
-                        <Image src={"cover2.png"}></Image>
+                        <Image src={"cover2.webp"}></Image>
                     </Grid>
                     <Grid sm={6} xs={12} className={styles.heroSection}>
                         <Text className={styles.heroText}>
@@ -26,7 +26,7 @@ export default function ForStartups(){
                 <div style={{height: "10vh"}}></div>
                 <div className={styles.section}>
                     <div className={styles.sectionImage} >
-                        <Image src={'img4.png'} alt={''}></Image>
+                        <Image src={'img4.webp'} alt={''}></Image>
                     </div>
                     <div  className={styles.sectionText}>
                         <div>
@@ -60,13 +60,13 @@ export default function ForStartups(){
                         </div>
                     </div>
                     <div className={styles.sectionImage} >
-                        <Image src={'img3.png'} alt={''}></Image>
+                        <Image src={'img3.webp'} alt={''}></Image>
                     </div>
                 </div>
                 <div style={{height: "10vh"}}></div>
                 <div className={styles.section}>
                     <div className={styles.sectionImage} >
-                        <Image src={'img2.png'} alt={''}></Image>
+                        <Image src={'img2.webp'} alt={''}></Image>
                     </div>
                     <div  className={styles.sectionText}>
                         <div>

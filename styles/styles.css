@@ -77,8 +77,7 @@
 .section p,
 .section3 p,
 .section4 p{
-    color: grey;
-    font-style: italic;
+    color: rgb(212, 211, 211);
     font-size: 20px;
 }
 

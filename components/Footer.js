@@ -58,7 +58,7 @@ export default function Footer(){
             </div>
             <div className={styles.bottomSection}>
                 <br></br>
-                <Image className={styles.bottomImage} src="/footer.png" />
+                <Image className={styles.bottomImage} src="/footer.webp" />
                 <Text size={'18'}>@ 2022 StarticField Innovations Pvt Ltd. All rights reserved.</Text>
                 <Link external href={"http://devlooper.in"} target={"_blank"} className={styles.devlooper}>
                     <Text b size={'18'}>Designed And Developed by</Text>

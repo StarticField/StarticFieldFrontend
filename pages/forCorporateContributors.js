@@ -14,7 +14,7 @@ export default function ForCorporateContributors(){
                         </Text>
                     </Grid>
                     <Grid  xs={12} className={styles.heroSection}>
-                        <Image src={"cover2.png"}></Image>
+                        <Image src={"cover2.webp"}></Image>
                     </Grid>
                     <Grid sm={6} xs={12} className={styles.heroSection}>
                         <Text className={styles.heroText}>
@@ -26,7 +26,7 @@ export default function ForCorporateContributors(){
                 </Grid.Container>
                 <div className={styles.section}>
                     <div className={styles.sectionImage} >
-                        <Image src={'img2.png'} alt={''}></Image>
+                        <Image src={'img2.webp'} alt={''}></Image>
                     </div>
                     <div  className={styles.sectionText}>
                         <div>
@@ -48,12 +48,12 @@ export default function ForCorporateContributors(){
                     </div>
 
                     <div className={styles.sectionImage} >
-                        <Image src={'img4.png'} alt={''}></Image>
+                        <Image src={'img4.webp'} alt={''}></Image>
                     </div>
                 </div>
                 <div className={styles.sectionReverse}>
                     <div className={styles.sectionImage} >
-                        <Image src={'img1.png'} alt={''}></Image>
+                        <Image src={'img1.webp'} alt={''}></Image>
                     </div>
                     <div  className={styles.sectionText}>
                         <div>

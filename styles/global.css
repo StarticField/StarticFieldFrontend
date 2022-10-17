@@ -29,6 +29,13 @@ a{
     color: white;
 }
 .background {
-    background-image: linear-gradient(-20deg, #367d64 0%, #422b7b 100%);
-    color: rgb(39, 34, 59);
+    background-image: linear-gradient(-20deg, #04c07eef 0%, #0577bdf9 100%);
+    color: rgb(23, 25, 30);
   }
+
+.startic-blue {
+    background-color: rgb(44, 115, 230);
+}
+.startic-green {
+    background-color: rgb(13, 193, 94);
+}

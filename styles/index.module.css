@@ -24,7 +24,7 @@
 }
 
 .groupFour{
-    content: url("/group1.png");
+    content: url("/group1.webp");
     position: absolute;
     top: -0.3vw;
     left: -0.3vw;
@@ -37,7 +37,7 @@
 }
 
 .groupFive{
-    content: url("/group2.png");
+    content: url("/group2.webp");
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@
         display: none;
     }
     .groupFour{
-        content: url("/group1mob.png");
+        content: url("/group1mob.webp");
         top: -11vh;
         right: 0;
     }
@@ -70,7 +70,7 @@
     }
 
     .groupFive{
-        content: url("/group2mob.png");
+        content: url("/group2mob.webp");
         position: absolute;
         top: -5vh;
         left: 0;
