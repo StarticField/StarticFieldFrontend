@@ -25,7 +25,7 @@ export default function CTOHuntRegistration(){
         <Grid.Container className={styles.main}>
             <form className="w3-half w3-padding w3-margin-top w3-margin-bottom ">
                 <h3>Personal Details</h3>
-                <div className="w3-margin w3-padding w3-round-large">
+                <div>
                     <label className="w3-margin-left" >Full Name</label>
                     <input
                         required
@@ -75,7 +75,7 @@ export default function CTOHuntRegistration(){
             
             <div className="w3-half w3-padding w3-margin-top w3-margin-bottom ">
                 <h3>Socials</h3>
-                <div className="w3-margin w3-padding w3-round-large">
+                <div>
                     <label className="w3-margin" >LinkedIn Profile</label>
                     <input
                         required
