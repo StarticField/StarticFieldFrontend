@@ -12,32 +12,32 @@ const Wrapper = styled(Box)(
       border: none;
     }
     .grey {
-        background-color: rgb(23, 30, 32);
+        background-color: black;
     }
     .margin {
         margin: 5vw;
         padding: 20px;
-        margin-top: 0;
+        margin-top: 10px;
         border-radius: 30px;
     }
     @media (max-width: 750px) {
         .margin {
-          margin: 0;
+          margin: 2vw;
           padding: 10px;
           border-radius: 0;
         }
   `
   );
 
-export default function CTOHuntRegistration(){
+const CTOHuntRegistration = () => {
 
 
     return(
     <Wrapper>
-        <Grid.Container className={styles.main}>
-            <div style={{width: "100%"}} className="grey w3-card-4 margin w3-topbar w3-border-blue w3-round w3-container" >
+        <Grid.Container className={styles.formmain}>
+            <div style={{width: "100%"}} className="grey w3-card-4 margin w3-round w3-container" >
             <h2 className="w3-center w3-row w3-margin" >
-                <e className="w3-text-blue">All India CTO Hunt</e>
+                <e>Complete your profile</e>
             </h2>
             <div className="w3-half w3-padding-large w3-margin-top w3-margin-bottom ">
                 <h3>Personal Details</h3>
@@ -45,7 +45,7 @@ export default function CTOHuntRegistration(){
                     <label className="" >Full Name <e className="w3-text-red">*</e></label>
                     <input
                         required
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -56,7 +56,7 @@ export default function CTOHuntRegistration(){
                     <label  >College Name</label>
                     <input
                         required
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -67,7 +67,7 @@ export default function CTOHuntRegistration(){
                     <label  >Your Skills <e className="w3-text-red">*</e></label>
                     <input
                         required
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -78,7 +78,7 @@ export default function CTOHuntRegistration(){
                     <label  >Current Field <e className="w3-text-red">*</e></label>
                     <input
                         required
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -95,7 +95,7 @@ export default function CTOHuntRegistration(){
                     <label  >LinkedIn Profile <e className="w3-text-red">*</e></label>
                     <input
                         required
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -105,7 +105,7 @@ export default function CTOHuntRegistration(){
                     />
                     <label  >Instagram Profile (Optional)</label>
                     <input
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -115,7 +115,7 @@ export default function CTOHuntRegistration(){
                     />
                     <label  >Github Profile (If any)</label>
                     <input
-                        className="w3-input w3-round-large w3-large w3-padding-large w3-margin-bottom"
+                        className="w3-input w3-round-large w3-large w3-padding w3-margin-bottom"
                         
                         type="text"
                         autoComplete="on"
@@ -138,3 +138,6 @@ export default function CTOHuntRegistration(){
     </Wrapper>
     )
 }
+
+CTOHuntRegistration.noLayout = true;
+export default CTOHuntRegistration;
