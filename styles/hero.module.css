@@ -2,6 +2,11 @@
     margin: auto;
 }
 
+.formmain{
+    margin: auto;
+    background-color: rgb(31, 37, 47);
+}
+
 .heroText{
     width: 70%;
     margin: 15vh auto 90px;

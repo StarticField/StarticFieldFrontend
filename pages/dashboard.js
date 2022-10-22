@@ -103,7 +103,7 @@ a, a:hover {
   }
 
   &__cnt {
-    margin-top: -35px;
+    margin-top: -55px;
     text-align: center;
     padding-bottom: 20px;
     transition: all .3s;
@@ -188,8 +188,9 @@ const Dashboard = () => {
   const [contact, setContact] = useState("993XXXXXX02");
   const [linkedin, setLinkedin] = useState("https://www.linkedin.com/");
   const [instagram, setInstagram] = useState("https://www.instagram.com/");
+  const [github, setGithub] = useState("https://www.github.com/");
   const [enrolled, setEnrolled] = useState(false);
-
+  const [completed, setCompleted] = useState(false);
 
   useEffect(() => {
     var access_token = localStorage.getItem("access_token");
@@ -211,7 +212,9 @@ const Dashboard = () => {
             setContact(response.data.contact);
             setLinkedin(response.data.linkedin);
             setInstagram(response.data.instagram);
+            setGithub(response.data.github);
             setEnrolled(response.data.enrolled);
+            setCompleted(response.data.completed);
             console.log("saved!")
           }
           else {console.log("Error")}
@@ -236,14 +239,19 @@ const Dashboard = () => {
           <div className="profile-card__img">
             <Image src={"./img3.webp"} />
           </div>
-
           <div className="profile-card__cnt js-profile-cnt">
             <div className="profile-card__name w3-text-blue">@{username?username:"username"}</div>
-            <div className="profile-card__txt w3-text-white">{emailid}</div>
+            <div className="profile-card__txt w3-text-white w3-medium">{emailid}</div>
             <div className="profile-card-loc w3-text-white">
-              <span className="profile-card-loc__txt">
+              <span className="profile-card-loc__txt w3-medium">
                 {contact}
               </span>
+              {
+                completed ?
+                  null
+                  :
+                  <a href={"./complete-profile"} className="w3-margin-left w3-text-green w3-hover-green w3-border-green w3-button w3-small w3-border" >Complete profile</a>
+              }
             </div> 
 
             <div className="profile-card-inf">
@@ -253,14 +261,22 @@ const Dashboard = () => {
               <a href={instagram} className="profile-card-inf__item">
                 <Image className={styles.socialIcons} src="/instagram.svg" />
               </a>
+              <a href={github} className="profile-card-inf__item">
+                <Image className={styles.socialIcons} src="/github.png" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="w3-row w3-center w3-black w3-margin w3-padding w3-card" >
-        <h3>Your are not enrolled in any event !</h3>
-        <Image src={"./img3.webp"} className="img" />
-      </div>
+      {
+        enrolled ?
+        <div className="w3-row w3-center w3-black w3-margin w3-padding w3-card" >
+          <h3>Your are not enrolled in any event !</h3>
+          <Image src={"./img3.webp"} className="img" />
+        </div>
+        :
+        null
+      }
       <div style={{
               width:'80vw',
               margin:"auto",
