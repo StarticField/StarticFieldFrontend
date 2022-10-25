@@ -129,6 +129,7 @@ function TabsDemo() {
     const [gitprofile, setGitprofile] = useState('https://github.com/');
     const [username, setUserName] = useState("");
     const [authenticated, setAuthenticated] = useState(false);
+    const [message, setMessage] = useState("");
 
     const handleFullName = (e) => {setFullName(e.target.value)};
     const handleCollegeName = (e) => {setCollegeName(e.target.value)};
@@ -163,10 +164,11 @@ function TabsDemo() {
             if (response.status==200){
               console.log("done !");
               Router.push({
-                pathname: "/dashboard"
+                pathname: "/dashboard",
+                query: {"message": "Profile completed successfully!"}
               })
             }
-            else {console.log("Error")}
+            else {setMessage("Some error occurred while completing your profile!");}
           });
       } 
       catch (error) {
@@ -196,6 +198,10 @@ function TabsDemo() {
                         <Card  className="w3-black w3-padding" >
                             <Box display={"flex"} className="w3-black" justifyContent={"space-between"}  height={"7vh"}>
                                 <CardHeader title="Complete your profile" />
+                                {message?
+                                <p className="red w3-medium w3-text-red " >{message}</p>
+                                :
+                                null}
                             </Box>
                             <Divider />
                             <CardContent className="w3-black"  >

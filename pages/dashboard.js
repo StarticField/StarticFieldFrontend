@@ -2,7 +2,7 @@ import { Box, styled} from "@mui/material";
 import axios from 'axios'
 import {useState, useEffect} from "react";
 import {Link, Image} from "@nextui-org/react";
-import Router from "next/router"; 
+import {Router, useRouter} from "next/router"; 
 import styles from "../styles/footer.module.css";
 import UpcomingEvents from "../components/UpcomingEvents";
 
@@ -191,6 +191,8 @@ const Dashboard = () => {
   const [github, setGithub] = useState("https://www.github.com/");
   const [enrolled, setEnrolled] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [fullname, setFullname] = useState("Full Name");
+  const message = useRouter().query.message;
 
   useEffect(() => {
     var access_token = localStorage.getItem("access_token");
@@ -215,6 +217,7 @@ const Dashboard = () => {
             setGithub(response.data.github);
             setEnrolled(response.data.enrolled);
             setCompleted(response.data.completed);
+            setFullname(response.data.fullname);
             console.log("saved!")
           }
           else {console.log("Error")}
@@ -234,17 +237,23 @@ const Dashboard = () => {
     <>
       <Wrapper>
       <div className="background">
+      {message?
+      <h5 id="message" className="w3-row w3-margin-top w3-green w3-padding" >
+        {message}
+      </h5>
+      :
+      null}
       <div className="wrapper">
-        <div className="profile-card js-profile-card">
+        <div className="profile-card js-profile-card w3-round">
           <div className="profile-card__img">
             <Image src={"./img3.webp"} />
           </div>
           <div className="profile-card__cnt js-profile-cnt">
-            <div className="profile-card__name w3-text-blue">@{username?username:"username"}</div>
-            <div className="profile-card__txt w3-text-white w3-medium">{emailid}</div>
+            <div className="profile-card__name w3-text-blue">{fullname?fullname:"fullname"} | @{username?username:"username"}</div>
+            <div className="profile-card__txt w3-text-white w3-medium">{emailid}  |  {contact}</div>
             <div className="profile-card-loc w3-text-white">
               <span className="profile-card-loc__txt w3-medium">
-                {contact}
+                
               </span>
               {
                 completed ?

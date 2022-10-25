@@ -121,6 +121,7 @@ import axiosInstance from "../components/axiosAPI";
 export default function LogIn() {
   const [username,setUsername] = useState("");
   const [password,setPsswd] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleUsername = (e) => {setUsername(e.target.value)};
   const handlePsswd = (e) => {setPsswd(e.target.value)};
@@ -132,21 +133,25 @@ export default function LogIn() {
             password: password
         })
           .then(
-            result => {
-                axiosInstance.defaults.headers['Authorization'] = "JWT " + result.data.access;
-                if (typeof window !== "undefined") {
-                  console.log("done!");
-                  localStorage.setItem('access_token', result.data.access);
-                  localStorage.setItem('refresh_token', result.data.refresh);
-                  localStorage.setItem('username', username);
-                }
+            (response) => {
+              if (response!=undefined){
+                  if (typeof window !== "undefined") {
+                    console.log(response);
+                    localStorage.setItem('access_token', response.data.access);
+                    localStorage.setItem('refresh_token', response.data.refresh);
+                    localStorage.setItem('username', username);
+                    axiosInstance.defaults.headers['Authorization'] = "JWT " + response.data.access;
+                    Router.push({
+                      pathname: "/",
+                      query: {"message": "Successfully Logged in !"}
+                    });
+                  }
+              }
+              else {
+                  setMessage("Incorrect username or password!")
+              }
             }
           )
-          .then(
-            Router.push({
-              pathname: "/"
-            })
-          );
     } 
     catch (error) {
         throw error;
@@ -163,6 +168,10 @@ export default function LogIn() {
               <div className="modal-left left-color">
                 <div>
                   <h1 className="w3-center">
+                    {message?
+                    <p className="red w3-medium w3-text-red " >{message}</p>
+                    :
+                    null}
                     Electrify your Startup!
                   </h1>
                   <h3 className="w3-center w3-medium">
