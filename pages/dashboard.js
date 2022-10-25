@@ -201,8 +201,15 @@ const Dashboard = () => {
     if (access_token && refresh_token){
       setAuthenticated(true);
       setUsername(localStorage.getItem("username"));
+      getUserData();
     }
-  }, [authenticated]);
+    else {
+      Router.push({
+        pathname: "/",
+        query: {"message": "Not authenticated !"}
+      });
+    }
+  }, []);
 
   const getUserData = () => {
     try {
@@ -228,11 +235,6 @@ const Dashboard = () => {
         throw error;
     }
   };
-
-  useEffect(() => {
-    getUserData();
-  }, [])
-
 
   return (
     <>

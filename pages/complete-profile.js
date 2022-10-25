@@ -195,7 +195,7 @@ function TabsDemo() {
                 >
                     <Grid item xs={13}>
                     <Wrapper>
-                        <Card  className="w3-black w3-padding" >
+                        <Card  className="w3-black" >
                             <Box display={"flex"} className="w3-black" justifyContent={"space-between"}  height={"7vh"}>
                                 <CardHeader title="Complete your profile" />
                                 {message?
@@ -208,7 +208,7 @@ function TabsDemo() {
                                 <Box sx={{ width: '100%' }} minHeight={"50vh"}>
                                 
                                     <div style={{width: "100%"}}>
-                                    <div className="w3-half w3-padding-xlarge w3-margin-top w3-margin-bottom ">
+                                    <div className="w3-half w3-margin-top w3-margin-bottom ">
                                         <h3 className="w3-text-blue">Personal Details</h3>
                                         <div>
                                             <label className="" >Full Name <e className="w3-text-red">*</e></label>
