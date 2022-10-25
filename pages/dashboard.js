@@ -192,6 +192,7 @@ const Dashboard = () => {
   const [enrolled, setEnrolled] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [fullname, setFullname] = useState("Full Name");
+  const [error, setError] = useState(null);
   const message = useRouter().query.message;
 
   useEffect(() => {
@@ -218,9 +219,9 @@ const Dashboard = () => {
             setEnrolled(response.data.enrolled);
             setCompleted(response.data.completed);
             setFullname(response.data.fullname);
-            console.log("saved!")
+            console.log(response);
           }
-          else {console.log("Error")}
+          else {setError(response);}
         });
     } 
     catch (error) {
@@ -243,13 +244,19 @@ const Dashboard = () => {
       </h5>
       :
       null}
+      {error?
+      <h5 id="message" className="w3-row w3-margin-top w3-red w3-padding" >
+        {error}
+      </h5>
+      :
+      null}
       <div className="wrapper">
         <div className="profile-card js-profile-card w3-round">
           <div className="profile-card__img">
             <Image src={"./img3.webp"} />
           </div>
           <div className="profile-card__cnt js-profile-cnt">
-            <div className="profile-card__name w3-text-blue">{fullname?fullname:"fullname"} | @{username?username:"username"}</div>
+            <div className="profile-card__name w3-text-blue">{fullname} | @{username}</div>
             <div className="profile-card__txt w3-text-white w3-medium">{emailid}  |  {contact}</div>
             <div className="profile-card-loc w3-text-white">
               <span className="profile-card-loc__txt w3-medium">
