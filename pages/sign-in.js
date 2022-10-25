@@ -152,18 +152,19 @@ const SignUp = () => {
             )
             .then(
               Router.push({
-                pathname: "/"
+                pathname: "/",
+                query: {"message": "Hi, @"+username+" your account has been created successfully!"}
               })
             );
           }
-          else {console.log("Error")}
+          else {setMessage("An error occured while creating your account!")}
         });
     } 
     catch (error) {
         throw error;
     }
     } else {
-      setMessage("Passwords didn't match !");
+      setMessage("Given passwords didn't match !");
     }
   };
 
@@ -181,7 +182,10 @@ const SignUp = () => {
                   </Typography>
                   <Typography variant="subtitle2">
                     To the startic field website an eco-system for startup.
-                    {message?message:null}
+                    {message?
+                    <p className="red w3-medium w3-text-red " >{message}</p>
+                    :
+                    null}
                   </Typography>
                 </Grid>
                
