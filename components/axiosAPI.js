@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const token = (typeof window !== "undefined")?localStorage.getItem("access_token"):"none";
 const axiosInstance = axios.create({
+    // http://127.0.0.1:8000/
     // https://starticfieldapi.herokuapp.com/
     baseURL: 'https://starticfieldapi.herokuapp.com/',
     timeout: 5000,

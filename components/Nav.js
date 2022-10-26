@@ -44,7 +44,7 @@ export default function Nav() {
   ];
 
   return (
-    <Navbar maxWidth={'fluid'} height={'15vh'} shouldHideOnScroll variant="sticky">
+    <Navbar maxWidth={'fluid'} height={'12vh'} shouldHideOnScroll variant="sticky">
       <div className={style.navParent}>
         <Navbar.Brand
             css={{
@@ -93,14 +93,14 @@ export default function Nav() {
           {authenticated?
           <>
             <Navbar.Link href="./dashboard">Dashboard</Navbar.Link>
-            <Button onPress={logout} className="w3-large" bordered color="gradient" auto>
+            <Button onPress={logout} className="w3-medium" bordered color="gradient" auto>
               Logout
             </Button>
           </>
           :
-            <Navbar.Link href="./sign-in">
-              <Button className="w3-large" bordered color="gradient" auto>
-                Sign In
+            <Navbar.Link href="./log-in">
+              <Button className="w3-medium" bordered color="gradient" auto>
+                SignUp / Login
               </Button>
             </Navbar.Link>
           }

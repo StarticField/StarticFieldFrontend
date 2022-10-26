@@ -152,12 +152,12 @@ a, a:hover {
     margin-top: 5px;
 
     &__item {
-      padding: 10px 35px;
-      min-width: 150px;
+      padding: 5px 5px;
+      min-width: 50px;
 
       @media screen and (max-width: 768px) {
         padding: 10px 20px;
-        min-width: 120px;
+        min-width: 50px;
       }
 
     }
@@ -258,7 +258,7 @@ const Dashboard = () => {
             <Image src={"./img3.webp"} />
           </div>
           <div className="profile-card__cnt js-profile-cnt">
-            <div className="profile-card__name w3-text-blue">{fullname} | @{username}</div>
+            <div className="profile-card__txt w3-text-blue">{fullname} | @{username}</div>
             <div className="profile-card__txt w3-text-white w3-medium">{emailid}  |  {contact}</div>
             <div className="profile-card-loc w3-text-white">
               <span className="profile-card-loc__txt w3-medium">
