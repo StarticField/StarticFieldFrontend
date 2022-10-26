@@ -105,7 +105,7 @@ a, a:hover {
   &__cnt {
     margin-top: -55px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     transition: all .3s;
   }
 
@@ -119,7 +119,7 @@ a, a:hover {
     font-size: 18px;
     font-weight: 500;
     color: #324e63;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 
     strong {
       //color: #ff2846;
@@ -253,13 +253,14 @@ const Dashboard = () => {
       :
       null}
       <div className="wrapper">
-        <div className="profile-card js-profile-card w3-round">
+        <div className="profile-card js-profile-card w3-round-xlarge">
           <div className="profile-card__img">
             <Image src={"./img3.webp"} />
           </div>
           <div className="profile-card__cnt js-profile-cnt">
-            <div className="profile-card__txt w3-text-blue">{fullname} | @{username}</div>
-            <div className="profile-card__txt w3-text-white w3-medium">{emailid}  |  {contact}</div>
+            <div className="profile-card__txt w3-text-blue">{fullname} <e className="w3-text-grey w3-medium">( {username} )</e></div>
+            <div className="profile-card__txt w3-text-white w3-medium">{emailid}</div>
+            <div className="profile-card__txt w3-text-white w3-medium">{contact}</div>
             <div className="profile-card-loc w3-text-white">
               <span className="profile-card-loc__txt w3-medium">
                 
