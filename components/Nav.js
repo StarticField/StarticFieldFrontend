@@ -156,7 +156,7 @@ export default function Nav() {
                   css={{
                     minWidth: "100%",
                   }}
-                  href={"/sign-in"}
+                  href={"/log-in"}
                   className={
                     style.premium
                   }>

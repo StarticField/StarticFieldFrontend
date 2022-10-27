@@ -18,8 +18,11 @@ export default function Timeline() {
             Why join Startic Field?
           </Text>
           <Spacer x={2} />
-          <Text h2 i weight={'medium'} className="subTitle">
-            For Student Startups
+          <Text
+              h1
+              size={28}
+          >
+              For Student Startups
           </Text>
           <Spacer x={2} />
         </div>

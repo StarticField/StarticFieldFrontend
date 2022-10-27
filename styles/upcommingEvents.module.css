@@ -23,12 +23,11 @@
     grid-template-rows: 170px 170px 80px;
     grid-template-areas: "image" "text";
     border-radius: 15px;
-    background: rgb(31, 37, 47);
-    box-shadow: 12px 10px 20px rgba(98, 99, 172, 0.8);
+    background: rgb(10, 10, 10);
     text-align: center;
     transition: 0.5s ease;
     cursor: pointer;
-    margin:50px;
+    margin: 20px;
 }
 .cardImage {
     grid-area: image;
@@ -68,7 +67,6 @@
 }
 .card:hover {
     transform: scale(1.15);
-    box-shadow: 5px 5px 15px  rgba(98, 99, 172, 1);
 }
 
 /*card2*/
