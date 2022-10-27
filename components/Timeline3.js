@@ -12,7 +12,7 @@ export default function Timeline3() {
                     >
                         For Students
                     </Text>
-                    <Spacer y={4} />
+                    <Spacer y={3} />
                 </div>
 
                 <div className="timeline3">
