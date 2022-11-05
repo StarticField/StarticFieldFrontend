@@ -2,7 +2,7 @@ import { Box, Button, styled } from "@mui/material";
 import { Google } from "@mui/icons-material";
 import { useState} from "react";
 import axios from 'axios';
-import Router from "next/router"; 
+import Router, { useRouter } from "next/router"; 
 import {Link} from "@nextui-org/react";
 
 const Wrapper = styled(Box)(
@@ -122,6 +122,7 @@ export default function LogIn() {
   const [username,setUsername] = useState("");
   const [password,setPsswd] = useState("");
   const [message, setMessage] = useState("");
+  const router = useRouter();
 
   const handleUsername = (e) => {setUsername(e.target.value)};
   const handlePsswd = (e) => {setPsswd(e.target.value)};
@@ -141,7 +142,7 @@ export default function LogIn() {
                     localStorage.setItem('refresh_token', response.data.refresh);
                     localStorage.setItem('username', username);
                     axiosInstance.defaults.headers['Authorization'] = "JWT " + response.data.access;
-                    Router.push({
+                    router.push({
                       pathname: "/",
                       query: {"message": "Successfully Logged in !"}
                     });

@@ -76,7 +76,7 @@ export default class UpcomingEvents extends Component {
                             <p>
                                 Get top 5 problems in the industry to solve for and explore million dollars startup opportunities.
                             </p>
-                            <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
+                            <a href={"./events"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ export default class UpcomingEvents extends Component {
                             <p>
                                 Improve your pitch and prepare for next season of Shark Tank India, 2023
                             </p>
-                            <a href={"./cto-hunt"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
+                            <a href={"./mock-pitch"} style={{"width":"100%"}} className="w3-margin-top w3-hover-black w3-button w3-round-xlarge w3-blue" >More details</a>
                         </div>
                     </div>
                 </div>
