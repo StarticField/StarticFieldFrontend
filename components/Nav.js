@@ -22,11 +22,14 @@ export default function Nav() {
   useEffect(() => {
     var access_token = localStorage.getItem("access_token");
     var refresh_token = localStorage.getItem("refresh_token");
-    if (access_token && refresh_token){
+    var username = localStorage.getItem("username");
+    if (access_token && refresh_token && username){
+      console.log(access_token, refresh_token, username);
       setAuthenticated(true);
     }
   }, [authenticated]);
   const collapseItems = [
+    "Events",
     "About Us",
     "For Student Startups",
     "For Students",
@@ -35,6 +38,7 @@ export default function Nav() {
     "Premium Membership",
   ];
   const collapseItemsLink = [
+    "/events",
     "/aboutUs",
     "/forStartups",
     "/forStudents",
@@ -73,20 +77,20 @@ export default function Nav() {
                     For Students
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item>
-                  <Link href="./eventsAndProgram" color="text">
-                    Events and Programs
-                  </Link>
-                </Dropdown.Item>
                 <Dropdown.Item >
                   <Link href="./forCorporateContributors" color="text">
                     For Corporate contributors
                   </Link>
                 </Dropdown.Item>
+                <Dropdown.Item >
+                  <Link href="./aboutUss" color="text">
+                    About Us
+                  </Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Navbar.Item>
-          <Navbar.Link href="./aboutUs">About Us</Navbar.Link>
+          <Navbar.Link href="./events">Events</Navbar.Link>
           <Navbar.Link  href="./premium">
               Premium Membership
           </Navbar.Link>

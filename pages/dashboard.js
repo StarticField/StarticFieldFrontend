@@ -8,6 +8,33 @@ import UpcomingEvents from "../components/UpcomingEvents";
 
 const Wrapper = styled(Box)(
   () => `
+  
+  .mar {
+    margin: 20px;
+    background-color: rgba(28, 43, 61, 0.858);
+    color: white;
+    @media screen and (max-width: 768px) {
+      margin: 0px;
+    }
+  }
+  .grn {
+    background-image: linear-gradient(to right, rgb(3, 139, 139) , rgb(6, 170, 170));
+    margin: 3px;
+    max-width: 32.5%;
+    border-radius: 20px;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  .red {
+    margin: 3px;
+    background-color: black;
+    max-width: 32.5%;
+    border-radius: 20px;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
   .centered {
     position: absolute;
     top: 50%;
@@ -176,7 +203,6 @@ a, a:hover {
 
   }
 
-
 `
 );
 
@@ -190,9 +216,11 @@ const Dashboard = () => {
   const [instagram, setInstagram] = useState("https://www.instagram.com/");
   const [github, setGithub] = useState("https://www.github.com/");
   const [enrolled, setEnrolled] = useState(false);
+  const [mockenrolled, setMockEnrolled] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [fullname, setFullname] = useState("Full Name");
   const [error, setError] = useState(null);
+  const router = useRouter();
   const message = useRouter().query.message;
 
   useEffect(() => {
@@ -204,7 +232,7 @@ const Dashboard = () => {
       getUserData();
     }
     else {
-      Router.push({
+      router.push({
         pathname: "/",
         query: {"message": "Not authenticated !"}
       });
@@ -213,9 +241,11 @@ const Dashboard = () => {
 
   const getUserData = () => {
     try {
-        axiosInstance.post('/user/get-data/', {
-            username: localStorage.getItem("username"),
-        })
+        axiosInstance.get('/user/get-data/',
+              {params: {
+                  username: localStorage.getItem("username")
+                }}
+        )
         .then((response) => {
           if (response.status==200){
             setEmailid(response.data.emailid);
@@ -226,6 +256,7 @@ const Dashboard = () => {
             setEnrolled(response.data.enrolled);
             setCompleted(response.data.completed);
             setFullname(response.data.fullname);
+            setMockEnrolled(response.data.mockenrolled);
             console.log(response);
           }
           else {setError(response);}
@@ -287,11 +318,68 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className="w3-black">
       {
         enrolled ?
-        <div className="w3-row w3-center w3-black w3-margin w3-padding w3-card" >
-          <h3>Your are not enrolled in any event !</h3>
-          <Image src={"./img3.webp"} className="img" />
+        <div className="w3-row w3-padding" >
+          <h3>All India Student CTO Hunt</h3>
+          <div className="grn w3-third w3-padding w3-round-large">
+            <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right">Ends on 30 Nov, 2022</p>
+            <div className="w3-row">
+              <p className="w3-large">We've provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.</p>
+              <div className=" w3-padding" ><a style={{width:"100%"}} href="https://docs.google.com/forms/d/e/1FAIpQLSdXyXfgAyPjowKflIet0q5kT39yZlzJN3m3UdpfDcBx1fPOAA/viewform?usp=sf_link" className="w3-button w3-black w3-round-xxlarge w3-medium" >Submit your research</a></div>
+            </div>
+          </div>
+          <div className="red w3-third w3-padding">
+            <p className=" w3-left w3-large w3-text-cyan">Round 2 - THE BUILD</p><p className="w3-right">Ends on 8 Dec, 2022</p>
+            <div className="w3-row">
+              <p className="w3-large">Selected participants will now have to build the platform with at least one suggested feature and submit the deployyed or video link.</p>
+              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-cyan w3-round-xxlarge w3-medium" disabled>Submit your build</button></div>
+            </div>
+          </div>
+          <div className="red w3-third w3-padding">
+            <p className=" w3-left w3-large w3-text-cyan">Round 3 - DEMO PITCH</p><p className="w3-right">Ends on 11 Dec, 2022</p>
+            <div className="w3-row">
+              <p className="w3-large">Selected participants are eligible to enter our CTO Pool. They will be interviewed about the build and their entrepreneurial skills will be judged by our team. The interview will take place during the closing session of the event in front of a CTO guest from a company and the audience. Winners will be announced live in the same session with the prizes.</p>
+              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-cyan w3-round-xxlarge w3-medium" disabled>Get the iterview link</button></div>
+            </div>
+          </div>
+        </div>
+        :
+        null
+      }
+      {
+        mockenrolled ?
+        <div className="w3-row cen w3-padding " >
+          <h3>All India Student CTO Hunt</h3>
+          <div className="grn w3-quarter w3-padding">
+            <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
+            <div className="w3-row">
+              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-green w3-round-xxlarge w3-small" >Complete Round 1</a></div>
+            </div>
+          </div>
+          <div className="red w3-quarter  w3-padding">
+            <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
+            <div className="w3-row">
+              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
+            </div>
+          </div>
+          <div className="red w3-quarter  w3-padding">
+            <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
+            <div className="w3-row">
+              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
+            </div>
+          </div>
+          <div className="red w3-quarter  w3-padding">
+            <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
+            <div className="w3-row">
+              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
+            </div>
+          </div>
         </div>
         :
         null
@@ -303,8 +391,9 @@ const Dashboard = () => {
               textAlign:'center'
           }}>
             < UpcomingEvents/>
-        </div>
+      </div>
       <div className=" w3-container" ></div>
+      </div>
       </div>
       </Wrapper>
     </>
