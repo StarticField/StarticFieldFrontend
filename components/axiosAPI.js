@@ -4,7 +4,7 @@ const token = (typeof window !== "undefined")?localStorage.getItem("access_token
 const axiosInstance = axios.create({
     // http://127.0.0.1:8000/
     // https://starticfieldapi.herokuapp.com/
-    baseURL: 'http://127.0.0.1:8000/',
+    baseURL: 'https://starticfieldapi.herokuapp.com/',
     timeout: 5000,
     headers: {
         'Authorization': "JWT " + token,
