@@ -87,7 +87,7 @@ export default function Home() {
                         padding:'0',
                         }}
                     >
-                        Are you a corporate proffesional ? Do you have an idea but no time to work on it ?
+                        Are you a corporate professional ? Do you have an idea but no time to work on it ?
                     </Text>
                     <h4 className="w3-margin w3-text-grey">India is the country with the 2nd highest number of Unicorns after USA. However, if we take into consideration the population of both countries, India has only utilized 6% of its startup potential.
                             This is because a vast population of experienced and talented people with entrepreneurial aspirations are unable to fulfil them as they are unable to find the right set of people to form a team. They have the experience. They have the networks. They even have some money to spare. But after a hard day's work and a family to look after, they hardly find time or energy to work on the ground.

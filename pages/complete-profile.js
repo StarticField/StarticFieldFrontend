@@ -96,7 +96,7 @@ function a11yProps(index) {
 const Wrapper = styled(Box)(
     () => `
     input {
-      background-color: rgb(12, 12, 12);
+      background-color: rgb(4, 4, 4);
       color: white;
       border: none;
     }
@@ -222,24 +222,24 @@ function TabsDemo() {
                     <Wrapper>
                         <Card className="w3-black" >
                             <Box display={"flex"} className="w3-black" justifyContent={"space-between"}  height={"7vh"}>
-                                <CardHeader className="startic-blue w3-round-xxlarge" title="Complete your profile" />
-                                {message?
-                                <p className="red w3-medium w3-text-red " >{message}</p>
+                                <CardHeader title="Complete your profile" />
+                            </Box>
+                            {message?
+                                <p className="w3-medium w3-text-red w3-margin-left " >{message}</p>
                                 :
                                 null}
-                            </Box>
                             <Divider />
                             <CardContent className="w3-black"  >
                                 <Box sx={{ width: '100%' }} minHeight={"50vh"}>
                                 
                                     <div style={{width: "100%"}}>
                                     <div className="w3-half w3-margin-top w3-margin-bottom ">
-                                        <h3 className="w3-text-blue">Personal Details</h3>
+                                        <h3 className="w3-text-indigo">Personal Details</h3>
                                         <div>
                                             <label className="" >Full Name <e className="w3-text-red">*</e></label>
                                             <input
                                                 required
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleFullName}
                                                 type="text"
                                                 autoComplete="on"
@@ -250,7 +250,7 @@ function TabsDemo() {
                                             <label >College Name <e className="w3-text-red">*</e></label>
                                             <input
                                                 required
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleCollegeName}
                                                 type="text"
                                                 autoComplete="on"
@@ -261,7 +261,7 @@ function TabsDemo() {
                                             <label  >Your Skills <e className="w3-text-red">*</e></label>
                                             <input
                                                 required
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleSkills}
                                                 type="text"
                                                 autoComplete="on"
@@ -272,7 +272,7 @@ function TabsDemo() {
                                             <label  >Current Field <e className="w3-text-red">*</e></label>
                                             <input
                                                 required
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleField}
                                                 type="text"
                                                 autoComplete="on"
@@ -284,12 +284,12 @@ function TabsDemo() {
                                     </div>
                                     
                                     <div className="w3-half w3-margin-top w3-margin-bottom ">
-                                        <h3 className="w3-text-blue">Socials <e className="w3-medium w3-text-red">( Atleast one )</e></h3>
+                                        <h3 className="w3-text-indigo">Socials <e className="w3-medium w3-text-yellow">( Atleast one )</e></h3>
                                         <div>
                                             <label >LinkedIn Profile</label>
                                             <input
                                                 required
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleLinkprofile}
                                                 type="text"
                                                 autoComplete="on"
@@ -299,7 +299,7 @@ function TabsDemo() {
                                             />
                                             <label  >Instagram Profile (Optional)</label>
                                             <input
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleInstaprofile}
                                                 type="text"
                                                 autoComplete="on"
@@ -309,7 +309,7 @@ function TabsDemo() {
                                             />
                                             <label  >Github Profile (If any)</label>
                                             <input
-                                                className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
+                                                className="w3-input w3-round-xxlarge w3-large w3-padding w3-margin-bottom"
                                                 onChange={handleGitprofile}
                                                 type="text"
                                                 autoComplete="on"

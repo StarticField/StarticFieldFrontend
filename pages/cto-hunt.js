@@ -111,7 +111,7 @@ export default function CTOHunt(){
             <div className="w3-padding w3-half">
                 <Text
                     h1
-                    className="w3-margin w3-text-yellow"
+                    className="w3-text-yellow"
                     weight={'semibold'}
                     css={{
                     margin:'0',
@@ -120,12 +120,27 @@ export default function CTOHunt(){
                 >
                     Get amazing cash Prizes !!!
                 </Text>
-                <div className="w3-margin">
+                <div className="">
                     <h2 className="w3-margin-top">1st Prize <e className="w3-yellow w3-padding w3-round-large w3-right">Rs. 10,000</e></h2>
                     <br />
                     <h2 className="w3-margin-top">2nd Prize <e className="w3-yellow w3-padding w3-round-large w3-right">Rs. 7,000</e></h2>
                     <br />
                     <h2 className="w3-margin-top">3rd Prize <e className="w3-yellow w3-padding w3-round-large w3-right">Rs. 5,000</e></h2>
+                </div>
+                <br></br>
+                <Text
+                    h2
+                    className="w3-margin-top w3-text-yellow"
+                    weight={'semibold'}
+                    css={{
+                    margin:'0',
+                    padding:'0',
+                    }}
+                >
+                    Get a chance to be in our CTO pool
+                </Text>
+                <div className="">
+                    <h5>The top 10 students from the competition will each be awarded with a ‘Certified Student CTO’ certificate issued by Startic Field and rest 30 will be considered in the CTO pool. The CTO Pool is a group of outstanding students, whom we keep an eye on, for future leadership roles in potential to-be-unicorn/ profitable student led startups as technical co-founders or CTOs.</h5>
                 </div>
             </div>
         </div>
@@ -137,7 +152,7 @@ export default function CTOHunt(){
             className="w3-row w3-margin w3-black w3-center" >
             <h3>For more information</h3>
             <a href={"./cto_hunt_brochure.pdf"} className="w3-button w3-blue w3-round-xxlarge" >Download CTO Hunt Brochure</a>
-            <p className="w3-padding w3-large">Or contact us through <b className="w3-text-blue">priyansh@starticfield.com</b></p>
+            <p className="w3-padding w3-large">Or contact us through <b className="w3-text-blue">events.team@starticfield.com</b></p>
         </div>
         <Spacer y={2} />
     </>
