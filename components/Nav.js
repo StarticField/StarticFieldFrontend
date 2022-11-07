@@ -83,7 +83,7 @@ export default function Nav() {
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item >
-                  <Link href="./aboutUss" color="text">
+                  <Link href="./aboutUs" color="text">
                     About Us
                   </Link>
                 </Dropdown.Item>

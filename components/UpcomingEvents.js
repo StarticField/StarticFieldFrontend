@@ -58,7 +58,7 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>6 Nov - 3 Dec</span>
+                            <span className={styles.date}>7 Nov - 11 Dec</span>
                             <h2>Student CTO Hunt</h2>
                             <p>
                             If you think you have what it takes to be a CTO or Tech Cofounder at one of the best student startups in India, then this is the competition for you
@@ -71,7 +71,7 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>1 Oct - 30 Oct</span>
+                            <span className={styles.date}>1 Oct - 20 Nov</span>
                             <h2>Big 5</h2>
                             <p>
                                 Get top 5 problems in the industry to solve for and explore million dollars startup opportunities.
@@ -84,7 +84,7 @@ export default class UpcomingEvents extends Component {
                     <div className={styles.card}>
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
-                            <span className={styles.date}>20 Nov - 8 Jan</span>
+                            <span className={styles.date}>15 Nov - 27 Dec</span>
                             <h2>Mock Pitch</h2>
                             <p>
                                 Improve your pitch and prepare for next season of Shark Tank India, 2023

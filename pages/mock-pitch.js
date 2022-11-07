@@ -132,7 +132,7 @@ export default function CTOHunt(){
               }} 
             className="w3-row w3-margin w3-black w3-center" >
             <h3>For more information</h3>
-            <p className="w3-padding w3-large">Contact us through <b className="w3-text-blue">ashutosh.bisht@starticfield.com</b></p>
+            <p className="w3-padding w3-large">Contact us through <b className="w3-text-blue">events.team@starticfield.com</b></p>
         </div>
         <Spacer y={2} />
     </>

@@ -329,21 +329,21 @@ const Dashboard = () => {
             <p className=" w3-left w3-large">🔥 Round 1 - OPPORTUNITY FINDING</p><p className="w3-right">📅 Ends on 30 Nov</p>
             <div className="w3-row">
               <p className="w3-large">We've provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.</p>
-              <div className=" w3-padding" ><a style={{width:"100%"}} href="https://docs.google.com/forms/d/e/1FAIpQLSdXyXfgAyPjowKflIet0q5kT39yZlzJN3m3UdpfDcBx1fPOAA/viewform?usp=sf_link" className="w3-button w3-black w3-round-xxlarge w3-medium" >Submit your research 📑</a></div>
+              <div className=" w3-padding" ><a style={{width:"100%"}} href="https://docs.google.com/forms/d/e/1FAIpQLSdXyXfgAyPjowKflIet0q5kT39yZlzJN3m3UdpfDcBx1fPOAA/viewform?usp=sf_link" className="w3-button w3-black w3-round-xxlarge w3-medium" >Submit Presentation 📑</a></div>
             </div>
           </div>
           <div className="red w3-third w3-padding">
             <p className=" w3-left w3-large w3-text-indigo">🔥 Round 2 - THE BUILD</p><p className="w3-right">📅 Ends on 8 Dec</p>
             <div className="w3-row">
               <p className="w3-large">Selected participants will now have to build the platform with at least one suggested feature and submit the deployyed or video link.</p>
-              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-indigo w3-round-xxlarge w3-medium">Submit your build</button></div>
+              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-indigo w3-round-xxlarge w3-medium">Submit Project</button></div>
             </div>
           </div>
           <div className="red w3-third w3-padding">
             <p className=" w3-left w3-large w3-text-indigo">🔥 Round 3 - DEMO PITCH</p><p className="w3-right">📅 Ends on 11 Dec</p>
             <div className="w3-row">
               <p className="w3-large">Selected participants are eligible to enter our CTO Pool. They will be interviewed about the build and their entrepreneurial skills will be judged by our team. The interview will take place during the closing session of the event in front of a CTO guest from a company and the audience. Winners will be announced live in the same session with the prizes.</p>
-              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-indigo w3-round-xxlarge w3-medium">Get the iterview link</button></div>
+              <div className=" w3-padding" ><button style={{width:"100%"}} className="w3-button w3-indigo w3-round-xxlarge w3-medium">Get Zoom Link</button></div>
             </div>
           </div>
         </div>

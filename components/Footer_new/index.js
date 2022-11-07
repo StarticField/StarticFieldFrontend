@@ -18,7 +18,7 @@ function Footer() {
       >
         <Box>
           <Typography variant="subtitle1">
-            &copy; 2022 - Stactic Field
+            &copy; 2022 - Startic Field
           </Typography>
         </Box>
       </Box>
