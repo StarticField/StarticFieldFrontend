@@ -111,7 +111,7 @@ export default function Home() {
                         authenticated ?
                         (
                             ctoHuntStatus==="enrolled"?
-                            <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-cyan w3-large w3-margin" >View Progress &gt;</a>
+                            <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
                             :
                             (
                                 ctoHuntStatus==="available"?
@@ -123,7 +123,7 @@ export default function Home() {
                         :
                         <a href="./log-in" className="w3-round-xxlarge w3-button w3-large w3-margin" >Login to get enrolled</a>
                     }
-                    <a href="./cto-hunt" className="w3-button w3-round-xlarge w3-text-cyan w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
+                    <a href="./cto-hunt" className="w3-button w3-round-xlarge w3-text-indigo w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
                 </div>
             </div>
             <div className="w3-row w3-margin-top w3-margin-bottom ">
@@ -147,14 +147,14 @@ export default function Home() {
                         authenticated ?
                         (
                             mockpitchStatus==="enrolled"?
-                            <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-cyan w3-large w3-margin" >View Progress &gt;</a>
+                            <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
                             :
                             <button value={"ctohunt"} onClick={enroll} className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin" >Enroll Now</button>
                         )
                         :
                         <a href="./log-in" className="w3-round-xxlarge w3-red w3-button w3-large w3-margin" >Login to get enrolled</a>
                     }
-                    <a href="./mock-pitch" className="w3-button w3-round-xlarge w3-text-cyan w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
+                    <a href="./mock-pitch" className="w3-button w3-round-xlarge w3-text-indigo w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
                  </div>
             </div>
             <div className="w3-row w3-margin-top w3-margin-bottom ">

@@ -123,38 +123,9 @@ export default function LogIn() {
   const [password,setPsswd] = useState("");
   const [message, setMessage] = useState("");
   const router = useRouter();
-  const [reset, setReset] = useState(false);
 
   const handleUsername = (e) => {setUsername(e.target.value)};
   const handlePsswd = (e) => {setPsswd(e.target.value)};
-
-  const resetPassword = () =>{
-    return (
-        <div className="modal-left left-color" >
-            <h1 className="w3-center">
-              Password Reset
-            </h1>
-            <br></br>
-            <h3 className="w3-large" >Enter your email for password reset</h3>
-            <input
-                required
-                onChange={handleUsername}
-                className="w3-input inner-input w3-round w3-large w3-padding-large w3-margin-bottom"
-                label="email"
-                name="email"
-                id="email"
-                placeholder="Username" 
-              />
-            <br />
-            <button style={{width:"100%"}} className=" w3-round-xxlarge w3-margin-bottom w3-button w3-indigo" >Send Reset Mail</button>
-            <br></br>
-            <div className="w3-center w3-margin-top w3-row">
-              <p>New to StarticField ? <button className="w3-button w3-hover-black w3-text-blue" >Sign Up</button></p>
-              <p>Forgot your password ? <a href="./sign-in" className="w3-text-blue" >Reset Password</a></p>
-            </div>
-        </div>
-      );
-  }
 
   const handleSubmit = () => {
     try {
@@ -188,16 +159,13 @@ export default function LogIn() {
     }
   };
 
+
   return (
     <>
       <Wrapper>
         <div className="container">
           <div className="modal">
             <div className="modal-container">
-            {
-              reset ?
-              resetPassword()
-              :
               <div className="modal-left left-color">
                 <div>
                   <h1 className="w3-center">
@@ -271,7 +239,6 @@ export default function LogIn() {
                   
                 </Box>
               </div>
-            }
               <div className="modal-right left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -282,7 +249,7 @@ export default function LogIn() {
             </div>
           </div>
         </div>
-      </Wrapper>        
+      </Wrapper>
     </>
   );
 };

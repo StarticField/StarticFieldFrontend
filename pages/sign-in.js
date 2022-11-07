@@ -134,7 +134,7 @@ const SignUp = () => {
             email: emailid
         })
         .then((response) => {
-          if (response.status==201){
+          if (response.status===201){
             axiosInstance.post('/token/obtain/', {
                     username: username,
                     password: password,
@@ -157,7 +157,9 @@ const SignUp = () => {
               })
             );
           }
-          else {setMessage("An error occured while creating your account!")}
+          else {
+            setMessage("An error occured while creating your account (Try with different username)!");
+          }
         });
     } 
     catch (error) {

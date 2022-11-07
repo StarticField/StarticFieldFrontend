@@ -129,25 +129,6 @@ export default function CTOHunt(){
                 </div>
             </div>
         </div>
-        <div className="startic-blue w3-row w3-padding ">
-            <div className="w3-padding w3-half">
-                <Text
-                    h1
-                    className="w3-margin"
-                    weight={'semibold'}
-                    css={{
-                    margin:'0',
-                    padding:'0',
-                    }}
-                >
-                    Participating Startups
-                </Text>
-                <h4 className="w3-margin">Coming soon…</h4>
-            </div>
-            <div className="w3-half w3-padding">
-                <Image src="img1.webp" alt=""></Image>
-            </div>
-        </div>
         <TimelineCTOHunt />
         <Spacer y={3} />
         <div style={{
