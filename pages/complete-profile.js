@@ -96,7 +96,7 @@ function a11yProps(index) {
 const Wrapper = styled(Box)(
     () => `
     input {
-      background-color: rgb(30, 35, 32);
+      background-color: rgb(12, 12, 12);
       color: white;
       border: none;
     }
@@ -104,10 +104,7 @@ const Wrapper = styled(Box)(
         background: white;
     }
     .margin {
-        margin: 5vw;
-        padding: 20px;
-        margin-top: 10px;
-        border-radius: 30px;
+        
     }
     @media (max-width: 750px) {
         .margin {
@@ -123,7 +120,7 @@ function TabsDemo() {
     const [full_name, setFullName] = useState("");
     const [college_name, setCollegeName] = useState('');
     const [skills, setSkills] = useState('');
-    const [field, setField] = useState('Startup');
+    const [field, setField] = useState('');
     const [linkprofile, setLinkprofile] = useState('https://linkedin.com/');
     const [instaprofile, setInstaprofile] = useState('https://instagram.com/');
     const [gitprofile, setGitprofile] = useState('https://github.com/');
@@ -148,32 +145,60 @@ function TabsDemo() {
         }
       }, [authenticated]);
 
+    const checkForm = () => {
+        if (!full_name) {
+            alert("FullName field cannot be left empty !");
+            return false;
+        }
+        else if (!college_name) {
+            alert("College name field cannot be left empty !");
+            return false;
+        }
+        else if (!skills) {
+            alert("Skills field cannot be left empty !");
+            return false;
+        }
+        else if (!field) {
+            alert("Please enter your current field !");
+            return false;
+        }
+        else if (linkprofile==="https://linkedin.com/" && gitprofile==="https://github.com/" && instaprofile==="https://instagram.com/") {
+            alert("Please enter any one of the given social fields !");
+            return false;
+        }
+        else return true;
+    }
+
     const handleSubmit = () => {
-      try {
-          axiosInstance.post('/user/complete-profile/', {
-              username: username,
-              fullname: full_name,
-              collegename: college_name,
-              skills: skills,
-              field: field,
-              linkedin: linkprofile,
-              instagram: instaprofile,
-              github: gitprofile,
-          })
-          .then((response) => {
-            if (response.status==200){
-              console.log("done !");
-              Router.push({
-                pathname: "/dashboard",
-                query: {"message": "Profile completed successfully!"}
-              })
+        if (checkForm()){
+            try {
+                axiosInstance.post('/user/complete-profile/', {
+                    username: username,
+                    fullname: full_name,
+                    collegename: college_name,
+                    skills: skills,
+                    field: field,
+                    linkedin: linkprofile,
+                    instagram: instaprofile,
+                    github: gitprofile,
+                })
+                .then((response) => {
+                    if (response.status===200){
+                    console.log("done !");
+                    Router.push({
+                        pathname: "/dashboard",
+                        query: {"message": "Profile completed successfully!"}
+                    })
+                    }
+                    else {setMessage("Some error occurred while completing your profile!");}
+                });
+            } 
+            catch (error) {
+                throw error;
             }
-            else {setMessage("Some error occurred while completing your profile!");}
-          });
-      } 
-      catch (error) {
-          throw error;
-      }
+        } else{
+            setMessage("Fill the compulsory fields.")
+        }
     };
 
     return (
@@ -195,9 +220,9 @@ function TabsDemo() {
                 >
                     <Grid item xs={13}>
                     <Wrapper>
-                        <Card  className="w3-black" >
+                        <Card className="w3-black" >
                             <Box display={"flex"} className="w3-black" justifyContent={"space-between"}  height={"7vh"}>
-                                <CardHeader title="Complete your profile" />
+                                <CardHeader className="startic-blue w3-round-xxlarge" title="Complete your profile" />
                                 {message?
                                 <p className="red w3-medium w3-text-red " >{message}</p>
                                 :
@@ -222,7 +247,7 @@ function TabsDemo() {
                                                 id="full_name"
                                                 placeholder="Enter your full name"
                                             />
-                                            <label  >College Name</label>
+                                            <label >College Name <e className="w3-text-red">*</e></label>
                                             <input
                                                 required
                                                 className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
@@ -258,10 +283,10 @@ function TabsDemo() {
                                         </div>
                                     </div>
                                     
-                                    <div className="w3-half w3-padding w3-margin-top w3-margin-bottom ">
-                                        <h3 className="w3-text-blue">Socials</h3>
+                                    <div className="w3-half w3-margin-top w3-margin-bottom ">
+                                        <h3 className="w3-text-blue">Socials <e className="w3-medium w3-text-red">( Atleast one )</e></h3>
                                         <div>
-                                            <label >LinkedIn Profile <e className="w3-text-red">*</e></label>
+                                            <label >LinkedIn Profile</label>
                                             <input
                                                 required
                                                 className="w3-input w3-round w3-large w3-padding w3-margin-bottom"
@@ -293,15 +318,10 @@ function TabsDemo() {
                                                 placeholder="paste your profile link here ... "
                                             />
                                         </div>
-                                        <p className="w3-padding">
-                                        <label className="w3-margin-right">I Agree, to the terms & conditions. 
-                                            <a className="w3-text-blue" href="#"> check here</a>
-                                        </label>
-                                        <input class="w3-check" type="checkbox" />
-                                        </p>
-                                        <button type="submit" onClick={handleSubmit} className="w3-button w3-blue w3-round-large" style={{width:"100%"}} >Register</button>
+                                        
+                                        <button type="submit" onClick={handleSubmit} className="w3-button w3-indigo w3-round-xxlarge" style={{width:"100%"}} >Complete</button>
                                     </div>
-                                    </div>
+                                </div>
 
                                 </Box>
                             </CardContent>

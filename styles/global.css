@@ -46,7 +46,7 @@ a{
     background-color: rgba(21, 21, 21, 0.858);
 }
 .form {
-    background-color: linear-gradient(to right, rgb(3, 139, 139) , rgb(6, 170, 170));
+    background-color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
 }
