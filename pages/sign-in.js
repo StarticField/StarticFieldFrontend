@@ -124,43 +124,41 @@ const SignUp = () => {
     return false;
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async() => {
     if (checkPassword()){
     try {
-        axiosInstance.post('/user/create/', {
-            username: username,
-            password: password,
-            contact: contact,
-            email: emailid
+      const response = await axiosInstance.post('/user/create/', {
+          username: username,
+          password: password,
+          contact: contact,
+          email: emailid
+      });
+      if (response.status===201){
+        axiosInstance.post('/token/obtain/', {
+                username: username,
+                password: password,
         })
-        .then((response) => {
-          if (response.status===201){
-            axiosInstance.post('/token/obtain/', {
-                    username: username,
-                    password: password,
-            })
-            .then(
-              result => {
-                  axiosInstance.defaults.headers['Authorization'] = "JWT " + result.data.access;
-                  if (typeof window !== "undefined") {
-                    console.log("done!");
-                    localStorage.setItem('access_token', result.data.access);
-                    localStorage.setItem('refresh_token', result.data.refresh);
-                    localStorage.setItem('username', username);
-                  }
+        .then(
+          result => {
+              axiosInstance.defaults.headers['Authorization'] = "JWT " + result.data.access;
+              if (typeof window !== "undefined") {
+                console.log("done!");
+                localStorage.setItem('access_token', result.data.access);
+                localStorage.setItem('refresh_token', result.data.refresh);
+                localStorage.setItem('username', username);
               }
-            )
-            .then(
-              Router.push({
-                pathname: "/",
-                query: {"message": "Hi, @"+username+" your account has been created successfully!"}
-              })
-            );
           }
-          else {
-            setMessage("An error occured while creating your account (Try with different username)!");
-          }
-        });
+        )
+        .then(
+          Router.push({
+            pathname: "/",
+            query: {"message": "Hi, @"+username+" your account has been created successfully!"}
+          })
+        );
+      }
+      else {
+        setMessage("An error occured while creating your account (Try with different username)!");
+      }
     } 
     catch (error) {
         throw error;
