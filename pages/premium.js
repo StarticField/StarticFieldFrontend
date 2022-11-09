@@ -6,9 +6,9 @@ export default function Premium(){
             <>
                 <div className={styles.hero}>
                    <div className={styles.background2}></div>
-                   <Image className={styles.heroImg} src={'cover3.png'} alt={''}></Image>
+                   <Image className={styles.heroImg} src={'cover3.webp'} alt={''}></Image>
                    <div className={styles.heroText}>
-                       <Text i>All our services are free till December 1, 2022. Post that below would be the membership plans for various stakeholders.</Text>
+                       <Text i> All our services are free till January, 2022. Post that below would be the membership plans for various stakeholders..</Text>
                    </div>
                    <Text h2 className={styles.headings}>For Individual Students</Text>
                    <div  className={styles.table}>

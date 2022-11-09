@@ -121,9 +121,9 @@ export default function Home() {
                             )
                         )
                         :
-                        <a href="./log-in" className="w3-round-xxlarge w3-button w3-large w3-margin" >Login to get enrolled</a>
+                        <a href="./log-in" className="w3-round-xxlarge w3-red w3-button w3-large w3-margin" >Login to get enrolled</a>
                     }
-                    <a href="./cto-hunt" className="w3-button w3-round-xlarge w3-text-indigo w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
+                    <a href="./cto-hunt" className="w3-button  w3-round-xlarge w3-text-indigo w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
                 </div>
             </div>
             <div className="w3-row w3-margin-top w3-margin-bottom ">
@@ -146,10 +146,11 @@ export default function Home() {
                     {
                         authenticated ?
                         (
-                            mockpitchStatus==="enrolled"?
-                            <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
-                            :
-                            <button value={"ctohunt"} onClick={enroll} className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin" >Enroll Now</button>
+                            mockpitchStatus==="enrolled" &&
+                            // ?
+                            // <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
+                            // :
+                            <button value={"ctohunt"} onClick={enroll} className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin" >Coming soon!</button>
                         )
                         :
                         <a href="./log-in" className="w3-round-xxlarge w3-red w3-button w3-large w3-margin" >Login to get enrolled</a>
@@ -157,9 +158,9 @@ export default function Home() {
                     <a href="./mock-pitch" className="w3-button w3-round-xlarge w3-text-indigo w3-padding w3-large" ><e className="w3-left ">More details</e><e className="w3-right" >&gt;</e></a>
                  </div>
             </div>
-            <div className="w3-row w3-margin-top w3-margin-bottom ">
+            <div className="w3-row w3-margin-top w3-margin-bottom">
                 <div className="w3-third w3-padding">
-                    <Image src="big5.webp" className="w3-round-large" alt=""></Image>
+                <Image src="big5.jpg" className="w3-round-large" alt=""></Image>
                 </div>
                 <div className="w3-twothird w3-display-container">
                     <Text
@@ -171,7 +172,7 @@ export default function Home() {
                         padding:'0',
                         }}
                     >
-                        Big 5 (Problems)
+                        Big 5 Problems
                     </Text>
                     <h4 className="w3-margin w3-text-grey">Every big company starts off with an idea and few people with the commitment to make it into a reality. And if you are a student or a group of students with these two things, Startic Field is the destination you should go to next. This is the sandbox where you work on your ideas and build them into successful business by following the below journey. </h4>
                     <h4 className="w3-margin w3-text-grey">Even if you do not have ideas but have the passion to join and contribute to a campus based startup, you need to create your profile on Startic Field.</h4>

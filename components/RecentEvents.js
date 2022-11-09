@@ -63,7 +63,7 @@ export default class RecentEvents extends Component {
                             </iframe>
                             <div className={styles.cardText}>
                                 <span className={styles.date}>Shamik Guha</span>
-                                <h2>CEO & Co-Founder of Altor</h2>
+                                <h2>Convert your sorrows to success</h2>
                                 <p>
                                     Shamik Guha - CEO & Co-Founder of Altor discussed his journey in his
                                     startup, which was influenced by the death of a friend.....

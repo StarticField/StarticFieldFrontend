@@ -1,7 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 import style from "../styles/aboutUs.module.css"
-import {Image, Text} from "@nextui-org/react";
+import {Card, Grid, Image, Link, Row, Text} from "@nextui-org/react";
 
+const list = [
+    {
+      title: "Ashutosh Bisht",
+      img: "AshutoshBisht.png",
+      link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
+    },
+    {
+      title: "Priyansh Negi",
+      img: "PriyanshNegi.jpg",
+      link: "https://www.linkedin.com/in/priyanshnegi/",
+
+    },
+    {
+      title: "Shubhanshu Rao",
+      img: "ShubhanshuRao.jpeg",
+      link: "https://www.linkedin.com/in/shubhanshu-rao-b77704223/",
+    },
+    {
+      title: "Ankit Gupta",
+      img: "AnkitGupta.png",
+      link: "$5.30",
+    },
+    {
+      title: "Aryan Kataria",
+      img: "/AryanKataria.jpeg",
+      link: "$15.70",
+    },
+  ];
 export default function AboutUs(){
     return(
         <div className={style.main}>
@@ -32,39 +60,33 @@ export default function AboutUs(){
                 className={style.backgroundTeam}
             >
             </div>
-            <div className={style.team} style={{zIndex: "3",position:'relative'}}>
-                <div className={style.person}>
-                    <Image src={'ShubhanshuRao.jpeg'}></Image>
-                    <Text b className={style.personName}>Shubhanshu Rao</Text>
-                </div>
-                <div className={style.person}>
-                    <Image src={'PriyanshNegi.jpg'}></Image>
-                    <Text b className={style.personName}>Priyansh Negi</Text>
-                </div>
-                <div className={style.person}>
-                    <Image src={'AryanKataria.jpeg'}></Image>
-                    <Text b className={style.personName}>Aryan Kataria</Text>
-                </div>
-            </div>
-            <div className={style.spaceTeamSection}></div>
-
-            <div
-                style={{
-                    position: "relative",
-                }}
-                className={style.backgroundTeam}
-            >
-            </div>
-            <div className={style.team} style={{zIndex: "3",position:'relative'}}>
-                <div className={style.person}>
-                    <Image src={'AshutoshBisht.png'}></Image>
-                    <Text b className={style.personName}>Ashutosh Bisht</Text>
-                </div>
-                <div className={style.person}>
-                    <Image src={'AnkitGupta.png'}></Image>
-                    <Text b className={style.personName}>Ankit Gupta</Text>
-                </div>
-            </div>
+            <Grid.Container gap={2} justify="flex-start">
+      {list.map((item, index) => (
+        <Grid xs={6} sm={4} key={index}>
+          <Card  isPressable
+      isHoverable
+       >
+            <Card.Body css={{ p: 0 }}>
+              <Card.Image
+                src={item.img}
+                objectFit="cover"
+                width="100%"
+                height={'340px'}
+                alt={item.title}
+              />
+            </Card.Body>
+            <Card.Footer css={{ justifyItems: "flex-start" }}>
+              <Row wrap="wrap" justify="space-between" align="center">
+                <Text b>{item.title}</Text>
+                <Link target={"_blank"} href={item.link} color="text" >
+                <Image className={style.socialIcons} src="/linkedin.svg" />
+                </Link>
+              </Row>
+            </Card.Footer>
+          </Card>
+        </Grid>
+      ))}
+    </Grid.Container>
             <Text
                 h1
                 className={style.teamHeading}
@@ -90,7 +112,7 @@ export default function AboutUs(){
                         Founder of Infosys
                     </Text>
                 </div>
-                <Image className={style.mentorImage} src={'NarayanaMurty.png'}></Image>
+                <Image className={style.mentorImage} src={'narayana-murthy.png'} width="350px" height="350px"></Image>
             </div>
         </div>
     )

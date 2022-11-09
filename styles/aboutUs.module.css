@@ -48,6 +48,12 @@
     display: flex;
 }
 
+
+.socialIcons{
+    margin: -3px;
+    padding: 8px;
+    height: 50px;
+}
 .mentorText{
     width: 40vw;
     margin: 20vh 5vw;

@@ -72,7 +72,7 @@ export default class UpcomingEvents extends Component {
                         <div className={styles.cardImage}></div>
                         <div className={styles.cardText}>
                             <span className={styles.date}>1 Oct - 20 Nov</span>
-                            <h2>Big 5</h2>
+                            <h2>Big 5 Problems</h2>
                             <p>
                                 Get top 5 problems in the industry to solve for and explore million dollars startup opportunities.
                             </p>
