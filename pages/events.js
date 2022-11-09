@@ -150,7 +150,7 @@ export default function Home() {
                             // ?
                             // <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
                             // :
-                            <button value={"ctohunt"} onClick={enroll} className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin" >Coming soon!</button>
+                            <button value={"ctohunt"}  className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin" >Coming soon!</button>
                         )
                         :
                         <a href="./log-in" className="w3-round-xxlarge w3-red w3-button w3-large w3-margin" >Login to get enrolled</a>
