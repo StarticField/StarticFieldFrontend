@@ -52,6 +52,9 @@ export default function Footer(){
                             <Link href="https://www.instagram.com/startic_field/" >
                                 <Image className={styles.socialIcons} src="/instagram.svg" />
                             </Link>
+                            <Link href="https://chat.whatsapp.com/CZMeBhMmuKO7q5y2WPXvub" >
+                                <Image className={styles.socialIcons} src="/whatsapp.svg" />
+                            </Link>
                         </div>
                     </div>
                 </div>

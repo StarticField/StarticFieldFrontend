@@ -46,6 +46,11 @@
     height: 60vh;
 }
 
+.big5 .cardImage {
+    background: url("/big5.webp");
+    background-size: cover;
+}
+
 .groupFiveSpace{
     height: 50vh;
 }
