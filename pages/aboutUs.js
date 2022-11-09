@@ -3,32 +3,37 @@ import style from "../styles/aboutUs.module.css"
 import {Card, Grid, Image, Link, Row, Text} from "@nextui-org/react";
 
 const list = [
-    {
-      title: "Ashutosh Bisht",
-      img: "AshutoshBisht.png",
-      link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
-    },
+  {
+    title: "Ashutosh Bisht",
+    img: "AshutoshBisht.png",
+    link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
+  },
+  {
+    title: "Aryan Kataria",
+    img: "/AryanKataria.jpeg",
+    link: "https://www.linkedin.com/in/whoaryanraj",
+  },
+  
     {
       title: "Priyansh Negi",
       img: "PriyanshNegi.jpg",
       link: "https://www.linkedin.com/in/priyanshnegi/",
 
     },
+    
     {
       title: "Shubhanshu Rao",
       img: "ShubhanshuRao.jpeg",
       link: "https://www.linkedin.com/in/shubhanshu-rao-b77704223/",
     },
+  
     {
       title: "Ankit Gupta",
       img: "AnkitGupta.png",
-      link: "$5.30",
+      link: "https://www.linkedin.com/in/gupta-ankit2",
     },
-    {
-      title: "Aryan Kataria",
-      img: "/AryanKataria.jpeg",
-      link: "$15.70",
-    },
+   
+ 
   ];
 export default function AboutUs(){
     return(

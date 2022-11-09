@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, Grid, Text, Link, Button, Col, Row, Spacer } from "@nextui-org/react";
 
-
 const BrandingPartners = () => {
   return (
     <div>
@@ -53,6 +52,7 @@ const BrandingPartners = () => {
         </Col>
         <Col>
           <Row justify="flex-end">
+            <Link href="https://pnapaao.com ">
             <Button flat auto rounded color="secondary">
               <Text
                 css={{ color: "inherit" }}
@@ -63,6 +63,8 @@ const BrandingPartners = () => {
               Know More
               </Text>
             </Button>
+            </Link>
+
           </Row>
         </Col>
       </Row>
@@ -109,6 +111,8 @@ const BrandingPartners = () => {
         </Col>
         <Col>
           <Row justify="flex-end">
+          <Link href="https://linktr.ee/befikra_community">
+
             <Button flat auto rounded color="secondary">
               <Text
                 css={{ color: "inherit" }}
@@ -119,6 +123,7 @@ const BrandingPartners = () => {
              Know More
               </Text>
             </Button>
+            </Link>
           </Row>
         </Col>
       </Row>
