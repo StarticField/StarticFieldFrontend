@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import {Router, useRouter} from "next/router"; 
 
 import axiosInstance from "../components/axiosAPI";
+import BrandingPartners from "../components/brandingPartners";
 export default function CTOHunt(){
     const mes = useRouter().query.message;
     const [message, setMessage] = useState(mes);
@@ -145,13 +146,14 @@ export default function CTOHunt(){
             </div>
         </div>
         <TimelineCTOHunt />
+        <BrandingPartners/>
         <Spacer y={3} />
         <div style={{
                   position: "relative",
               }} 
             className="w3-row w3-margin w3-black w3-center" >
             <h3>For more information</h3>
-            <a href={"./cto_hunt_brochure.pdf"} className="w3-button w3-blue w3-round-xxlarge" >Download CTO Hunt Brochure</a>
+            <a href={"./CTO_Hunt.pdf"} className="w3-button w3-blue w3-round-xxlarge cp" >Download CTO Hunt Brochure</a>
             <p className="w3-padding w3-large">Or contact us through <b className="w3-text-blue">events.team@starticfield.com</b></p>
         </div>
         <Spacer y={2} />

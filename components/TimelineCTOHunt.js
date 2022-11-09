@@ -12,7 +12,7 @@ export default function TimelineCTOHunt() {
                     >
                         CTO Hunt Timeline
                     </Text>
-                    <Spacer y={2} />
+                    <Spacer y={4} />
                 </div>
 
                 <div className="timeline3">
