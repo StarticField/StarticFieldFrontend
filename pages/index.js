@@ -9,7 +9,8 @@ import UpcomingEvents from "../components/UpcomingEvents";
 import {Router, useRouter} from "next/router"; 
 import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
 
-export default function Home() {
+
+ const Home = () => {
     const message = useRouter().query.message;
     return (
         <>
@@ -123,3 +124,5 @@ export default function Home() {
         </>
     );
 }
+
+export default Home

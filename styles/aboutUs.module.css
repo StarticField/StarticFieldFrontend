@@ -60,6 +60,9 @@
     text-align: left;
 }
 
+.card:hover {
+    transform: scale(1.05);
+} 
 
 .mentorName{
     font-size: 28px;

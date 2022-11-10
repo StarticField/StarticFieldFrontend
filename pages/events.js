@@ -6,6 +6,10 @@ import {Router, useRouter} from "next/router";
 import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
 
 import axiosInstance from "../components/axiosAPI";
+
+export const config = {
+    unstable_runtime:false
+  }
 export default function Home() {
     const message = useRouter().query.message;
     const [ctoHuntStatus, setCTOHuntStatus] = useState("unavailable");

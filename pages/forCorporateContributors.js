@@ -2,6 +2,9 @@ import {Layout} from "../components/Layout";
 import {Grid, Image, Text} from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css"
 
+export const config = {
+    unstable_runtime:false
+  }
 export default function ForCorporateContributors(){
     return(
         <>

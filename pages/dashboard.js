@@ -209,6 +209,10 @@ a, a:hover {
 );
 
 import axiosInstance from "../components/axiosAPI";
+
+export const config = {
+  unstable_runtime:false
+}
 const Dashboard = () => {
   const [authenticated, setAuthenticated] = useState(false);
   const [username, setUsername] = useState("username");

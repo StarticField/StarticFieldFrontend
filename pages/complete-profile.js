@@ -116,6 +116,10 @@ const Wrapper = styled(Box)(
   );
 
 import axiosInstance from "../components/axiosAPI";
+
+export const config = {
+    unstable_runtime:false
+  }
 function TabsDemo() {
     const [full_name, setFullName] = useState("");
     const [college_name, setCollegeName] = useState('');
