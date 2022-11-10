@@ -7,9 +7,7 @@ import { Router, useRouter } from "next/router";
 import axiosInstance from "../components/axiosAPI";
 import BrandingPartners from "../components/brandingPartners";
 
-export const config = {
-  unstable_runtime:false
-}
+
 
 const CTOHunt = () => {
   const mes = useRouter().query.message;

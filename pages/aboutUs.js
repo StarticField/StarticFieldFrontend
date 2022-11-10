@@ -33,9 +33,6 @@ const list = [
   },
 ];
 
-export const config = {
-  unstable_runtime:false
-}
 
 export default function AboutUs() {
   return (

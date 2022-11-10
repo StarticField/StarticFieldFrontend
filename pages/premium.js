@@ -2,9 +2,7 @@ import {Image, Text} from "@nextui-org/react";
 import styles from "../styles/premium.module.css"
 
 
-export const config = {
-    unstable_runtime:false
-  }
+
 export default function Premium(){
     return(
             <>

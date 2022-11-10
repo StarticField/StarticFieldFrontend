@@ -10,6 +10,9 @@ import {Router, useRouter} from "next/router";
 import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
 
 
+export const config = {
+    unstable_runtime:false
+  }
  const Home = () => {
     const message = useRouter().query.message;
     return (

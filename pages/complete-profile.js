@@ -117,9 +117,7 @@ const Wrapper = styled(Box)(
 
 import axiosInstance from "../components/axiosAPI";
 
-export const config = {
-    unstable_runtime:false
-  }
+
 function TabsDemo() {
     const [full_name, setFullName] = useState("");
     const [college_name, setCollegeName] = useState('');
@@ -209,7 +207,7 @@ function TabsDemo() {
         <>
             <div className='w3-left w3-margin-left'>
             <Link href={"/"}>
-                <Image style={{width:"130px"}} src="logo.svg" alt=""></Image>
+                <Image width="130px" src="logo.svg" alt="logo"/>
             </Link>
             </div>
             <Container maxWidth="lg" >

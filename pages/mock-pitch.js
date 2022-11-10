@@ -37,9 +37,7 @@ const list = [
   },
 ];
 
-export const config = {
-    unstable_runtime:false
-  }
+
 export default function CTOHunt() {
   const mes = useRouter().query.message;
   const [message, setMessage] = useState(mes);
