@@ -141,10 +141,10 @@ export default function Home() {
             )
           ) : (
             <a
-              href="./log-in"
+              href="https://forms.gle/i6qiusGYKukG2kuX9"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
-              Login to get enrolled
+             Login to get enrolled
             </a>
           )}
           <a
@@ -159,7 +159,7 @@ export default function Home() {
       <div className="w3-row w3-margin-top w3-margin-bottom ">
         <div className="w3-third w3-padding">
           <Image
-            src="commingSoon.webp"
+            src="form.png"
             className="w3-round-large"
             alt=""
           ></Image>
@@ -201,7 +201,7 @@ export default function Home() {
               href="./log-in"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
-              Login to get enrolled
+              Enroll now
             </a>
           )}
           <a

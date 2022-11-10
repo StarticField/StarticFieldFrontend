@@ -33,7 +33,7 @@ const list = [
     title: "Shamik Guha",
     img: "shamik_guha.jpeg",
     link: "https://www.linkedin.com/in/shamik-guha/",
-    designation: " Co-founder & CeO at Alter",
+    designation: "CeO at Alter",
   },
 ];
 
