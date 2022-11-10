@@ -37,7 +37,6 @@ const list = [
   },
 ];
 
-
 export default function CTOHunt() {
   const mes = useRouter().query.message;
   const [message, setMessage] = useState(mes);
@@ -138,19 +137,16 @@ export default function CTOHunt() {
                   View Progress &gt;
                 </a>
               ) : (
-                <button
-                  onClick={enroll}
-                  className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
-                >
+                <button className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin">
                   Enroll Now
                 </button>
               )
             ) : (
-             
-        <Button shadow color="gradient" auto>
-        Enroll Now
-        </Button>
-
+              <Link target="_blank" href="https://forms.gle/i6qiusGYKukG2kuX9">
+                <Button shadow color="gradient" auto>
+                  Enroll Now
+                </Button>
+              </Link>
             )}
           </div>
         </Grid>
