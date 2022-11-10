@@ -25,7 +25,7 @@ const list = [
   {
     title: "Saurabh Mangrulkar",
     img: "saurabh_mangrulkar.png",
-    link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
+    link: "https://www.linkedin.com/in/saurabh-mangrulkar/",
     designation: " Co-founder & CEO at EventBeep",
   },
 
