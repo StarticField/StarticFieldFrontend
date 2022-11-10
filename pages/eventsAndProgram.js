@@ -2,6 +2,8 @@ import styles from "../styles/eventsAndProgram.module.css"
 import {Text} from "@nextui-org/react";
 import Timeline2 from "../components/Timeline2";
 
+
+
 export default function EventsAndProgram(){
     return(
         <>

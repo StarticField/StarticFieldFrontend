@@ -117,6 +117,10 @@ const Wrapper = styled(Box)(
 `
 );
 
+export const config = {
+  unstable_runtime:false
+}
+
 import axiosInstance from "../components/axiosAPI";
 export default function LogIn() {
   const [username,setUsername] = useState("");

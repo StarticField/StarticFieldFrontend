@@ -2,6 +2,7 @@ import {Layout} from "../components/Layout";
 import {Grid, Image, Text} from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css"
 
+
 export default function ForCorporateContributors(){
     return(
         <>

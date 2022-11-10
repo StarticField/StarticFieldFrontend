@@ -1,6 +1,8 @@
 import {Image, Text} from "@nextui-org/react";
 import styles from "../styles/premium.module.css"
 
+
+
 export default function Premium(){
     return(
             <>

@@ -6,7 +6,10 @@ import { Router, useRouter } from "next/router";
 
 import axiosInstance from "../components/axiosAPI";
 import BrandingPartners from "../components/brandingPartners";
-export default function CTOHunt() {
+
+
+
+const CTOHunt = () => {
   const mes = useRouter().query.message;
   const [message, setMessage] = useState(mes);
   const [status, setStatus] = useState("unavailable");
@@ -216,3 +219,5 @@ export default function CTOHunt() {
     </>
   );
 }
+
+export default CTOHunt

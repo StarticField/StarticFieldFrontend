@@ -104,6 +104,8 @@ const Wrapper = styled(Box)(
 );
 
 import axiosInstance from "../components/axiosAPI";
+
+
 const SignUp = () => {
 
   const [username,setUsername] = useState("");

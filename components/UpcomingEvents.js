@@ -6,6 +6,7 @@ import styles from "../styles/upcommingEvents.module.css";
 import {Image, Link, Text} from "@nextui-org/react";
 
 
+
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
