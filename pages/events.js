@@ -141,7 +141,7 @@ export default function Home() {
             )
           ) : (
             <a
-              href="https://forms.gle/i6qiusGYKukG2kuX9"
+              href="./log-in"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
              Login to get enrolled
@@ -198,7 +198,7 @@ export default function Home() {
             )
           ) : (
             <a
-              href="./log-in"
+              href="https://forms.gle/i6qiusGYKukG2kuX9"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
               Enroll now
