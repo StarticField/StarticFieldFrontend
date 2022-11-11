@@ -128,26 +128,12 @@ export default function CTOHunt() {
               working with various sharks.
             </h4>
             <Spacer x={4} />
-            {authenticated ? (
-              status === "enrolled" ? (
-                <a
-                  href={"./dashboard"}
-                  className="w3-round-xxlarge w3-button w3-cyan w3-large w3-margin"
-                >
-                  View Progress &gt;
-                </a>
-              ) : (
-                <button className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin">
-                  Enroll Now
-                </button>
-              )
-            ) : (
+           
               <Link target="_blank" href="https://forms.gle/i6qiusGYKukG2kuX9">
                 <Button shadow color="gradient" auto>
                   Enroll Now
                 </Button>
               </Link>
-            )}
           </div>
         </Grid>
         <div className="w3-half">
