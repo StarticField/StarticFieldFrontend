@@ -23,7 +23,7 @@ export default function TimelineCTOHunt() {
                             <h3>Round 1 - OPPORTUNITY FINDING</h3>
                             <h5>Ends on <e className="w3-text-blue" >30 Nov, 2022</e></h5>
                             <p>
-                            We've provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.
+                            Weve provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.
                             </p>
                         </div>
                     </div>

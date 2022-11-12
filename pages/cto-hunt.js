@@ -1,8 +1,8 @@
-import { Grid, Spacer, Text, Image, Link } from "@nextui-org/react";
+import { Grid, Spacer, Text, Image } from "@nextui-org/react";
 import styles from "../styles/hero.module.css";
 import TimelineCTOHunt from "../components/TimelineCTOHunt";
 import { useState, useEffect } from "react";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 import axiosInstance from "../components/axiosAPI";
 import BrandingPartners from "../components/brandingPartners";
@@ -87,45 +87,20 @@ const CTOHunt = () => {
               <e className="w3-text-blue"> 7 Nov Onwards</e>
             </Text>
             <h4>
-              If you're a student with technical skills and an entrepreneurial
-              mindset, then this is the perfect competition for you! You'll have
+              If you&#39;re a student with technical skills and an entrepreneurial
+              mindset, then this is the perfect competition for you! You&#39;ll have
               the chance to join an ambitious student-led startup as a Tech
-              Cofounder or CTO and win exciting prizes for sure - so don't miss
+              Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss
               out and register now!
             </h4>
             <Spacer x={4} />
-            {authenticated ? (
-              status === "enrolled" ? (
-                <a
-                  href={"./dashboard"}
-                  className="w3-round-xxlarge w3-button w3-text-green w3-large w3-margin"
-                >
-                  View Progress &gt;
-                </a>
-              ) : status === "available" ? (
-                <button
-                  onClick={enroll}
-                  className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
-                >
-                  Enroll Now
-                </button>
-              ) : (
-                <a
-                  href={"./dashboard"}
-                  style={{ backgroundColor: "red" }}
-                  className="w3-round-xxlarge w3-button w3-large w3-margin"
-                >
-                  Complete your profile to Enroll
-                </a>
-              )
-            ) : (
+            
               <a
-                href="./log-in"
+                href="https://forms.gle/JR8ZLfDwB6GbBinLA"
                 className="w3-round-xxlarge w3-button w3-large w3-margin"
               >
-                Login to get enrolled
+                Enroll now
               </a>
-            )}
           </div>
         </Grid>
         <div className="w3-half">

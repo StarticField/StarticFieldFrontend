@@ -56,9 +56,9 @@ const Form = () => {
             src="https://docs.google.com/forms/d/e/1FAIpQLSdvmptZA14jLVS4bRuor28L95kRvcM96WsvQFVxV0tjf7KtYA/viewform?embedded=true" 
             width="640"
             height="4500" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0"
+            // frameborder="0" 
+            // marginheight="0" 
+            // marginwidth="0"
             scrolling="no">Loading…</iframe>
             :
             <div className='w3-margin w3-padding w3-round-large w3-center w3- '>{error}</div>

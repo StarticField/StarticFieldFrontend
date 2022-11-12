@@ -330,7 +330,7 @@ const Dashboard = () => {
           <div className="grn w3-indigo w3-third w3-padding w3-round-large">
             <p className=" w3-left w3-large">🔥 Round 1 - OPPORTUNITY FINDING</p><p className="w3-right">📅 Ends on 30 Nov</p>
             <div className="w3-row">
-              <p className="w3-large">We've provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.</p>
+              <p className="w3-large">We&#39;ve provided a list of platforms in the brochure for you to analyze and choose from - choose 5 unique features which are not already listed and prepare a document outlining these features for review.</p>
               <div className=" w3-padding" ><a style={{width:"100%"}} href="https://docs.google.com/forms/d/e/1FAIpQLSdXyXfgAyPjowKflIet0q5kT39yZlzJN3m3UdpfDcBx1fPOAA/viewform?usp=sf_link" className="w3-button w3-black w3-round-xxlarge w3-medium" >Submit Presentation 📑</a></div>
             </div>
           </div>
@@ -359,28 +359,28 @@ const Dashboard = () => {
           <div className="grn w3-quarter w3-padding">
             <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
             <div className="w3-row">
-              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <p className="">If you&#39;re a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You&#39;ll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss out and register now!</p>
               <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-green w3-round-xxlarge w3-small" >Complete Round 1</a></div>
             </div>
           </div>
           <div className="red w3-quarter  w3-padding">
             <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
             <div className="w3-row">
-              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <p className="">If you&#39;re a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You&#39;ll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss out and register now!</p>
               <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
             </div>
           </div>
           <div className="red w3-quarter  w3-padding">
             <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
             <div className="w3-row">
-              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <p className="">If you&#39;re a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You&#39;ll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss out and register now!</p>
               <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
             </div>
           </div>
           <div className="red w3-quarter  w3-padding">
             <p className=" w3-left w3-large">Round 1 - OPPORTUNITY FINDING</p><p className="w3-right w3-text-green">Opened</p>
             <div className="w3-row">
-              <p className="">If you're a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You'll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don't miss out and register now!</p>
+              <p className="">If you&#39;re a student with technical skills and an entrepreneurial mindset, then this is the perfect competition for you! You&#39;ll have the chance to join an ambitious student-led startup as a Tech Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss out and register now!</p>
               <div className=" w3-padding" ><a style={{width:"100%"}} className="w3-button w3-yellow w3-round-xxlarge w3-small" >Complete Round 1</a></div>
             </div>
           </div>

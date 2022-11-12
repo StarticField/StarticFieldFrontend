@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/index.module.css";
 import RecentEvents from "../components/RecentEvents";
 import { Router, useRouter } from "next/router";
-import { Grid, Spacer, Text, Image, Link } from "@nextui-org/react";
+import { Grid, Spacer, Text, Image, } from "@nextui-org/react";
 
 import axiosInstance from "../components/axiosAPI";
 
@@ -108,45 +108,19 @@ export default function Home() {
             All India CTO Hunt
           </Text>
           <h4 className="w3-margin w3-text-grey">
-            If you're a student with technical skills and an entrepreneurial
-            mindset, then this is the perfect competition for you! You'll have
+            If you&#39;re a student with technical skills and an entrepreneurial
+            mindset, then this is the perfect competition for you! You&#39;ll have
             the chance to join an ambitious student-led startup as a Tech
-            Cofounder or CTO and win exciting prizes for sure - so don't miss
+            Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss
             out and register now!
           </h4>
-          {authenticated ? (
-            ctoHuntStatus === "enrolled" ? (
-              <a
-                href={"./dashboard"}
-                className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin"
-              >
-                View Progress &gt;
-              </a>
-            ) : ctoHuntStatus === "available" ? (
-              <button
-                value={"ctohunt"}
-                onClick={enroll}
-                className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
-              >
-                Enroll Now
-              </button>
-            ) : (
-              <a
-                href={"./dashboard"}
-                style={{ backgroundColor: "red" }}
-                className="w3-round-xxlarge w3-button w3-large w3-margin"
-              >
-                Complete your profile to Enroll
-              </a>
-            )
-          ) : (
+          
             <a
-              href="./log-in"
+              href="https://forms.gle/JR8ZLfDwB6GbBinLA"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
-             Login to get enrolled
+             Enroll now
             </a>
-          )}
           <a
             href="./cto-hunt"
             className="w3-button  w3-round-xlarge w3-text-indigo w3-padding w3-large"

@@ -44,7 +44,7 @@ export default class RecentEvents extends Component {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        initialSlide: 1
+                        initialSlide: 1,
                     }
                 },
             ]
