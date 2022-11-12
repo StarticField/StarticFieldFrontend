@@ -188,7 +188,7 @@ function TabsDemo() {
                     if (response.status===200){
                     console.log("done !");
                     Router.push({
-                        pathname: "/dashboard",
+                        pathname: "/cto-hunt",
                         query: {"message": "Profile completed successfully!"}
                     })
                     }

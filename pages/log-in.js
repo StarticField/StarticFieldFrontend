@@ -176,7 +176,7 @@ export default function LogIn() {
                     localStorage.setItem('username', username);
                     axiosInstance.defaults.headers['Authorization'] = "JWT " + response.data.access;
                     router.push({
-                      pathname: "/",
+                      pathname: "/complete-profile",
                       query: {"message": "Successfully Logged in !"}
                     });
                   }
