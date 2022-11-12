@@ -1,7 +1,7 @@
 import Script from "next/script";
 import { Text, Spacer } from "@nextui-org/react";
 
-export default function Timeline() {
+ const Timeline = () => {
   return (
     <>
       <div className="container">
@@ -73,3 +73,5 @@ export default function Timeline() {
     </>
   );
 }
+
+export default Timeline

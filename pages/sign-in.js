@@ -123,7 +123,7 @@ const SignUp = () => {
 
   const checkPassword = () => {
     if (password === confpassword) return true;
-    return false;
+    // return false;
   }
 
   const handleSubmit = async() => {
@@ -135,6 +135,13 @@ const SignUp = () => {
           contact: contact,
           email: emailid
       });
+
+      if(response.status===200){
+        Router.push({
+          pathname: "/",
+          query: {"message": "Hi, @"+username+" your account has been created successfully!"}
+        })
+      }
       if (response.status===201){
         axiosInstance.post('/token/obtain/', {
                 username: username,
@@ -149,18 +156,18 @@ const SignUp = () => {
                 localStorage.setItem('refresh_token', result.data.refresh);
                 localStorage.setItem('username', username);
               }
+              Router.push({
+                pathname: "/",
+                query: {"message": "Hi, @"+username+" your account has been created successfully!"}
+              })
           }
+         
         )
-        .then(
-          Router.push({
-            pathname: "/",
-            query: {"message": "Hi, @"+username+" your account has been created successfully!"}
-          })
-        );
+      
       }
-      else {
-        setMessage("An error occured while creating your account (Try with different username)!");
-      }
+      // else {
+      //   setMessage("An error occured while creating your account (Try with different username)!");
+      // }
     } 
     catch (error) {
         throw error;

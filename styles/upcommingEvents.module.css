@@ -31,7 +31,7 @@
 }
 .cardImage {
     grid-area: image;
-    background: url("/commingSoon.webp");
+    /* background: url("/commingSoon.webp"); */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 110%;
@@ -69,7 +69,7 @@
     transform: scale(1.15);
 }
 
-/*card2*/
+card2
 .ctoHunt .cardImage {
     background: url("/allIndiaHunt.webp");
     background-size: cover;

@@ -108,10 +108,10 @@ export default function Home() {
             All India CTO Hunt
           </Text>
           <h4 className="w3-margin w3-text-grey">
-            If you're a student with technical skills and an entrepreneurial
-            mindset, then this is the perfect competition for you! You'll have
+            If you&#39;re a student with technical skills and an entrepreneurial
+            mindset, then this is the perfect competition for you! You&#39;ll have
             the chance to join an ambitious student-led startup as a Tech
-            Cofounder or CTO and win exciting prizes for sure - so don't miss
+            Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss
             out and register now!
           </h4>
           {authenticated ? (
@@ -185,17 +185,19 @@ export default function Home() {
             various sharks.
           </h4>
           {authenticated ? (
-            mockpitchStatus === "enrolled" && (
-              // ?
-              // <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
-              // :
-              <button
+            mockpitchStatus === "enrolled" 
+              ?
+             ( <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>)
+              :
+             (
+               <button
                 value={"ctohunt"}
                 className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
               >
                 Coming soon!
               </button>
-            )
+              )
+            
           ) : (
             <a
               href="https://forms.gle/i6qiusGYKukG2kuX9"

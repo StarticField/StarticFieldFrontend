@@ -1,8 +1,10 @@
-import {Grid, Spacer, Text, Image, Link} from "@nextui-org/react";
+import {Grid, Spacer, Text} from "@nextui-org/react";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/hero.module.css";
 
 
-export default function Hero() {
+ const Hero = () => {
   return (
     <Grid.Container className={styles.main}>
       <Grid xs={12} md={5.7}>
@@ -37,14 +39,16 @@ export default function Hero() {
             >
               Startic Field
             </Text>
-          <Link href="https://discord.com/invite/uWxKXJRpKS" className={styles.joinButton}>
+          <Link href="https://discord.com/invite/uWxKXJRpKS" prefetch={false} className={styles.joinButton}>
               <Text weight={'semibold'}>Join Discord</Text>
           </Link>
         </div>
       </Grid>
       <Grid xs={12} sm={6.3} md={6.3} className={styles.heroImage}>
-        <Image src="heroCover.webp" alt=""></Image>
+        <Image width='500px' height='500px'  src="/heroCover.webp" alt=""/>
       </Grid>
     </Grid.Container>
   );
 }
+
+export default Hero
