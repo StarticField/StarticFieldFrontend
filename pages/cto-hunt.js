@@ -212,7 +212,7 @@ const CTOHunt = () => {
         </a>
         <p className="w3-padding w3-large">
           Or contact us through{" "}
-          <b className="w3-text-blue">events.team@starticfield.com</b>
+          <b className="w3-text-blue">priyansh@starticfield.com</b>
         </p>
       </div>
       <Spacer y={2} />
