@@ -220,7 +220,7 @@ export default function CTOHunt() {
         <h3>For more information</h3>
         <p className="w3-padding w3-large">
           Contact us through{" "}
-          <b className="w3-text-blue">events.team@starticfield.com</b>
+          <b className="w3-text-blue">priyansh@starticfield.com</b>
         </p>
       </div>
       <Spacer y={2} />
