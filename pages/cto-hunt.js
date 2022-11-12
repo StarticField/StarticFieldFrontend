@@ -94,13 +94,38 @@ const CTOHunt = () => {
               out and register now!
             </h4>
             <Spacer x={4} />
-            
+            {authenticated ? (
+              status === "enrolled" ? (
+                <a
+                  href={"./dashboard"}
+                  className="w3-round-xxlarge w3-button w3-text-green w3-large w3-margin"
+                >
+                  View Progress &gt;
+                </a>
+              ) : status === "available" ? (
+                <button
+                  onClick={enroll}
+                  className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
+                >
+                  Enroll Now
+                </button>
+              ) : (
+                <a
+                  href={"./dashboard"}
+                  style={{ backgroundColor: "red" }}
+                  className="w3-round-xxlarge w3-button w3-large w3-margin"
+                >
+                  Complete your profile to Enroll
+                </a>
+              )
+            ) : (
               <a
                 href="https://forms.gle/JR8ZLfDwB6GbBinLA"
                 className="w3-round-xxlarge w3-button w3-large w3-margin"
               >
                 Enroll now
               </a>
+            )}
           </div>
         </Grid>
         <div className="w3-half">

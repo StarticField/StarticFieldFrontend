@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/index.module.css";
 import RecentEvents from "../components/RecentEvents";
 import { Router, useRouter } from "next/router";
-import { Grid, Spacer, Text, Image, } from "@nextui-org/react";
+import { Grid, Spacer, Text, Image, Link } from "@nextui-org/react";
 
 import axiosInstance from "../components/axiosAPI";
 
@@ -114,13 +114,39 @@ export default function Home() {
             Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss
             out and register now!
           </h4>
-          
+          {authenticated ? (
+            ctoHuntStatus === "enrolled" ? (
+              <a
+                href={"./dashboard"}
+                className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin"
+              >
+                View Progress &gt;
+              </a>
+            ) : ctoHuntStatus === "available" ? (
+              <button
+                value={"ctohunt"}
+                onClick={enroll}
+                className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
+              >
+                Enroll Now
+              </button>
+            ) : (
+              <a
+                href={"./dashboard"}
+                style={{ backgroundColor: "red" }}
+                className="w3-round-xxlarge w3-button w3-large w3-margin"
+              >
+                Complete your profile to Enroll
+              </a>
+            )
+          ) : (
             <a
-              href="https://forms.gle/JR8ZLfDwB6GbBinLA"
+              href="./log-in"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
-             Enroll now
+             Login to get enrolled
             </a>
+          )}
           <a
             href="./cto-hunt"
             className="w3-button  w3-round-xlarge w3-text-indigo w3-padding w3-large"
@@ -159,17 +185,19 @@ export default function Home() {
             various sharks.
           </h4>
           {authenticated ? (
-            mockpitchStatus === "enrolled" && (
-              // ?
-              // <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>
-              // :
-              <button
+            mockpitchStatus === "enrolled" 
+              ?
+             ( <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>)
+              :
+             (
+               <button
                 value={"ctohunt"}
                 className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
               >
                 Coming soon!
               </button>
-            )
+              )
+            
           ) : (
             <a
               href="https://forms.gle/i6qiusGYKukG2kuX9"
