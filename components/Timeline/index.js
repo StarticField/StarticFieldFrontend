@@ -1,30 +1,36 @@
 import Script from "next/script";
-import { Text, Spacer } from "@nextui-org/react";
+import { Typography } from "@mui/material";
 
  const Timeline = () => {
   return (
     <>
       <div className="container">
         <div className="top-section">
-          <Text
-            h1
+          <Typography
+            variant ="h3"  
             className="title"
-            weight={'semibold'}
-            css={{
-              textGradient:
-                "to right, #3361AD -20%,#6061AC 5%,#39B8C8 80%,#6AC5AA -90%",
+            mb={2}
+            fontWeight={700}
+            sx={{
+              background: "-webkit-linear-gradient(45deg, #3361AD -20%,#6061AC 5%,#39B8C8 80%,#6AC5AA -90%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+
             }}
+            // sx={{
+            //   colorGradient:"to right, #3361AD -20%,#6061AC 5%,#39B8C8 80%,#6AC5AA -90%",
+            // }}
           >
             Why join Startic Field?
-          </Text>
-          <Spacer x={2} />
-          <Text
-              h1
-              size={28}
+          </Typography>
+          <Typography
+              variant="h1"
+              fontSize='28px'
+              mb={2}
           >
               For Student Startups
-          </Text>
-          <Spacer x={2} />
+          </Typography>
+          {/* <Spacer x={2} /> */}
         </div>
 
         <div className="timeline">
