@@ -1,4 +1,4 @@
-import {Grid, Spacer, Text} from "@nextui-org/react";
+import {Button, Grid, Spacer, Text} from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/hero.module.css";
@@ -40,12 +40,14 @@ import styles from "../styles/hero.module.css";
               Startic Field
             </Text>
           <Link href="https://discord.com/invite/uWxKXJRpKS" prefetch={false} className={styles.joinButton}>
-              <Text weight={'semibold'}>Join Discord</Text>
+            <a>
+              <Button color="gradient" auto>Join Discord</Button>
+              </a>
           </Link>
         </div>
       </Grid>
       <Grid xs={12} sm={6.3} md={6.3} className={styles.heroImage}>
-        <Image width='500px' height='500px'  src="/heroCover.webp" alt=""/>
+        <Image width='750px' height='500px'  src="/heroCover.webp" alt=""/>
       </Grid>
     </Grid.Container>
   );

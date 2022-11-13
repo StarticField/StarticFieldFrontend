@@ -18,6 +18,10 @@
 }
 .heroSection{
     margin: auto;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .heroSection img{
@@ -61,6 +65,7 @@
     margin: 10px auto auto;
     font-size: 23px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
 }
 
 .section,

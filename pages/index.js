@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Hero from "../components/Hero";
-import Timeline from "../components/Timeline";
 import styles from "../styles/index.module.css";
-import RecentEvents from "../components/RecentEvents";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Router, useRouter } from "next/router";
@@ -18,6 +15,9 @@ const ForCorporates = dynamic(() =>
 
 const Timeline3 = dynamic(() => import("../components/Timeline3"));
 const Timeline4 = dynamic(() => import("../components/Timeline4"));
+const RecentEvents = dynamic(()=>import ('../components/RecentEvents'));
+const Timeline = dynamic(()=>import('../components/Timeline'));
+const Hero = dynamic(()=>import('../components/Hero')); 
 
 const Home = () => {
   const message = useRouter().query.message;

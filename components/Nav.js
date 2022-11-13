@@ -68,23 +68,31 @@ export default function Nav() {
               </Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions" css={{ $$dropdownMenuWidth: "280px" }}>
                 <Dropdown.Item >
-                  <Link href="./forStartups" color="text">
+                  <Link href="/forStartups" color="text">
+                    <a>
                     For Student Startups
+                    </a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item >
-                  <Link href="./forStudents" color="text">
+                  <Link href="/forStudents" color="text">
+                    <a>
                     For Students
+                    </a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item >
-                  <Link href="./forCorporateContributors" color="text">
+                  <Link href="/forCorporateContributors" color="text">
+                    <a>
                     For Corporate contributors
+                    </a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item >
-                  <Link href="./aboutUs" color="text">
+                  <Link href="/aboutUs" color="text">
+                    <a>
                     About Us
+                    </a>
                   </Link>
                 </Dropdown.Item>
               </Dropdown.Menu>

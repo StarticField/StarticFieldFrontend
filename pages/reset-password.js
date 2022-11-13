@@ -118,6 +118,7 @@ const Wrapper = styled(Box)(
 );
 
 import axiosInstance from "../components/axiosAPI";
+import Image from "next/image";
 export default function LogIn() {
   const [username,setUsername] = useState("");
   const [password,setPsswd] = useState("");
@@ -241,8 +242,11 @@ export default function LogIn() {
               </div>
               <div className="modal-right left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={"img1.webp"}
+                  height="100px"
+                  width="100px"
+                  layout="responsive"
                   alt=""
                 />
               </div>

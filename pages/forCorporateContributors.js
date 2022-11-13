@@ -1,8 +1,7 @@
-import { Layout } from "../components/Layout";
 import { Grid, Image, Text } from "@nextui-org/react";
 import styles from "../styles/forStudents.module.css";
 
-export default function ForCorporateContributors() {
+ const ForCorporateContributors = () => {
   return (
     <>
       <div className={styles.background}>
@@ -114,3 +113,5 @@ export default function ForCorporateContributors() {
     </>
   );
 }
+
+export default ForCorporateContributors

@@ -8,12 +8,7 @@ const list = [
     img: "AshutoshBisht.png",
     link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
   },
-  {
-    title: "Aryan Kataria",
-    img: "/AryanKataria.jpeg",
-    link: "https://www.linkedin.com/in/whoaryanraj",
-  },
-
+ 
   {
     title: "Priyansh Negi",
     img: "PriyanshNegi.jpg",
@@ -25,6 +20,12 @@ const list = [
     img: "ShubhanshuRao.jpeg",
     link: "https://www.linkedin.com/in/shubhanshu-rao-b77704223/",
   },
+  {
+    title: "Aryan Kataria",
+    img: "/AryanKataria.jpeg",
+    link: "https://www.linkedin.com/in/whoaryanraj",
+  },
+
 
   {
     title: "Ankit Gupta",

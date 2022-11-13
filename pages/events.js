@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import styles from "../styles/index.module.css";
 import RecentEvents from "../components/RecentEvents";
 import { Router, useRouter } from "next/router";
-import { Grid, Spacer, Text, Image, Link } from "@nextui-org/react";
+import { Grid, Spacer, Text, Link } from "@nextui-org/react";
 
 import axiosInstance from "../components/axiosAPI";
+import Image from "next/image";
 
 export default function Home() {
   const message = useRouter().query.message;
@@ -84,16 +85,19 @@ export default function Home() {
           position: "relative",
         }}
       >
-        <img src="/circles3.svg" alt="" className={styles.groupTwo}></img>
+        {/* <img src="/circles3.svg" alt="" className={styles.groupTwo}/> */}
       </div>
 
       <div className="w3-row w3-margin-top w3-margin-bottom ">
         <div className="w3-third w3-padding">
           <Image
-            src="allIndiaHunt.webp"
+            src="/allIndiaHunt.webp"
+            width="100px"
+            height="100px"
+            layout="responsive"
             className="w3-round-large"
             alt=""
-          ></Image>
+          />
         </div>
         <div className="w3-twothird w3-display-container">
           <Text
@@ -109,10 +113,10 @@ export default function Home() {
           </Text>
           <h4 className="w3-margin w3-text-grey">
             If you&#39;re a student with technical skills and an entrepreneurial
-            mindset, then this is the perfect competition for you! You&#39;ll have
-            the chance to join an ambitious student-led startup as a Tech
-            Cofounder or CTO and win exciting prizes for sure - so don&#39;t miss
-            out and register now!
+            mindset, then this is the perfect competition for you! You&#39;ll
+            have the chance to join an ambitious student-led startup as a Tech
+            Cofounder or CTO and win exciting prizes for sure - so don&#39;t
+            miss out and register now!
           </h4>
           {authenticated ? (
             ctoHuntStatus === "enrolled" ? (
@@ -144,7 +148,7 @@ export default function Home() {
               href="./log-in"
               className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
             >
-             Login to get enrolled
+              Login to get enrolled
             </a>
           )}
           <a
@@ -159,10 +163,13 @@ export default function Home() {
       <div className="w3-row w3-margin-top w3-margin-bottom ">
         <div className="w3-third w3-padding">
           <Image
-            src="form.png"
+            src="/form.png"
             className="w3-round-large"
+            width="100px"
+            height="100px"
+            layout="responsive"
             alt=""
-          ></Image>
+          />
         </div>
         <div className="w3-twothird w3-display-container">
           <Text
@@ -185,19 +192,21 @@ export default function Home() {
             various sharks.
           </h4>
           {authenticated ? (
-            mockpitchStatus === "enrolled" 
-              ?
-             ( <a href={"./dashboard"}  className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin" >View Progress &gt;</a>)
-              :
-             (
-               <button
+            mockpitchStatus === "enrolled" ? (
+              <a
+                href={"./dashboard"}
+                className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin"
+              >
+                View Progress &gt;
+              </a>
+            ) : (
+              <button
                 value={"ctohunt"}
                 className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
               >
-                Coming soon!
+                <a href="https://forms.gle/i6qiusGYKukG2kuX9">Enroll now</a>
               </button>
-              )
-            
+            )
           ) : (
             <a
               href="https://forms.gle/i6qiusGYKukG2kuX9"
@@ -217,7 +226,14 @@ export default function Home() {
       </div>
       <div className="w3-row w3-margin-top w3-margin-bottom">
         <div className="w3-third w3-padding">
-          <Image src="big5.jpg" className="w3-round-large" alt=""></Image>
+          <Image
+            width="100px"
+            height="100px"
+            layout="responsive"
+            src="/big5.jpg"
+            className="w3-round-large"
+            alt=""
+            />
         </div>
         <div className="w3-twothird w3-display-container">
           <Text
@@ -232,7 +248,8 @@ export default function Home() {
             Big 5 Problems
           </Text>
           <h4 className="w3-margin w3-text-grey">
-          Get the top 5 best problems in the industry to solve for and explore million dollar startup opportunities.
+            Get the top 5 best problems in the industry to solve for and explore
+            million dollar startup opportunities.
           </h4>
           <a
             href="https://discord.com/invite/uWxKXJRpKS"
@@ -247,7 +264,7 @@ export default function Home() {
           position: "relative",
         }}
       >
-        <img src="/circles2.svg" alt="" className={styles.groupThree}></img>
+        {/* <img src="/circles2.svg" alt="" className={styles.groupThree}/> */}
       </div>
       <div
         style={{
