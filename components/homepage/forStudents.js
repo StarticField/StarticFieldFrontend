@@ -13,8 +13,8 @@ const ForStudents = () => {
             width="100px"
             layout="responsive"
             className="w3-round-xlarge"
-            alt=""
-          ></Image>
+            alt="student"
+          />
         </div>
         <div className="w3-twothird w3-display-container">
           <Text
@@ -44,14 +44,14 @@ const ForStudents = () => {
           </h4>
           <a
             href="./forStartups"
-            className="w3-half w3-round-xlarge w3-button w3-padding w3-text-green w3-large"
+            className="w3-half w3-round-xlarge background w3-button w3-padding w3-text-white w3-large"
           >
-            <p className="w3-left ">For student startups </p>
+            <p className="w3-left">For student startups </p>
             <p className="w3-right">&gt;</p>
           </a>
           <a
             href="./forStudents"
-            className="w3-half w3-button w3-round-xlarge w3-text-blue w3-padding w3-large"
+            className="w3-half w3-button background m5 w3-round-xlarge w3-text-color w3-padding w3-large"
           >
             <p className="w3-left ">For students</p>
             <p className="w3-right">&gt;</p>

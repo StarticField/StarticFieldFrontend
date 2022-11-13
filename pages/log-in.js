@@ -1,9 +1,7 @@
 import { Box, Button, styled } from "@mui/material";
 import { Google } from "@mui/icons-material";
 import { useState} from "react";
-import axios from 'axios';
-import Router, { useRouter } from "next/router"; 
-import {Link} from "@nextui-org/react";
+import  { useRouter } from "next/router"; 
 
 const Wrapper = styled(Box)(
   ({ theme }) => `
@@ -122,6 +120,7 @@ export const config = {
 }
 
 import axiosInstance from "../components/axiosAPI";
+import Image from "next/image";
 export default function LogIn() {
   const [username,setUsername] = useState("");
   const [password,setPsswd] = useState("");
@@ -278,7 +277,10 @@ export default function LogIn() {
             }
               <div className="modal-right left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
+                  width={'100px'}
+                  height={"100px"}
+                  layout="responsive"
                   src={"img1.webp"}
                   alt=""
                 />

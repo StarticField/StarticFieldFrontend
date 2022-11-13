@@ -37,7 +37,7 @@ const list = [
   },
 ];
 
-export default function CTOHunt() {
+ const CTOHunt = () => {
   const mes = useRouter().query.message;
   const [message, setMessage] = useState(mes);
   const [status, setStatus] = useState("unavailable");
@@ -227,3 +227,5 @@ export default function CTOHunt() {
     </>
   );
 }
+
+export default CTOHunt

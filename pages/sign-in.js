@@ -104,6 +104,7 @@ const Wrapper = styled(Box)(
 );
 
 import axiosInstance from "../components/axiosAPI";
+import Image from "next/image";
 
 
 const SignUp = () => {
@@ -288,9 +289,12 @@ const SignUp = () => {
               </div>
               <div className="modal-right w3-half left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={"img2.webp"}
                   alt=""
+                  height="100px"
+                  width="100px"
+                  layout="responsive"
                 />
               </div>
             </div>
