@@ -44,7 +44,7 @@ const ForStudents = () => {
           </h4>
           <a
             href="./forStartups"
-            className="w3-half w3-round-xlarge background w3-button w3-padding w3-text-white w3-large"
+            className="w3-half w3-round-xlarge w3-margin-bottom w3-padding background w3-button w3-padding w3-text-white w3-large"
           >
             <p className="w3-left">For student startups </p>
             <p className="w3-right">&gt;</p>

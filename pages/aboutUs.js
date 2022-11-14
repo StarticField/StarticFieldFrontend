@@ -1,27 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import style from "../styles/aboutUs.module.css";
-import { Card, Grid, Image, Link, Row, Text } from "@nextui-org/react";
+import { Card, Grid, Link, Row, Text } from "@nextui-org/react";
+import Image from "next/image";
 
 const list = [
   {
     title: "Ashutosh Bisht",
+    designation:'CTO @ Startic Field',
     img: "AshutoshBisht.png",
     link: "https://www.linkedin.com/in/ashutosh-bisht-050287181/",
   },
  
   {
     title: "Priyansh Negi",
+    designation:'CEO @ Startic Field',
     img: "PriyanshNegi.jpg",
     link: "https://www.linkedin.com/in/priyanshnegi/",
   },
 
   {
     title: "Shubhanshu Rao",
+    designation:'CO-Founder @ Startic Field',
     img: "ShubhanshuRao.jpeg",
     link: "https://www.linkedin.com/in/shubhanshu-rao-b77704223/",
   },
   {
     title: "Aryan Kataria",
+    designation:'Founding Member @ Startic Field',
     img: "/AryanKataria.jpeg",
     link: "https://www.linkedin.com/in/whoaryanraj",
   },
@@ -29,6 +34,7 @@ const list = [
 
   {
     title: "Ankit Gupta",
+    designation:'Founding Member @ Startic Field',
     img: "AnkitGupta.png",
     link: "https://www.linkedin.com/in/gupta-ankit2",
   },
@@ -75,7 +81,7 @@ export default function AboutUs() {
       ></div>
       <Grid.Container gap={2} justify="flex-start">
         {list.map((item, index) => (
-          <Grid xs={6} sm={4} key={index}>
+          <Grid xs={12} sm={4} key={index}>
             <Card className={style.card} isPressable isHoverable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
@@ -88,9 +94,9 @@ export default function AboutUs() {
               </Card.Body>
               <Card.Footer css={{ justifyItems: "flex-start" }}>
                 <Row wrap="wrap" justify="space-between" align="center">
-                  <Text b>{item.title}</Text>
+                  <Text align="left" b>{item.title} <br />{item.designation}</Text>
                   <Link target={"_blank"} href={item.link} color="text">
-                    <Image className={style.socialIcons} src="/linkedin.svg" />
+                    <Image className={style.socialIcons} width="25px" height="25px" src="/linkedin.svg" />
                   </Link>
                 </Row>
               </Card.Footer>
@@ -118,11 +124,12 @@ export default function AboutUs() {
           </Text>
         </div>
         <Image
-          className={style.mentorImage}
-          src={"narayana-murthy.png"}
+          src={"/narayana-pti.webp"}
           width="350px"
           height="350px"
-        ></Image>
+          layout="intrinsic"
+        
+        />
       </div>
     </div>
   );
