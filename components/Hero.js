@@ -47,7 +47,6 @@ const Hero = () => {
           >
               <button
                 className="w3-button w3-indigo w3-round-xxlarge"
-                auto
               >
                 Join Discord
               </button>
