@@ -261,7 +261,6 @@ const Dashboard = () => {
             setCompleted(response.data.completed);
             setFullname(response.data.fullname);
             setMockEnrolled(response.data.mockenrolled);
-            console.log(response);
           }
           else {setError(response);}
         });

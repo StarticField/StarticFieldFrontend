@@ -166,9 +166,9 @@ const SignUp = () => {
         )
       
       }
-      // else {
-      //   setMessage("An error occured while creating your account (Try with different username)!");
-      // }
+      else {
+        setMessage("An error occured while creating your account (Try with different username)!");
+      }
     } 
     catch (error) {
         throw error;
@@ -290,7 +290,7 @@ const SignUp = () => {
               <div className="modal-right w3-half left-color">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <Image
-                  src={"img2.webp"}
+                  src={"/img2.webp"}
                   alt=""
                   height="100px"
                   width="100px"
