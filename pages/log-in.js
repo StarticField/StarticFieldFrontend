@@ -169,13 +169,12 @@ export default function LogIn() {
             (response) => {
               if (response!=undefined){
                   if (typeof window !== "undefined") {
-                    console.log(response);
                     localStorage.setItem('access_token', response.data.access);
                     localStorage.setItem('refresh_token', response.data.refresh);
                     localStorage.setItem('username', username);
                     axiosInstance.defaults.headers['Authorization'] = "JWT " + response.data.access;
                     router.push({
-                      pathname: "/complete-profile",
+                      pathname: "/",
                       query: {"message": "Successfully Logged in !"}
                     });
                   }
@@ -281,7 +280,7 @@ export default function LogIn() {
                   width={'100px'}
                   height={"100px"}
                   layout="responsive"
-                  src={"img1.webp"}
+                  src={"/img1.webp"}
                   alt=""
                 />
               </div>
