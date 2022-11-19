@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
-import { Button, Grid, Spacer, Text } from "@nextui-org/react";
-import Image from "next/image";
+import { Button, Grid, Spacer, Text, Image } from "@nextui-org/react";
 import Link from "next/link";
 import { Container } from "theme-ui";
 import styles from "../styles/hero.module.css";
@@ -53,8 +52,8 @@ const Hero = () => {
           </Link>
         </div>
       </Container>
-      <Container width="100vw" height="100vh"  className="w3-half">
-        <Image width="750px" height="650px" src="/heroCover.webp" alt="" />
+      <Container className="w3-half">
+        <Image src="/heroCover.webp" alt="" />
       </Container>
     </Grid.Container>
   );

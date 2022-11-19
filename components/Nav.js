@@ -35,7 +35,6 @@ export default function Nav() {
     "For Students",
     "Events & Programs",
     "For Corporate Startups",
-    "Premium Membership",
   ];
   const collapseItemsLink = [
     "/events",
@@ -44,7 +43,6 @@ export default function Nav() {
     "/forStudents",
     "/eventsAndProgram",
     "/forCorporateContributors",
-    "/premium",
   ];
 
   return (
@@ -99,9 +97,9 @@ export default function Nav() {
             </Dropdown>
           </Navbar.Item>
           <Navbar.Link href="./events">Events</Navbar.Link>
-          <Navbar.Link  href="./premium">
+          {/* {<Navbar.Link  href="./premium">
               Premium Membership
-          </Navbar.Link>
+          </Navbar.Link>} */}
           {authenticated?
           <>
             <Navbar.Link href="./dashboard">Dashboard</Navbar.Link>
