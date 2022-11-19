@@ -32,7 +32,7 @@ export default function Home() {
               });
             } else {
               router.push({
-                pathname: "/cto-hunt",
+                pathname: "https://docs.google.com/forms/d/e/1FAIpQLSeKiV6QXyqi-7aeLFBW94Hmyz2czVB4fMlZ4UI3BeJZRxpLZQ/viewform?usp=sf_link",
                 query: { message: "Successfully enrolled in CTO Hunt !" },
               });
             }
@@ -118,39 +118,12 @@ export default function Home() {
             Cofounder or CTO and win exciting prizes for sure - so don&#39;t
             miss out and register now!
           </h4>
-          {authenticated ? (
-            ctoHuntStatus === "enrolled" ? (
-              <a
-                href={"./dashboard"}
-                className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin"
-              >
-                View Progress &gt;
-              </a>
-            ) : ctoHuntStatus === "available" ? (
-              <button
-                value={"ctohunt"}
-                onClick={enroll}
-                className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
-              >
-                Enroll Now
-              </button>
-            ) : (
-              <a
-                href={"./dashboard"}
-                style={{ backgroundColor: "red" }}
-                className="w3-round-xxlarge w3-button w3-large w3-margin"
-              >
-                Complete your profile to Enroll
-              </a>
-            )
-          ) : (
-            <a
-              href="./log-in"
-              className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
-            >
-              Login to get enrolled
-            </a>
-          )}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeKiV6QXyqi-7aeLFBW94Hmyz2czVB4fMlZ4UI3BeJZRxpLZQ/viewform?usp=sf_link"
+            className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
+          >
+            Get registration link
+          </a>
           <a
             href="./cto-hunt"
             className="w3-button  w3-round-xlarge w3-text-indigo w3-padding w3-large"
@@ -191,30 +164,12 @@ export default function Home() {
             seek feedback, suggestions, and experience about working with
             various sharks.
           </h4>
-          {authenticated ? (
-            mockpitchStatus === "enrolled" ? (
-              <a
-                href={"./dashboard"}
-                className="w3-round-xxlarge w3-button w3-indigo w3-large w3-margin"
-              >
-                View Progress &gt;
-              </a>
-            ) : (
-              <button
-                value={"ctohunt"}
-                className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
-              >
-                <a href="https://forms.gle/i6qiusGYKukG2kuX9">Enroll now</a>
-              </button>
-            )
-          ) : (
-            <a
-              href="https://forms.gle/i6qiusGYKukG2kuX9"
-              className="w3-round-xxlarge w3-red w3-button w3-large w3-margin"
-            >
-              Enroll now
-            </a>
-          )}
+          <a
+            href="https://forms.gle/i6qiusGYKukG2kuX9"
+            className="w3-round-xxlarge w3-indigo w3-button w3-large w3-margin"
+          >
+            Enroll now
+          </a>
           <a
             href="./mock-pitch"
             className="w3-button w3-round-xlarge w3-text-indigo w3-padding w3-large"

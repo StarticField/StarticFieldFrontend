@@ -1,15 +1,15 @@
 import { Typography } from "@mui/material";
-import { Button, Grid, Spacer, Text } from "@nextui-org/react";
-import Image from "next/image";
+import { Button, Grid, Spacer, Text, Image } from "@nextui-org/react";
 import Link from "next/link";
 import { Container } from "theme-ui";
 import styles from "../styles/hero.module.css";
 
 const Hero = () => {
   return (
-    <Grid.Container className={styles.main}>
-      <Container className="w3-half">
-        <div className={styles.heroText}>
+    <>
+      <Grid.Container className={styles.main}>
+        <Grid xs={12} md={5.7}>
+          <div className={styles.heroText}>
           <Text
             h1
             weight={"semibold"}
@@ -51,12 +51,13 @@ const Hero = () => {
                 Join Discord
               </button>
           </Link>
+          </div>
+        </Grid>
+        <div className="w3-half">
+          <Image src="heroCover.webp" alt=""></Image>
         </div>
-      </Container>
-      <Container width="100vw" height="100vh"  className="w3-half">
-        <Image width="750px" height="650px" src="/heroCover.webp" alt="" />
-      </Container>
-    </Grid.Container>
+      </Grid.Container>
+    </>
   );
 };
 
