@@ -44,17 +44,15 @@ const ForStudents = () => {
           </h4>
           <a
             href="./forStartups"
-            className="w3-half w3-round-xlarge w3-margin-bottom w3-padding background w3-button w3-padding w3-text-white w3-large"
+            className="w3-round-xxlarge w3-indigo w3-margin w3-padding w3-button w3-text-white w3-xlarge"
           >
-            <p className="w3-left">For student startups </p>
-            <p className="w3-right">&gt;</p>
+            <p className=" w3-large">For student startups </p>
           </a>
           <a
             href="./forStudents"
-            className="w3-half w3-button background m5 w3-round-xlarge w3-text-color w3-padding w3-large"
+            className="w3-button w3-margin w3-purple w3-round-xxlarge w3-text-white w3-padding w3-xlarge"
           >
-            <p className="w3-left ">For students</p>
-            <p className="w3-right">&gt;</p>
+            <p className=" w3-large ">For students</p>
           </a>
         </div>
       </div>

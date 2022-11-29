@@ -73,6 +73,7 @@ card2
 .ctoHunt .cardImage {
     background: url("/allIndiaHunt.webp");
     background-size: cover;
+    border-radius: 20px;
 }
 .big5 .cardImage {
     background: url("/big5.webp");
