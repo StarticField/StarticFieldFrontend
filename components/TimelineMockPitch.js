@@ -19,16 +19,16 @@ export default function TimelineCTOHunt() {
             <div className="content">
               <h3>Application and Pitch Submission (Round 1)</h3>
               <h5>
-                <e className="w3-text-blue">11 Dec, 2022</e>
+                <e className="w3-text-blue">15 Nov to 11 Dec, 2022</e>
               </h5>
             </div>
           </div>
           <div className="section3">
             <div className="bead bead2"></div>
             <div className="content">
-              <h3>The development round R2 (Round 2)</h3>
+              <h3>First pitch to SF Internal team. (Round 2)</h3>
               <h5>
-                <e className="w3-text-blue">16 Dec, 2022</e>
+                <e className="w3-text-blue">17 -18 Dec, 2022</e>
               </h5>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function TimelineCTOHunt() {
             <div className="content">
               <h3>Final pitch to judges</h3>
               <h5>
-                On <e className="w3-text-blue">21 Dec, 2022</e>
+                On <e className="w3-text-blue">27 Dec, 2022</e>
               </h5>
             </div>
           </div>
